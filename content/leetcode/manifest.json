@@ -1,0 +1,2886 @@
+[
+  {
+    "number": 5,
+    "contentId": "b6a5acfeffec",
+    "title": "最长回文子串",
+    "url": "https://leetcode.cn/problems/longest-palindromic-substring/",
+    "fetchedAt": "2026-09-27T03:39:55.365236+00:00",
+    "sourceSha256": "dcffc09a04bc07adff364b533f1634862f4da7802ed1a826765e010171a29a0e",
+    "markdownSha256": "42d89c4942a477effc97fdee191f65de668efc6a5901c4447af3875e8b4e4541",
+    "imagePaths": []
+  },
+  {
+    "number": 10,
+    "contentId": "82a46feabbcc",
+    "title": "正则表达式匹配",
+    "url": "https://leetcode.cn/problems/regular-expression-matching/",
+    "fetchedAt": "2026-09-27T03:39:55.202431+00:00",
+    "sourceSha256": "cf17d071d7bba4321effc6e3a0fd2a28df37521883545579ab04c73ae7a7f6d5",
+    "markdownSha256": "e316cd6a98f820579ebde903019b4056cb095f11c32e19733790e6d14a66e4f2",
+    "imagePaths": []
+  },
+  {
+    "number": 15,
+    "contentId": "c37cc111b086",
+    "title": "三数之和",
+    "url": "https://leetcode.cn/problems/3sum/",
+    "fetchedAt": "2026-09-27T03:39:45.092659+00:00",
+    "sourceSha256": "63eb6d79808da6c9139c2505d6dac316c0c0735ae8a6c02ff7866ca6673e7f37",
+    "markdownSha256": "b461ee53ea34f1db5847e7e862499aa9b7ad3f24a40b97c3e3dbbfdf3bf921ab",
+    "imagePaths": []
+  },
+  {
+    "number": 16,
+    "contentId": "d86c9d9a6aa9",
+    "title": "最接近的三数之和",
+    "url": "https://leetcode.cn/problems/3sum-closest/",
+    "fetchedAt": "2026-09-27T03:39:45.027743+00:00",
+    "sourceSha256": "6b7c7510fe87f5fd2b4dfa557c7525344c5b6f064edc4ce0305aabf8ec36e64e",
+    "markdownSha256": "4ca2630959f5b22b6d849c1339986d3cfec53a982c5f21082037712f4e47238c",
+    "imagePaths": []
+  },
+  {
+    "number": 18,
+    "contentId": "018e10820258",
+    "title": "四数之和",
+    "url": "https://leetcode.cn/problems/4sum/",
+    "fetchedAt": "2026-09-27T03:39:45.258293+00:00",
+    "sourceSha256": "449c76d8822cebd257a7740ad19ae258ff46983e78f1584839a1e9c9483ea79f",
+    "markdownSha256": "533e0171714d5a607e7417f1feb2fef2d7ad719553164ac437b89990d5b83c1a",
+    "imagePaths": []
+  },
+  {
+    "number": 44,
+    "contentId": "7f1d5aabb783",
+    "title": "通配符匹配",
+    "url": "https://leetcode.cn/problems/wildcard-matching/",
+    "fetchedAt": "2026-09-27T03:39:55.223487+00:00",
+    "sourceSha256": "a5a85c9895539b9742c7221efafa2353da4cbe1c8342dea68adf7d3faf61b433",
+    "markdownSha256": "407cfe2ac446b2b62f44d053c8b71cf528e4b9ec375c0b06cc225f2c1b5dba34",
+    "imagePaths": []
+  },
+  {
+    "number": 49,
+    "contentId": "0ae17495a992",
+    "title": "字母异位词分组",
+    "url": "https://leetcode.cn/problems/group-anagrams/",
+    "fetchedAt": "2026-09-27T03:39:43.158083+00:00",
+    "sourceSha256": "32eb1a3b8905d39dd5b14ee96c18216202374a7bf98c9e78a1daf298ebe48652",
+    "markdownSha256": "d298a8368c5dac9be45d278fb6a10b7065c7c6ce1de0306f7afba245a3d0e910",
+    "imagePaths": []
+  },
+  {
+    "number": 53,
+    "contentId": "bf4915fccc0c",
+    "title": "最大子数组和",
+    "url": "https://leetcode.cn/problems/maximum-subarray/",
+    "fetchedAt": "2026-09-27T03:39:50.349599+00:00",
+    "sourceSha256": "754da07fe14887e8e25531ffb64c92cd2b3f49838cc445c83ee9ec91ece31f71",
+    "markdownSha256": "f8b6a52daa394a8fe98f3f5041125f30491ec39c61deb979ae344ea37731f0e8",
+    "imagePaths": []
+  },
+  {
+    "number": 56,
+    "contentId": "dc167f27749d",
+    "title": "合并区间",
+    "url": "https://leetcode.cn/problems/merge-intervals/",
+    "fetchedAt": "2026-09-27T03:39:47.948307+00:00",
+    "sourceSha256": "1e38974de587578f75aa3bd186d6ad591714f04ea1f287a6cb34d189cf35a734",
+    "markdownSha256": "18d513273cd991a7d0ab5af85a72263acec8052f41aaa17d835ec56635f4f1ea",
+    "imagePaths": []
+  },
+  {
+    "number": 62,
+    "contentId": "f455190e4054",
+    "title": "不同路径",
+    "url": "https://leetcode.cn/problems/unique-paths/",
+    "fetchedAt": "2026-09-27T03:39:50.890573+00:00",
+    "sourceSha256": "5dff079f199b339f20a1b640283e31564a7acad237310cfaacfee293b4b2aa29",
+    "markdownSha256": "409a54371efb101f228af10c22d34d21840b94392c64317c1adfe5ff7c9851c1",
+    "imagePaths": [
+      "/leetcode-assets/d9a9b5c9d80e99242fd3ec61.png"
+    ]
+  },
+  {
+    "number": 63,
+    "contentId": "045602370a91",
+    "title": "不同路径 II",
+    "url": "https://leetcode.cn/problems/unique-paths-ii/",
+    "fetchedAt": "2026-09-27T03:39:51.013266+00:00",
+    "sourceSha256": "b597786a3db44cc0ab1de7a7f0bc9956e9a88e66234ebbbfe6c84a4ee1723790",
+    "markdownSha256": "6974793734f37ad377b817b7c8e8611d91867a27c39be647cabc9013fbf40881",
+    "imagePaths": [
+      "/leetcode-assets/94ada2c016c0e0808caf49c8.jpg",
+      "/leetcode-assets/9dcd69de523fedebb9c100b7.jpg"
+    ]
+  },
+  {
+    "number": 64,
+    "contentId": "ee9d94e64493",
+    "title": "最小路径和",
+    "url": "https://leetcode.cn/problems/minimum-path-sum/",
+    "fetchedAt": "2026-09-27T03:39:51.096839+00:00",
+    "sourceSha256": "725560ede172d303efcc1de72384bd5a9d5f633780557ce8b7bb31055af2e022",
+    "markdownSha256": "f7cba29620ed65e94a3f38f7be6247f4f23a62aeaa7f131960cf2b53799c70ad",
+    "imagePaths": [
+      "/leetcode-assets/740753af9ef8d586f0acba5b.jpg"
+    ]
+  },
+  {
+    "number": 70,
+    "contentId": "714498dd80d1",
+    "title": "爬楼梯",
+    "url": "https://leetcode.cn/problems/climbing-stairs/",
+    "fetchedAt": "2026-09-27T03:39:50.089956+00:00",
+    "sourceSha256": "7cf0dbf0d6aafda3fb8f6d321076005ab2d5ac74d890553a1fc9508704c8261a",
+    "markdownSha256": "86c2f39eb3775703de4e5035fdb174dacac56263da8a60d7a792e269a71cb3fb",
+    "imagePaths": []
+  },
+  {
+    "number": 72,
+    "contentId": "6033eb9f91ff",
+    "title": "编辑距离",
+    "url": "https://leetcode.cn/problems/edit-distance/",
+    "fetchedAt": "2026-09-27T03:39:54.759093+00:00",
+    "sourceSha256": "63317bbfbad0793fc267d5754924ebba57da320e2b4245340717a3c498ad0bbc",
+    "markdownSha256": "d237328cb585cbda48a3700b1482735f84831dcf014652c5914caab883017b34",
+    "imagePaths": []
+  },
+  {
+    "number": 75,
+    "contentId": "5baa4e47b85e",
+    "title": "颜色分类",
+    "url": "https://leetcode.cn/problems/sort-colors/",
+    "fetchedAt": "2026-09-27T03:39:42.227394+00:00",
+    "sourceSha256": "827adbc4ec1cd585135dd89db47cf9e71d7b4124254325b79725e08ef58ee19d",
+    "markdownSha256": "ccd53c42733e8b46e5bff85bbd12dccc1ae8ae6ef755910b1eaef2186e27e023",
+    "imagePaths": []
+  },
+  {
+    "number": 88,
+    "contentId": "e9dac3c965da",
+    "title": "合并两个有序数组",
+    "url": "https://leetcode.cn/problems/merge-sorted-array/",
+    "fetchedAt": "2026-09-27T03:39:41.902235+00:00",
+    "sourceSha256": "ab4d3072d0280728f0d186aefc4630074e558ab512edfe0e2b524ac84590b54d",
+    "markdownSha256": "90b245b399d1f632984ff554a962c0f5e8dcaf5af282909e1960044293d19252",
+    "imagePaths": []
+  },
+  {
+    "number": 91,
+    "contentId": "d5ce0b5414e3",
+    "title": "解码方法",
+    "url": "https://leetcode.cn/problems/decode-ways/",
+    "fetchedAt": "2026-09-27T03:39:57.329341+00:00",
+    "sourceSha256": "ca45c5b8f743a1ebe461d70e66c9f3a5c85fb5a4695ae618243b7e99bcdfa8f8",
+    "markdownSha256": "33066308fdb2210b33adde8b5e4ec8814ca82bf01792743d03ffa43c4aeb0de4",
+    "imagePaths": []
+  },
+  {
+    "number": 95,
+    "contentId": "d9f8a925b9ae",
+    "title": "不同的二叉搜索树 II",
+    "url": "https://leetcode.cn/problems/unique-binary-search-trees-ii/",
+    "fetchedAt": "2026-09-27T03:39:58.805029+00:00",
+    "sourceSha256": "246709fd63d309ce196fb475291e0ef249a5b5f68be71b1d2c142900cd5e52dc",
+    "markdownSha256": "d5954af140b73d6a650017219c6adf2ad559c105e1463cc11e022e484c77f387",
+    "imagePaths": [
+      "/leetcode-assets/ff8186d95cc4e3043ed00d64.jpg"
+    ]
+  },
+  {
+    "number": 96,
+    "contentId": "b6f2c9c2c3fb",
+    "title": "不同的二叉搜索树",
+    "url": "https://leetcode.cn/problems/unique-binary-search-trees/",
+    "fetchedAt": "2026-09-27T03:39:58.650606+00:00",
+    "sourceSha256": "8cbc128195d9a51e43b00d7d771cbf6258633607254b510334df6c6eeb87c103",
+    "markdownSha256": "115316077ab48ae4bde57b2fe699bfc2b38831d9e4e1888369c13fe70d7cc6df",
+    "imagePaths": [
+      "/leetcode-assets/ff8186d95cc4e3043ed00d64.jpg"
+    ]
+  },
+  {
+    "number": 97,
+    "contentId": "1b15c66529df",
+    "title": "交错字符串",
+    "url": "https://leetcode.cn/problems/interleaving-string/",
+    "fetchedAt": "2026-09-27T03:39:54.803218+00:00",
+    "sourceSha256": "5ba2ddf4c9d9d3f8f3f5789ab6951d9f32ef469cf0cf9f53cc7dddd0d41aefb0",
+    "markdownSha256": "9b13914066119249b57dd36b9d7968a45afbb7b9f99cc270e54d1fff9226c7ba",
+    "imagePaths": [
+      "/leetcode-assets/0f1e1053bf603eac949e71c4.jpg"
+    ]
+  },
+  {
+    "number": 115,
+    "contentId": "eeffe2c81f00",
+    "title": "不同的子序列",
+    "url": "https://leetcode.cn/problems/distinct-subsequences/",
+    "fetchedAt": "2026-09-27T03:39:54.901999+00:00",
+    "sourceSha256": "5c7afe50f58bd5fa7095d3bfefbb6422019dadbd9d32c2e8f4eb70ff3fb7e9aa",
+    "markdownSha256": "20d7832a972a3384ff0c9ed585496e2b14e7c287f2c8c136a109ec2b3a2963fe",
+    "imagePaths": []
+  },
+  {
+    "number": 120,
+    "contentId": "42a5551045b7",
+    "title": "三角形最小路径和",
+    "url": "https://leetcode.cn/problems/triangle/",
+    "fetchedAt": "2026-09-27T03:39:51.204721+00:00",
+    "sourceSha256": "99374c82cbc4a45ae3f7de5213b35ca2578887be7519bc3b6af255e09dfed4fa",
+    "markdownSha256": "156b1858e0f2cb8ec64843a3d34325044d04bcd2234f6eb879ee0d33298f24b2",
+    "imagePaths": []
+  },
+  {
+    "number": 121,
+    "contentId": "9678864af3d9",
+    "title": "买卖股票的最佳时机",
+    "url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/",
+    "fetchedAt": "2026-09-27T03:39:56.989938+00:00",
+    "sourceSha256": "bb21f1bfc111beff8ae831442ee0d7f01738776f3bb5a0d9a53e1d0bfbc45bbc",
+    "markdownSha256": "4baccfda5428612f9b0d0eccd31b4c1d0891fe54264276fcc89345501f4c8b3f",
+    "imagePaths": []
+  },
+  {
+    "number": 122,
+    "contentId": "f031ea7276fd",
+    "title": "买卖股票的最佳时机 II",
+    "url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/",
+    "fetchedAt": "2026-09-27T03:39:57.103090+00:00",
+    "sourceSha256": "e05277331ce03f8b7bfeb486e127a5004e8b945b77f977fea6b37a2cc7a1a068",
+    "markdownSha256": "94cd57abaa154b72861a294f72be6d9a6d7ef7b1d733cefc3c2403cbf618a220",
+    "imagePaths": []
+  },
+  {
+    "number": 123,
+    "contentId": "730b17e273ab",
+    "title": "买卖股票的最佳时机 III",
+    "url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/",
+    "fetchedAt": "2026-09-27T03:39:57.322652+00:00",
+    "sourceSha256": "c19c5340a6b6b7651d93c5df5e3d98c6115a9ffc78319dc776a4b38f32df367a",
+    "markdownSha256": "eaeced30d689e2bb7dc922c93a5789cb5f9fb689cfdd00cfb62ed795af800a0f",
+    "imagePaths": []
+  },
+  {
+    "number": 124,
+    "contentId": "3d23deea9135",
+    "title": "二叉树中的最大路径和",
+    "url": "https://leetcode.cn/problems/binary-tree-maximum-path-sum/",
+    "fetchedAt": "2026-09-27T03:39:58.874391+00:00",
+    "sourceSha256": "072a45a20f48b1817ce058360ba7385c27e2ac03a491fc76f3228270552bde60",
+    "markdownSha256": "8858e95e31a64d514e7ac1ed886a2f6ae4d926031698a48142beecfc0e7c4ef9",
+    "imagePaths": [
+      "/leetcode-assets/a38e09d667d026cf4bc2856d.jpg",
+      "/leetcode-assets/2796cd67b3b48e17c8cde743.jpg"
+    ]
+  },
+  {
+    "number": 131,
+    "contentId": "5891b2a0751d",
+    "title": "分割回文串",
+    "url": "https://leetcode.cn/problems/palindrome-partitioning/",
+    "fetchedAt": "2026-09-27T03:39:55.660826+00:00",
+    "sourceSha256": "620d7ba5a36c36a67caa3c80448a98611c5a2718761d1d6ea77ffb368a5ac349",
+    "markdownSha256": "931aea3c000df03888c7cbb6b9dc7c7a8209bf3d027ee84e84dcb8ce3494cfee",
+    "imagePaths": []
+  },
+  {
+    "number": 132,
+    "contentId": "4eb922ad5b4a",
+    "title": "分割回文串 II",
+    "url": "https://leetcode.cn/problems/palindrome-partitioning-ii/",
+    "fetchedAt": "2026-09-27T03:39:55.764125+00:00",
+    "sourceSha256": "63ddce906825a0b21c251893f44ddbcc3095b1c805f0f75e360798afba79d2e1",
+    "markdownSha256": "580ccb1551fb176a14ad9037239d2aefc4511419f55cd69654d4d6413bcc1ff4",
+    "imagePaths": []
+  },
+  {
+    "number": 133,
+    "contentId": "3e64b7e95b99",
+    "title": "克隆图",
+    "url": "https://leetcode.cn/problems/clone-graph/",
+    "fetchedAt": "2026-09-27T03:39:59.585112+00:00",
+    "sourceSha256": "010d40d79ec6e3aa4e822ab7b915c296b57ab7f3e1bd24cf2e842055dc3746f8",
+    "markdownSha256": "ddcf338221912f286dca8e255c0ad63c5458c6c9e0d7dccd6082ef985f15f449",
+    "imagePaths": [
+      "/leetcode-assets/eba9573b3e36f8055450368e.png",
+      "/leetcode-assets/085e9213a06a02f9b2a007af.png"
+    ]
+  },
+  {
+    "number": 139,
+    "contentId": "1cdcd62b05c5",
+    "title": "单词拆分",
+    "url": "https://leetcode.cn/problems/word-break/",
+    "fetchedAt": "2026-09-27T03:39:53.081288+00:00",
+    "sourceSha256": "30e951a3ee9b4b15177cb35c83e3ce780089b96f436bc5c42c58b0265e5113ff",
+    "markdownSha256": "e0c4bbca87a8cb0b7c1e72bef938fc6b5a42568ce34adfeb7c8cf2355c0473ce",
+    "imagePaths": []
+  },
+  {
+    "number": 147,
+    "contentId": "20ec56cd06f7",
+    "title": "对链表进行插入排序",
+    "url": "https://leetcode.cn/problems/insertion-sort-list/",
+    "fetchedAt": "2026-09-27T03:39:42.198166+00:00",
+    "sourceSha256": "427c398f34b143ec211993a7efc953a62f0057e771c99c806c01fa101ef5ab2c",
+    "markdownSha256": "99b24e0f39dc5b8a7318dc1ec00602b33dff8f16bd8347cf38e4fe838bbca549",
+    "imagePaths": [
+      "/leetcode-assets/0fa50fab53c3435d30aab7f5.gif",
+      "/leetcode-assets/1139cfe363191ec7f8f27234.png",
+      "/leetcode-assets/e612d7600864d15ef015091a.png"
+    ]
+  },
+  {
+    "number": 148,
+    "contentId": "3e62abdee497",
+    "title": "排序链表",
+    "url": "https://leetcode.cn/problems/sort-list/",
+    "fetchedAt": "2026-09-27T03:39:42.419940+00:00",
+    "sourceSha256": "386a841f1e5e2c4c701daed3444d0c4992ed94e063a3f85d93af4e5c05a8b8a9",
+    "markdownSha256": "77fe13b9f30208ac7728ae44d288bab8f4a05b196b273c6e4be01acf9dcea3af",
+    "imagePaths": [
+      "/leetcode-assets/2200d696a1851ea221016ca2.jpg",
+      "/leetcode-assets/49367b04ae63af59f8bf5b40.jpg"
+    ]
+  },
+  {
+    "number": 152,
+    "contentId": "55e360880142",
+    "title": "乘积最大子数组",
+    "url": "https://leetcode.cn/problems/maximum-product-subarray/",
+    "fetchedAt": "2026-09-27T03:39:50.612222+00:00",
+    "sourceSha256": "e629a52c636cf6798476486470b2ebaf8d40fb8f55837086b7cca3eb0832ff27",
+    "markdownSha256": "3650060696b2e97e56d99eeaa39d2c6081b9f24bb04bd8b659a6a2898c7a74c9",
+    "imagePaths": []
+  },
+  {
+    "number": 164,
+    "contentId": "65152ad6cc0f",
+    "title": "最大间距",
+    "url": "https://leetcode.cn/problems/maximum-gap/",
+    "fetchedAt": "2026-09-27T03:39:43.763483+00:00",
+    "sourceSha256": "60c579b4061e8cad3eb1ffc32763d94ac5c40dcaaa1c450fd16b5e8ca320c11f",
+    "markdownSha256": "11c0d90451d6ae3781cccf4a97a37c86703234fe8ff607b240384350bd4feed2",
+    "imagePaths": []
+  },
+  {
+    "number": 174,
+    "contentId": "360e81bb063c",
+    "title": "地下城游戏",
+    "url": "https://leetcode.cn/problems/dungeon-game/",
+    "fetchedAt": "2026-09-27T03:39:51.632560+00:00",
+    "sourceSha256": "489f07c225ea15830247a8bafac3aa1eb4fe822d5e9c0d8c22ab3322966bda07",
+    "markdownSha256": "370ef90338ee62157ca830948ad74281286a4d283059deb26b76edfd57a072c5",
+    "imagePaths": [
+      "/leetcode-assets/ae1b4e09fd411f3248d5ba0c.jpg"
+    ]
+  },
+  {
+    "number": 179,
+    "contentId": "be9226f2001e",
+    "title": "最大数",
+    "url": "https://leetcode.cn/problems/largest-number/",
+    "fetchedAt": "2026-09-27T03:39:44.152504+00:00",
+    "sourceSha256": "c09e85602f0d4690fec2f69471c075152bbcd456081c8a1aacba2e94702ca80d",
+    "markdownSha256": "554dabd62590cd449e971064924316846e15c794c2858e7c736634e75eaadba4",
+    "imagePaths": []
+  },
+  {
+    "number": 188,
+    "contentId": "71ae9b024855",
+    "title": "买卖股票的最佳时机 IV",
+    "url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/",
+    "fetchedAt": "2026-09-27T03:39:57.604077+00:00",
+    "sourceSha256": "5f04e82dfe8e9cc0d3c88309f8767600b25784b9cbbdbd7c42dda3e672e1ffe2",
+    "markdownSha256": "8a89f7e9957b38220673bd09cf5698499e7b9fcb636e7acb9dfcf64fdf8892a9",
+    "imagePaths": []
+  },
+  {
+    "number": 198,
+    "contentId": "c18e3751eb5c",
+    "title": "打家劫舍",
+    "url": "https://leetcode.cn/problems/house-robber/",
+    "fetchedAt": "2026-09-27T03:39:50.486704+00:00",
+    "sourceSha256": "24f6bd6fa62b3160c57ca812de9b7e9456efff6220c9dfc087cc239711950d9b",
+    "markdownSha256": "11da4c455537eb597ac2aea0a83fed45c9c6a919fa5a7ea5a468cc8fd09cff66",
+    "imagePaths": []
+  },
+  {
+    "number": 207,
+    "contentId": "2f1817b3c7de",
+    "title": "课程表",
+    "url": "https://leetcode.cn/problems/course-schedule/",
+    "fetchedAt": "2026-09-27T03:40:01.360737+00:00",
+    "sourceSha256": "d8a0fb3ccc2eb38186d8d33f3331cbf2d2f03b636b1015b7d6dd33bc4861299c",
+    "markdownSha256": "736c2b41db997269ed225d5e44bd1d5ccb3f4890cf279b5a91d3a3bef000f25c",
+    "imagePaths": []
+  },
+  {
+    "number": 210,
+    "contentId": "910b21c0671e",
+    "title": "课程表 II",
+    "url": "https://leetcode.cn/problems/course-schedule-ii/",
+    "fetchedAt": "2026-09-27T03:40:01.359601+00:00",
+    "sourceSha256": "9e94c633cc7a7aabecb7546c3b28824a6386ace4e2d20cd26d37443f77b40469",
+    "markdownSha256": "68cca3fd27c54d22ebc35682b79d3082a0a8834033090d1f3db4a85f728df04f",
+    "imagePaths": []
+  },
+  {
+    "number": 213,
+    "contentId": "5217d1f4df0b",
+    "title": "打家劫舍 II",
+    "url": "https://leetcode.cn/problems/house-robber-ii/",
+    "fetchedAt": "2026-09-27T03:39:50.486704+00:00",
+    "sourceSha256": "f94c8403618cfee5f2f6f1a30ecd3ef49f53eaa0cf3f01c53494e7284a60cfff",
+    "markdownSha256": "6c2836a040f61c119d1ece130cb5fd25dc7b42b55b246be37f8a2270aadbea30",
+    "imagePaths": []
+  },
+  {
+    "number": 215,
+    "contentId": "2a4563d3a601",
+    "title": "数组中的第K个最大元素",
+    "url": "https://leetcode.cn/problems/kth-largest-element-in-an-array/",
+    "fetchedAt": "2026-09-27T03:39:46.376298+00:00",
+    "sourceSha256": "8f73d3a1149d31b0acb1e740a184c6578427b346d90f56f3bfcc7eb25a289788",
+    "markdownSha256": "ff975d5289f6a3c29ffb890c95b5f611d91202c808d2fae4e1df9c6a923983a2",
+    "imagePaths": []
+  },
+  {
+    "number": 218,
+    "contentId": "a164fe477caf",
+    "title": "天际线问题",
+    "url": "https://leetcode.cn/problems/the-skyline-problem/",
+    "fetchedAt": "2026-09-27T03:39:49.373918+00:00",
+    "sourceSha256": "7542e670f980b29603c9415f15c11e8aa607f5a0ed6e8888ad49b6bd0e55c068",
+    "markdownSha256": "36ddad618327504e35315b2b60f700c9b6b9be93c4194f22fc559be5af9a67ad",
+    "imagePaths": [
+      "/leetcode-assets/bb8bccc3f90e5d6e4507834e.jpg"
+    ]
+  },
+  {
+    "number": 221,
+    "contentId": "125e50445faf",
+    "title": "最大正方形",
+    "url": "https://leetcode.cn/problems/maximal-square/",
+    "fetchedAt": "2026-09-27T03:39:51.336570+00:00",
+    "sourceSha256": "334bb9a882aa35eb76acc1e982db56f8036e407198707051b00f449c9a528e53",
+    "markdownSha256": "240659fcdd4a130a8a218965baff3e34c07b8d14219649704b6bfa252b97819d",
+    "imagePaths": [
+      "/leetcode-assets/b4db65e95274225ad0589500.jpg",
+      "/leetcode-assets/433e1b50f8b395ae7d2ae1ec.jpg"
+    ]
+  },
+  {
+    "number": 242,
+    "contentId": "2f62d12f4db9",
+    "title": "有效的字母异位词",
+    "url": "https://leetcode.cn/problems/valid-anagram/",
+    "fetchedAt": "2026-09-27T03:39:42.642423+00:00",
+    "sourceSha256": "8859f41cc44e773e7a4a59d4d5ae4ee46518044c198f99457653ef0c47e7d437",
+    "markdownSha256": "c9b866d8b73de058ba29dba438474c49b21a4bfa9d2a07eba0560237f520d316",
+    "imagePaths": []
+  },
+  {
+    "number": 274,
+    "contentId": "b9d2f2b92dbc",
+    "title": "H 指数",
+    "url": "https://leetcode.cn/problems/h-index/",
+    "fetchedAt": "2026-09-27T03:39:43.535993+00:00",
+    "sourceSha256": "764e540c2b0ed25c2a2fa35722a70e1ab82b6bd625e4ec45879f03ed10530802",
+    "markdownSha256": "f93e61a32532fb98a2538c716692d76fe1fd3afd7317184d4086fdf9d1666053",
+    "imagePaths": []
+  },
+  {
+    "number": 279,
+    "contentId": "3c8a9c39ae13",
+    "title": "完全平方数",
+    "url": "https://leetcode.cn/problems/perfect-squares/",
+    "fetchedAt": "2026-09-27T03:39:52.719242+00:00",
+    "sourceSha256": "23db1b0fe039164e34ba9ddec4bc54e7da797ef22c49a61853cb501db1db0f1b",
+    "markdownSha256": "6f51fdaa899b56a9bf98c55bd71f36dbe9218a51f1278e94678ea11eda1ab5f9",
+    "imagePaths": []
+  },
+  {
+    "number": 295,
+    "contentId": "99b657161aaf",
+    "title": "数据流的中位数",
+    "url": "https://leetcode.cn/problems/find-median-from-data-stream/",
+    "fetchedAt": "2026-09-27T03:39:47.160154+00:00",
+    "sourceSha256": "cb9a8b6a962185b9b8a93f858175103ed6bebaaec07fe27ce7166ac6bfeadf83",
+    "markdownSha256": "d32d2eafb7b4f31c3cac9665beec97a2243c7273e29e4bd5a2e13b16572a91bb",
+    "imagePaths": []
+  },
+  {
+    "number": 300,
+    "contentId": "5a9013ab1a8a",
+    "title": "最长递增子序列",
+    "url": "https://leetcode.cn/problems/longest-increasing-subsequence/",
+    "fetchedAt": "2026-09-27T03:39:53.528100+00:00",
+    "sourceSha256": "7be1570726409ee041690df5817dea8e4f9e1b8a0ee4b44f45c52656a23f2629",
+    "markdownSha256": "b43f6ac785dae5efe991e9eaab56d2359283ba71a0c76260306dbb0904cd6b79",
+    "imagePaths": []
+  },
+  {
+    "number": 309,
+    "contentId": "c22e3006fce5",
+    "title": "买卖股票的最佳时机含冷冻期",
+    "url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/",
+    "fetchedAt": "2026-09-27T03:39:57.075724+00:00",
+    "sourceSha256": "fe8e95161e7217364d621a7f4c0753c2184216839ebe370c4375d3a2f43f4ebc",
+    "markdownSha256": "c1cff1dda94edfd446e760a6cfb67bb5b7f9704d97288783d73bfac6d38134d0",
+    "imagePaths": []
+  },
+  {
+    "number": 310,
+    "contentId": "287106d509cf",
+    "title": "最小高度树",
+    "url": "https://leetcode.cn/problems/minimum-height-trees/",
+    "fetchedAt": "2026-09-27T03:40:01.043614+00:00",
+    "sourceSha256": "9d67f126e586d8845df0d66e14f8c41ec102d98a8ef028765de254de1a333f26",
+    "markdownSha256": "04a0c5dc8e7bd1916369fe280123870c39f5df9878620467bd8923b674c9b998",
+    "imagePaths": [
+      "/leetcode-assets/d2f9c2cc772164b665295194.jpg",
+      "/leetcode-assets/cb269a195e0c152a2fcab46f.jpg"
+    ]
+  },
+  {
+    "number": 312,
+    "contentId": "2d37197e12d0",
+    "title": "戳气球",
+    "url": "https://leetcode.cn/problems/burst-balloons/",
+    "fetchedAt": "2026-09-27T03:39:56.822538+00:00",
+    "sourceSha256": "924dd300993dc1cb785eb5b4ed70cd757d9756ffbeeac8bcbe32aae0363ab051",
+    "markdownSha256": "3602581b5c87b24842fd0c268b9e342899ab96f29fb474742b7ee5338375b5e5",
+    "imagePaths": []
+  },
+  {
+    "number": 322,
+    "contentId": "5f680c123569",
+    "title": "零钱兑换",
+    "url": "https://leetcode.cn/problems/coin-change/",
+    "fetchedAt": "2026-09-27T03:39:52.493844+00:00",
+    "sourceSha256": "39384d1bcea0942daa5e9f5d30d293f319c19e884c1ff192fbdef6006f63f2a2",
+    "markdownSha256": "bf27a3c01d1e135431aa90ca421510a23db2f83b5036af3c9a16480302712a7e",
+    "imagePaths": []
+  },
+  {
+    "number": 324,
+    "contentId": "45e4c952c5b0",
+    "title": "摆动排序 II",
+    "url": "https://leetcode.cn/problems/wiggle-sort-ii/",
+    "fetchedAt": "2026-09-27T03:39:46.630242+00:00",
+    "sourceSha256": "06ce7aa7d41482536b83b53b80e02ec3323a82e6dcfd72c190fc38e7502f7868",
+    "markdownSha256": "39911e063d6bd534bfb95df1939db0265a153b5a872e80d1bbd6f0f4ae39eeff",
+    "imagePaths": []
+  },
+  {
+    "number": 329,
+    "contentId": "0cea155b2696",
+    "title": "矩阵中的最长递增路径",
+    "url": "https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/",
+    "fetchedAt": "2026-09-27T03:39:52.426424+00:00",
+    "sourceSha256": "d5307b6d8bc412bebd75c491d0c0e11b2396ce5edcf2ffccb9066ad7fa797fad",
+    "markdownSha256": "43307cce215856e76ad5281517f2366c49f33e2a5088acc1570e4758158f92df",
+    "imagePaths": [
+      "/leetcode-assets/2cc0a6612298965593cc78a1.jpg",
+      "/leetcode-assets/6c6f0b135d884dc13108e094.jpg"
+    ]
+  },
+  {
+    "number": 332,
+    "contentId": "2497c7d58079",
+    "title": "重新安排行程",
+    "url": "https://leetcode.cn/problems/reconstruct-itinerary/",
+    "fetchedAt": "2026-09-27T03:40:02.934996+00:00",
+    "sourceSha256": "afdd29d5b9dc2cd93bcf7ddb707a69ac22c9aaa078a770f0fc1ef511be64e92f",
+    "markdownSha256": "1f7228970678d93cbfd9dff4351b70d6c745f9c9a4701d67fc5ed4b34f50f328",
+    "imagePaths": [
+      "/leetcode-assets/40cf02ab055590d055ecd007.jpg",
+      "/leetcode-assets/7f80d1a2cd90f95517784ca4.jpg"
+    ]
+  },
+  {
+    "number": 337,
+    "contentId": "f397d661c25b",
+    "title": "打家劫舍 III",
+    "url": "https://leetcode.cn/problems/house-robber-iii/",
+    "fetchedAt": "2026-09-27T03:39:58.584868+00:00",
+    "sourceSha256": "924a511a59348394da1821453936be9c3b24762e73fc4572cf1202bfe134f13d",
+    "markdownSha256": "9a4df4b95fe5544bafd1e99cc41b05f16244e0a9723494e394eb685ca40bb458",
+    "imagePaths": [
+      "/leetcode-assets/aa6d3f3b80a3babc1da242c4.jpg",
+      "/leetcode-assets/0a21dfdf17c9d17f19406147.jpg"
+    ]
+  },
+  {
+    "number": 343,
+    "contentId": "7e5aa9038d69",
+    "title": "整数拆分",
+    "url": "https://leetcode.cn/problems/integer-break/",
+    "fetchedAt": "2026-09-27T03:39:53.008892+00:00",
+    "sourceSha256": "885b6ca08e79a9d1bdd96a271b6aa3c0b7acbac2a880bb338d5131aa3e27dfc0",
+    "markdownSha256": "754f6ae4c4c5b0ce84dd6570d709757074a420de950e9a00a653835e8794589b",
+    "imagePaths": []
+  },
+  {
+    "number": 347,
+    "contentId": "8d797092b6b7",
+    "title": "前 K 个高频元素",
+    "url": "https://leetcode.cn/problems/top-k-frequent-elements/",
+    "fetchedAt": "2026-09-27T03:39:46.073474+00:00",
+    "sourceSha256": "ee3eaf4f4ac0a56d6496868addc2ea11bfedf662b61e9538e3dd16db8fe02d98",
+    "markdownSha256": "0ce812a590e992ebeec438390e43e48e649f7055c7bd7e00a8d8bb1c144e3fa6",
+    "imagePaths": []
+  },
+  {
+    "number": 354,
+    "contentId": "1e31852fc0d4",
+    "title": "俄罗斯套娃信封问题",
+    "url": "https://leetcode.cn/problems/russian-doll-envelopes/",
+    "fetchedAt": "2026-09-27T03:39:54.251313+00:00",
+    "sourceSha256": "777bc52ed1ad07df2573dabacf5545e8543e7354cccdd09a94884e20b03d453b",
+    "markdownSha256": "4f7755b99db3702ea80d7e8685f6fa4d19770bb7c17323246d1ef9794607a044",
+    "imagePaths": []
+  },
+  {
+    "number": 368,
+    "contentId": "c97a51580cc5",
+    "title": "最大整除子集",
+    "url": "https://leetcode.cn/problems/largest-divisible-subset/",
+    "fetchedAt": "2026-09-27T03:39:54.043741+00:00",
+    "sourceSha256": "b486f16ff0f72b1469f8608ae50cb50908332f863c2985738e2831c1aba580da",
+    "markdownSha256": "32558089c1e0211079ba68ba5a80a87aebaf22dbd3d17359661339fec88f39bb",
+    "imagePaths": []
+  },
+  {
+    "number": 375,
+    "contentId": "8aff5d83f4a0",
+    "title": "猜数字大小 II",
+    "url": "https://leetcode.cn/problems/guess-number-higher-or-lower-ii/",
+    "fetchedAt": "2026-09-27T03:39:56.294529+00:00",
+    "sourceSha256": "8da46a9d92a4a49b9f338d314dcc38b2ea802bf6a59b69ab38e4f24880ea5416",
+    "markdownSha256": "517c951fce7a345918e95fb112802944831ba257d97daf3319a116ec85507557",
+    "imagePaths": [
+      "/leetcode-assets/a11cb15c75dd25deae2bbe0f.png"
+    ]
+  },
+  {
+    "number": 377,
+    "contentId": "229476c07a21",
+    "title": "组合总和 Ⅳ",
+    "url": "https://leetcode.cn/problems/combination-sum-iv/",
+    "fetchedAt": "2026-09-27T03:39:52.741562+00:00",
+    "sourceSha256": "14faa5664f9c0b1ae4a803a3adc77c7d0ff202cf0e16b6c39c71d13f21b7955c",
+    "markdownSha256": "9a11185f8493d9c0555fd0f98b3c780bc8aa013fed2b2d8308ac60c7a0aceba8",
+    "imagePaths": []
+  },
+  {
+    "number": 378,
+    "contentId": "03bc7b662807",
+    "title": "有序矩阵中第 K 小的元素",
+    "url": "https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/",
+    "fetchedAt": "2026-09-27T03:39:46.322915+00:00",
+    "sourceSha256": "fd9f78c3938a1c95f30cbd9a23def49800274fac3f56ce52ad3c270dc3481575",
+    "markdownSha256": "fe1ef4196ee8484f54c821751ae22b833e368f00af284ab6227c057b87689865",
+    "imagePaths": []
+  },
+  {
+    "number": 392,
+    "contentId": "1c3476de5f1a",
+    "title": "判断子序列",
+    "url": "https://leetcode.cn/problems/is-subsequence/",
+    "fetchedAt": "2026-09-27T03:39:53.520384+00:00",
+    "sourceSha256": "40a194049d6924740e40fca14e02a9b8cb50bcbbfc04d76bb8d870584afeb22d",
+    "markdownSha256": "8e6a4819145d42e44e6c3d89f8753ad98ecad35427e707efc79864d9f30cb902",
+    "imagePaths": []
+  },
+  {
+    "number": 399,
+    "contentId": "3b06f3fb6a0a",
+    "title": "除法求值",
+    "url": "https://leetcode.cn/problems/evaluate-division/",
+    "fetchedAt": "2026-09-27T03:40:00.259288+00:00",
+    "sourceSha256": "224a2048d460fa03d5da44d1c18428ff1695ab1f0d2412c497e67e8e1be92e2e",
+    "markdownSha256": "acc520d62f6f46e4288d5d2ee5c74c6113fdf8bafefac92cd7742d22010588f2",
+    "imagePaths": []
+  },
+  {
+    "number": 416,
+    "contentId": "bb87f85f3ca9",
+    "title": "分割等和子集",
+    "url": "https://leetcode.cn/problems/partition-equal-subset-sum/",
+    "fetchedAt": "2026-09-27T03:39:51.993244+00:00",
+    "sourceSha256": "3a91819876605bb51a723ad4defad742278f9cc68ea5437943bd26ecf184b02d",
+    "markdownSha256": "e2cac6fe71a6b4e896542277f3ec68c7f409d2e9caab6c302d6e06beba4a6d88",
+    "imagePaths": []
+  },
+  {
+    "number": 451,
+    "contentId": "fc6df1ae4efe",
+    "title": "根据字符出现频率排序",
+    "url": "https://leetcode.cn/problems/sort-characters-by-frequency/",
+    "fetchedAt": "2026-09-27T03:39:43.305747+00:00",
+    "sourceSha256": "61fb6bff86ed72496055898f2d7acfb14fd6f0a9555f0bd2db28c5fa5544093a",
+    "markdownSha256": "9b3ff7957ded9ce25e97c6aa783811f3f986147d44e695df03ba3b8fa1f3f119",
+    "imagePaths": []
+  },
+  {
+    "number": 474,
+    "contentId": "c2338b7e8e94",
+    "title": "一和零",
+    "url": "https://leetcode.cn/problems/ones-and-zeroes/",
+    "fetchedAt": "2026-09-27T03:39:52.462824+00:00",
+    "sourceSha256": "eba1d072bb636c58b20dd6e4a444268adca0b71ddfff1aee3bba2aa54e0369b2",
+    "markdownSha256": "e78464393bf4d517f81c90b161ccd97675b8dba77b9058ba441681ffd9929a2a",
+    "imagePaths": []
+  },
+  {
+    "number": 486,
+    "contentId": "e19309005faf",
+    "title": "预测赢家",
+    "url": "https://leetcode.cn/problems/predict-the-winner/",
+    "fetchedAt": "2026-09-27T03:39:56.451294+00:00",
+    "sourceSha256": "757fddfddc45b7d01b8f0d7eff7ea9f9a7487356b98f166d8abc99e7276fb896",
+    "markdownSha256": "69560b6717a8513fb9e7425cf68b9eac390094cd441887e4bb6cebe8faddca75",
+    "imagePaths": []
+  },
+  {
+    "number": 494,
+    "contentId": "6a7892e2c38a",
+    "title": "目标和",
+    "url": "https://leetcode.cn/problems/target-sum/",
+    "fetchedAt": "2026-09-27T03:39:52.215447+00:00",
+    "sourceSha256": "ce762540bbc21e3119ff471227459ba017726fe11c0940220772264a575b8cca",
+    "markdownSha256": "32991bed9f90278009b5ee74d28fd8421379a3290f7c0aff8a55395adf09118c",
+    "imagePaths": []
+  },
+  {
+    "number": 502,
+    "contentId": "1e34e35ee7fd",
+    "title": "IPO",
+    "url": "https://leetcode.cn/problems/ipo/",
+    "fetchedAt": "2026-09-27T03:39:47.146662+00:00",
+    "sourceSha256": "36f02aeba2eb9ac4ffd8defedad78afe5785f2342a6ee3dc8c4b09ac3ab3e86a",
+    "markdownSha256": "aecacdf11875abdc54804bc98430b8145a47a5b520b5dcc774111a65b7fe08fb",
+    "imagePaths": []
+  },
+  {
+    "number": 509,
+    "contentId": "e6b3f9aad3fb",
+    "title": "斐波那契数",
+    "url": "https://leetcode.cn/problems/fibonacci-number/",
+    "fetchedAt": "2026-09-27T03:39:49.847432+00:00",
+    "sourceSha256": "acc3e27a263260ab6d07b16951f0b7a517d6891e6a59d89dbfa220136b39928e",
+    "markdownSha256": "707f05bb87d23f7d5770209be8795a1a259f1fa1cf5b059594c06f39f151dd95",
+    "imagePaths": []
+  },
+  {
+    "number": 516,
+    "contentId": "64c576d6e89c",
+    "title": "最长回文子序列",
+    "url": "https://leetcode.cn/problems/longest-palindromic-subsequence/",
+    "fetchedAt": "2026-09-27T03:39:55.541306+00:00",
+    "sourceSha256": "75bbbbb49c89149751eb549b7922c3cf6317e170fa87c2334ab151dc764a5d31",
+    "markdownSha256": "648db4bde06c46613c9889e58bfacab652aa188692b189bfd7d726d1d70d889d",
+    "imagePaths": []
+  },
+  {
+    "number": 518,
+    "contentId": "0bcd6050042c",
+    "title": "零钱兑换 II",
+    "url": "https://leetcode.cn/problems/coin-change-ii/",
+    "fetchedAt": "2026-09-27T03:39:52.847539+00:00",
+    "sourceSha256": "c007fd5d39714b23b14bd7865bdb2d0047f84a879d7e6c57ecf7832f3ae6b21a",
+    "markdownSha256": "25c41e8c576da7be986894ec2464daf49695f585376fc06ffbf5be06340ee76c",
+    "imagePaths": []
+  },
+  {
+    "number": 547,
+    "contentId": "5e8a7c3f29a0",
+    "title": "省份数量",
+    "url": "https://leetcode.cn/problems/number-of-provinces/",
+    "fetchedAt": "2026-09-27T03:39:59.454393+00:00",
+    "sourceSha256": "701f5fa2812b1dcd724ec62f2f56fa28fea0937dac8ed5770c721cf71d526b79",
+    "markdownSha256": "a45b6c10044434378ad4daaab505d97412690579e9ec1dbeacf87bdd59ca62e1",
+    "imagePaths": [
+      "/leetcode-assets/c81040fcb9ab48e3c1a46647.jpg",
+      "/leetcode-assets/6bf94c9b6b31ef9ed8f67592.jpg"
+    ]
+  },
+  {
+    "number": 552,
+    "contentId": "1dd05cf3093a",
+    "title": "学生出勤记录 II",
+    "url": "https://leetcode.cn/problems/student-attendance-record-ii/",
+    "fetchedAt": "2026-09-27T03:39:58.091059+00:00",
+    "sourceSha256": "eff61c5e15e7692c616a3206402c921e7081a2056f89912925cf89e6ea7eb361",
+    "markdownSha256": "5b24380cbf5ed1d0dca2b313d9ab81c254a5a55bb5bc9a4177178e9b2e5a1dce",
+    "imagePaths": []
+  },
+  {
+    "number": 576,
+    "contentId": "53d1dac87637",
+    "title": "出界的路径数",
+    "url": "https://leetcode.cn/problems/out-of-boundary-paths/",
+    "fetchedAt": "2026-09-27T03:39:57.598580+00:00",
+    "sourceSha256": "7d1c5c4d66cfb04ed6b43f7bca234b8f2855d91eb56e4283c526e8197dc90b99",
+    "markdownSha256": "20ce6dcf869956aad75594410d5f492fbe233ab4b8d7e835389b37707b1898b9",
+    "imagePaths": [
+      "/leetcode-assets/1c368203b74f4a7dce746e60.png",
+      "/leetcode-assets/8d4911ec9e18ac936f73db15.png"
+    ]
+  },
+  {
+    "number": 581,
+    "contentId": "5e2726036155",
+    "title": "最短无序连续子数组",
+    "url": "https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/",
+    "fetchedAt": "2026-09-27T03:39:42.167187+00:00",
+    "sourceSha256": "ee0547c0b0beb67993e38c1b04b12550823610cd204a73f02d73a52100de9881",
+    "markdownSha256": "add19f5ed9a650c85db36145ca95aca5d98b214a4b619ef3b7a87d553738da55",
+    "imagePaths": []
+  },
+  {
+    "number": 583,
+    "contentId": "99598c9d8b0d",
+    "title": "两个字符串的删除操作",
+    "url": "https://leetcode.cn/problems/delete-operation-for-two-strings/",
+    "fetchedAt": "2026-09-27T03:39:54.547331+00:00",
+    "sourceSha256": "58f2c62d9eb000adaf3a9d2a657c5ab8d4f38c633737cbafd44660ed17464e22",
+    "markdownSha256": "dc8123024a003d28c880b5dd749772a21d6faf93ec783e4ea8c4b33e0ef759ba",
+    "imagePaths": []
+  },
+  {
+    "number": 611,
+    "contentId": "f7bad2ded5c2",
+    "title": "有效三角形的个数",
+    "url": "https://leetcode.cn/problems/valid-triangle-number/",
+    "fetchedAt": "2026-09-27T03:39:45.591734+00:00",
+    "sourceSha256": "cbcac594f9b78bc2bdf9d8dfc9da86ad92396ec9f863046a7c92e5de5729c813",
+    "markdownSha256": "6cd1e8ed4479182574d1d2acbd5bb5088c45a31960697698f0adc2c9c809b456",
+    "imagePaths": []
+  },
+  {
+    "number": 630,
+    "contentId": "b9769d924914",
+    "title": "课程表 III",
+    "url": "https://leetcode.cn/problems/course-schedule-iii/",
+    "fetchedAt": "2026-09-27T03:39:47.367038+00:00",
+    "sourceSha256": "42a572b0f87b89b9bb7a9aae17e89f5ef7ea5a0e832806d38b6aa5042b5d1b4b",
+    "markdownSha256": "ea9573d9144c6cb4debea18a8fc697b94081e97c70f78a67e55b55b3660d34c9",
+    "imagePaths": []
+  },
+  {
+    "number": 632,
+    "contentId": "3f351ca50d83",
+    "title": "最小区间",
+    "url": "https://leetcode.cn/problems/smallest-range-covering-elements-from-k-lists/",
+    "fetchedAt": "2026-09-27T03:39:48.535463+00:00",
+    "sourceSha256": "e1ad73815b6e9f4e1e3de847b4a1d0d76014b514984ec53c0ffcaedf907defd5",
+    "markdownSha256": "bc60802501025d4a72e047bec34138131986d23880cbcddf5965c314ace3ef9f",
+    "imagePaths": []
+  },
+  {
+    "number": 639,
+    "contentId": "52eefb5a465d",
+    "title": "解码方法 II",
+    "url": "https://leetcode.cn/problems/decode-ways-ii/",
+    "fetchedAt": "2026-09-27T03:39:57.565324+00:00",
+    "sourceSha256": "919717169f82b31e4789877429f9d9c2a0af94e7a56199f1b2f8cf3c465fd4da",
+    "markdownSha256": "7034060cca887b97ecaa089a76a015d8997cba9b036035d01c5513cebac1f9f2",
+    "imagePaths": []
+  },
+  {
+    "number": 646,
+    "contentId": "ede4d0b38c34",
+    "title": "最长数对链",
+    "url": "https://leetcode.cn/problems/maximum-length-of-pair-chain/",
+    "fetchedAt": "2026-09-27T03:39:53.846803+00:00",
+    "sourceSha256": "e0cd19f50ff10f863db50b9a56efaae977f7ba400131873648db2b608004554a",
+    "markdownSha256": "61cf6f09132fc012a1faace451680a2f50a5f929d4e46806744d1e89f01bc99f",
+    "imagePaths": []
+  },
+  {
+    "number": 647,
+    "contentId": "71d0ab20eebb",
+    "title": "回文子串",
+    "url": "https://leetcode.cn/problems/palindromic-substrings/",
+    "fetchedAt": "2026-09-27T03:39:55.446232+00:00",
+    "sourceSha256": "f678a4c8bd226c37beb9d581c0f69cd3caef5078e7b9817492b40871857bd80c",
+    "markdownSha256": "86e34304f1ac84d0d90e9d0b9a2639137762cd5b065877739d4d22061f682225",
+    "imagePaths": []
+  },
+  {
+    "number": 673,
+    "contentId": "67baa5a1c5fb",
+    "title": "最长递增子序列的个数",
+    "url": "https://leetcode.cn/problems/number-of-longest-increasing-subsequence/",
+    "fetchedAt": "2026-09-27T03:39:53.607507+00:00",
+    "sourceSha256": "0bcb65f6f59b0ea0e171bb2f27956a98d71c6c6c722bd7629a6e322de2ea7dc8",
+    "markdownSha256": "590201fba4b69c7bdc18cad52aa8e05bbcf82701d236f2b358f07db2229d40f0",
+    "imagePaths": []
+  },
+  {
+    "number": 684,
+    "contentId": "83a9b770ffce",
+    "title": "冗余连接",
+    "url": "https://leetcode.cn/problems/redundant-connection/",
+    "fetchedAt": "2026-09-27T03:40:00.856200+00:00",
+    "sourceSha256": "768b59ee1b254eb29304236b0a9322bfbb2f93bee0409375d6a41f03a75be053",
+    "markdownSha256": "e1bdd580c6d30b27ab286b259eea96b7a8404959b707dcbb36aa318827487d87",
+    "imagePaths": [
+      "/leetcode-assets/f583a3b06394c7eef21e421e.png",
+      "/leetcode-assets/c1a822bef8229462c0019ee7.png"
+    ]
+  },
+  {
+    "number": 685,
+    "contentId": "4b0955f598c7",
+    "title": "冗余连接 II",
+    "url": "https://leetcode.cn/problems/redundant-connection-ii/",
+    "fetchedAt": "2026-09-27T03:40:01.103997+00:00",
+    "sourceSha256": "c04966afef762fb7df96ee3b70f3ea6a7054f406fe98d64755c6b98798dba939",
+    "markdownSha256": "f5d20f120bb02911660864a52fc7fd0f8714a7c3053d47720c77e90763fb09d8",
+    "imagePaths": [
+      "/leetcode-assets/45346d617cd82aff526e4591.jpg",
+      "/leetcode-assets/9695246a018d09033f0ea4ad.jpg"
+    ]
+  },
+  {
+    "number": 688,
+    "contentId": "5a9a2c6df65a",
+    "title": "骑士在棋盘上的概率",
+    "url": "https://leetcode.cn/problems/knight-probability-in-chessboard/",
+    "fetchedAt": "2026-09-27T03:39:57.835850+00:00",
+    "sourceSha256": "cb83491d9f34119fc7d2af563521cf10c90786a0d44a572daf744011ae95e8d9",
+    "markdownSha256": "e6a5f47043dcbc87b3971d9ef02bf156a693bf7df99dc8460230990ce73547dc",
+    "imagePaths": [
+      "/leetcode-assets/ae5b6458da85f219da514d8d.png"
+    ]
+  },
+  {
+    "number": 692,
+    "contentId": "b6b66c667bab",
+    "title": "前K个高频单词",
+    "url": "https://leetcode.cn/problems/top-k-frequent-words/",
+    "fetchedAt": "2026-09-27T03:40:53.674038+00:00",
+    "sourceSha256": "92818ebe4b0bf841b5f030ea7120c415990da118f99a9f4ab3f02eac415cb6fd",
+    "markdownSha256": "826f96b38dcfd2c7733560955c8586d835144fee91ef3df70672a874efa96e62",
+    "imagePaths": []
+  },
+  {
+    "number": 712,
+    "contentId": "216b413a53ca",
+    "title": "两个字符串的最小ASCII删除和",
+    "url": "https://leetcode.cn/problems/minimum-ascii-delete-sum-for-two-strings/",
+    "fetchedAt": "2026-09-27T03:39:54.678946+00:00",
+    "sourceSha256": "c68e7c9eddfdeca5f2dc056c6243768d5f296b98b5d5fa96fc452a8cc6a1b99f",
+    "markdownSha256": "0090397e0fed0c54b8426c44a0e8ab52ab4c071918694788a3eb9c2d5f438f16",
+    "imagePaths": []
+  },
+  {
+    "number": 714,
+    "contentId": "b32ca942ca48",
+    "title": "买卖股票的最佳时机含手续费",
+    "url": "https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/",
+    "fetchedAt": "2026-09-27T03:39:57.262337+00:00",
+    "sourceSha256": "2ac67e233bd493b30899e697ba6b9da1bfc423cea3094b4be8f4202886e3fc85",
+    "markdownSha256": "819e701c78ff89bb91cdd5346dbb2f139dcce20c6f672b20a450ed682267fe1e",
+    "imagePaths": []
+  },
+  {
+    "number": 718,
+    "contentId": "8671ac17fc8e",
+    "title": "最长重复子数组",
+    "url": "https://leetcode.cn/problems/maximum-length-of-repeated-subarray/",
+    "fetchedAt": "2026-09-27T03:39:54.507950+00:00",
+    "sourceSha256": "3631c90ee49b61296a4cbd46691ab62ef8518fb80a6df9155212eef917067c53",
+    "markdownSha256": "0f9d9ad1418eba98bf9d23259f2c8341271284a48669c9dd3f15f9d327ccf345",
+    "imagePaths": []
+  },
+  {
+    "number": 719,
+    "contentId": "cd7b611ab269",
+    "title": "找出第 K 小的数对距离",
+    "url": "https://leetcode.cn/problems/find-k-th-smallest-pair-distance/",
+    "fetchedAt": "2026-09-27T03:39:46.577552+00:00",
+    "sourceSha256": "7cca68a9347093aef4525dbbec857642ee2b25d7a6ed3d0ec188a8e4d114f0ca",
+    "markdownSha256": "b5eea996ba363b85d5c23448254750ba58dd6a23d9364d535c56f5dfe299c0a6",
+    "imagePaths": []
+  },
+  {
+    "number": 730,
+    "contentId": "e32ab270837f",
+    "title": "统计不同回文子序列",
+    "url": "https://leetcode.cn/problems/count-different-palindromic-subsequences/",
+    "fetchedAt": "2026-09-27T03:39:56.184990+00:00",
+    "sourceSha256": "c84617b09632e853e28d9c78eed134f9ac1a544160c64f9b241f492c92bfd659",
+    "markdownSha256": "1760f15eec3704fcc7884b128639a059c94f81139e2bd7f63565c7e357329a61",
+    "imagePaths": []
+  },
+  {
+    "number": 743,
+    "contentId": "a9cf23ff22f3",
+    "title": "网络延迟时间",
+    "url": "https://leetcode.cn/problems/network-delay-time/",
+    "fetchedAt": "2026-09-27T03:40:02.261433+00:00",
+    "sourceSha256": "c0809139b05df6983d783badb14bbb4c1774a1e8f57102f4181332ea1b7430e3",
+    "markdownSha256": "a4433dfb2f5954bbc89f327245f5e8267eb921a109f46473b05cfffe4e4f9f96",
+    "imagePaths": [
+      "/leetcode-assets/d83858e272e60b167462355b.png"
+    ]
+  },
+  {
+    "number": 746,
+    "contentId": "614ab78dc0dc",
+    "title": "使用最小花费爬楼梯",
+    "url": "https://leetcode.cn/problems/min-cost-climbing-stairs/",
+    "fetchedAt": "2026-09-27T03:39:50.257163+00:00",
+    "sourceSha256": "cef33dd541de3dd2f83d77ecaec86d056355dbac6fd57d78abc4ab3e2c6745f3",
+    "markdownSha256": "280b58ced0ba1986929b483f5bb59576d3772dfc2d681233fda40306ade78323",
+    "imagePaths": []
+  },
+  {
+    "number": 753,
+    "contentId": "14ea2c31486e",
+    "title": "破解保险箱",
+    "url": "https://leetcode.cn/problems/cracking-the-safe/",
+    "fetchedAt": "2026-09-27T03:40:03.064688+00:00",
+    "sourceSha256": "7e24f6a4bbb174907e615b84ef1f745a51482e8c19dbd3d1a984ccea07b0496a",
+    "markdownSha256": "07202d41deeeeca0ac60c6c9ffc14967ad23f52be6d1cd721e118a37208403f2",
+    "imagePaths": []
+  },
+  {
+    "number": 767,
+    "contentId": "88639740da58",
+    "title": "重构字符串",
+    "url": "https://leetcode.cn/problems/reorganize-string/",
+    "fetchedAt": "2026-09-27T03:39:46.607763+00:00",
+    "sourceSha256": "9145736407f3239fda81f9a7c84a3f2640b0835be1d9733b609c08b701508d0e",
+    "markdownSha256": "eaaabbff7a6120acbd14d7da63faec5579c48161be0415306b6a0c2c9ff95baf",
+    "imagePaths": []
+  },
+  {
+    "number": 768,
+    "contentId": "34efa0fd700f",
+    "title": "最多能完成排序的块 II",
+    "url": "https://leetcode.cn/problems/max-chunks-to-make-sorted-ii/",
+    "fetchedAt": "2026-09-27T03:39:48.493698+00:00",
+    "sourceSha256": "25b74c661db9c9aff9ac62d900130a113472e6d3781e3f629b78aaea75846c69",
+    "markdownSha256": "f3538dd236a049d02fc7324ba64d15e38d2c71997a75c677a5429ba4c521c913",
+    "imagePaths": []
+  },
+  {
+    "number": 769,
+    "contentId": "935570377289",
+    "title": "最多能完成排序的块",
+    "url": "https://leetcode.cn/problems/max-chunks-to-make-sorted/",
+    "fetchedAt": "2026-09-27T03:39:48.146618+00:00",
+    "sourceSha256": "3893d66cd5bd1c900728a8467782f9db70afec01d70f838d310c118e4187bfe9",
+    "markdownSha256": "bee03b1fe34a6d986a19128ed3aa99b67e8841fca68413fdd5d99225bee40952",
+    "imagePaths": []
+  },
+  {
+    "number": 785,
+    "contentId": "a046eb8afe3d",
+    "title": "判断二分图",
+    "url": "https://leetcode.cn/problems/is-graph-bipartite/",
+    "fetchedAt": "2026-09-27T03:40:00.585591+00:00",
+    "sourceSha256": "28e15c87e2a0bfa740cfb2bb2c502ef3882d00f52d7cb67e68ca619dbf7b8f10",
+    "markdownSha256": "9ab6935f0c3f2b93b134ff16907df8c45249fc5dcfbf8cb5eed8345ba43510c4",
+    "imagePaths": [
+      "/leetcode-assets/673d480c709c4088b3e87e97.jpg",
+      "/leetcode-assets/0fd8934867e66f3840f3e396.jpg"
+    ]
+  },
+  {
+    "number": 786,
+    "contentId": "fdb837cd3d38",
+    "title": "第 K 个最小的质数分数",
+    "url": "https://leetcode.cn/problems/k-th-smallest-prime-fraction/",
+    "fetchedAt": "2026-09-27T03:39:46.321787+00:00",
+    "sourceSha256": "15f79acca7cd5819e305d0831394aaee169657bd5ed56108165ad213e536758a",
+    "markdownSha256": "a459c1c9d9a506395e95e4ca2dc9518e2dffd8eb47676c9434705e16bb7c04c3",
+    "imagePaths": []
+  },
+  {
+    "number": 787,
+    "contentId": "b9a38718881f",
+    "title": "K 站中转内最便宜的航班",
+    "url": "https://leetcode.cn/problems/cheapest-flights-within-k-stops/",
+    "fetchedAt": "2026-09-27T03:40:02.354694+00:00",
+    "sourceSha256": "f3cf4dac0b3ee058a9e16b2929de32c26e708b251066dc6d87946833c2538bfd",
+    "markdownSha256": "0ea45fbdb234b5582900a94a92c084c2426a83558762f87494059898a3db5100",
+    "imagePaths": [
+      "/leetcode-assets/8e5a1f7ba9bb6a1b9a72f732.png",
+      "/leetcode-assets/faae698fd3d9ce3a05da6e6c.png",
+      "/leetcode-assets/2e24e8f6279a22b2c2fa9bf4.png"
+    ]
+  },
+  {
+    "number": 791,
+    "contentId": "1b04cbdaf55b",
+    "title": "自定义字符串排序",
+    "url": "https://leetcode.cn/problems/custom-sort-string/",
+    "fetchedAt": "2026-09-27T03:39:43.364012+00:00",
+    "sourceSha256": "49c174cf28d6db7d14e7dcb3effff3884bea15cf1d7c2499d6f2442b79016c6d",
+    "markdownSha256": "7c8473681054557f8cf64a06499f761f2529accdce4ead5a39a798b6a5e3feac",
+    "imagePaths": []
+  },
+  {
+    "number": 797,
+    "contentId": "2b6ebeefa713",
+    "title": "所有可能的路径",
+    "url": "https://leetcode.cn/problems/all-paths-from-source-to-target/",
+    "fetchedAt": "2026-09-27T03:40:01.661936+00:00",
+    "sourceSha256": "5cc2146496d6d384619ff9b0c36b612174468f8487d1013143344eb0c9394d78",
+    "markdownSha256": "c1f329ebcd5c85ded87bcd42bfaf6b9d81a128b8d4207ab516656ccde5cbd906",
+    "imagePaths": [
+      "/leetcode-assets/8f3822bb502775a76b285f92.jpg",
+      "/leetcode-assets/35761844fc94f5c184b936a4.jpg"
+    ]
+  },
+  {
+    "number": 802,
+    "contentId": "db39d9d263d2",
+    "title": "找到最终的安全状态",
+    "url": "https://leetcode.cn/problems/find-eventual-safe-states/",
+    "fetchedAt": "2026-09-27T03:40:01.600059+00:00",
+    "sourceSha256": "f25403fb49874d2d99831339463339003c40dafc5e45b7885832b2de3cd97eab",
+    "markdownSha256": "6c494fc6c2e6fd40fc7a34a1ef124aa890fe10112d6ce8fcc54dd24d5e125f37",
+    "imagePaths": [
+      "/leetcode-assets/f5441d3add30493fd7b6232d.png"
+    ]
+  },
+  {
+    "number": 808,
+    "contentId": "e4310167b0cf",
+    "title": "分汤",
+    "url": "https://leetcode.cn/problems/soup-servings/",
+    "fetchedAt": "2026-09-27T03:39:57.849970+00:00",
+    "sourceSha256": "1f2b9ce9078695578e4940040fa096ad877d4ca568ea8e04bd1d8ee50f5f6c4d",
+    "markdownSha256": "5376fb99130afbbb7baaab46f23828b2079c8a2c48f59c22ceed953fdf6ed3b8",
+    "imagePaths": []
+  },
+  {
+    "number": 825,
+    "contentId": "4e9fafa96b81",
+    "title": "适龄的朋友",
+    "url": "https://leetcode.cn/problems/friends-of-appropriate-ages/",
+    "fetchedAt": "2026-09-27T03:39:45.806577+00:00",
+    "sourceSha256": "64b7da06e4c9ba4871d08fc65348b8469b89a342762b8e9eaf76e079ae1c5890",
+    "markdownSha256": "abe3e562ce0b4272b6e1fa9b2410f9a77fbb7a48a9e15974fcf938aea062a916",
+    "imagePaths": []
+  },
+  {
+    "number": 837,
+    "contentId": "8008ef8ff508",
+    "title": "新 21 点",
+    "url": "https://leetcode.cn/problems/new-21-game/",
+    "fetchedAt": "2026-09-27T03:39:58.105878+00:00",
+    "sourceSha256": "57cae959333b22853fdc8bf22d99bf8d60c34b253ac5f056c12fef58956f66c7",
+    "markdownSha256": "9deacea4a4ddc8a08446a96a8fb9ee55ac673d52e3e1e6a0c323be7846604eae",
+    "imagePaths": []
+  },
+  {
+    "number": 841,
+    "contentId": "1519b3352254",
+    "title": "钥匙和房间",
+    "url": "https://leetcode.cn/problems/keys-and-rooms/",
+    "fetchedAt": "2026-09-27T03:39:59.967897+00:00",
+    "sourceSha256": "a79ad1fdb89f2e9eb3c14e6d7a8c8974f0cbec013bb3ebcbdf26d4d5735da17b",
+    "markdownSha256": "82e64119ee0427b910bfae7e3c37e07bd7a969941b0a9ee1e18f45157a5f9362",
+    "imagePaths": []
+  },
+  {
+    "number": 847,
+    "contentId": "f0d179176b8f",
+    "title": "访问所有节点的最短路径",
+    "url": "https://leetcode.cn/problems/shortest-path-visiting-all-nodes/",
+    "fetchedAt": "2026-09-27T03:40:00.531189+00:00",
+    "sourceSha256": "530cf29097ef26c8b65a32fd6e7cef6bb4f5b6db81acd12503bb8126b1f8dca4",
+    "markdownSha256": "f8b6a89ff02912052ca2e69f4a95e1e7d7f152f74269961ab20978ab17096808",
+    "imagePaths": [
+      "/leetcode-assets/9d1768926a49508692b8b295.jpg",
+      "/leetcode-assets/43a6d52663e66c03570a3524.jpg"
+    ]
+  },
+  {
+    "number": 851,
+    "contentId": "d7f31a8f2a11",
+    "title": "喧闹和富有",
+    "url": "https://leetcode.cn/problems/loud-and-rich/",
+    "fetchedAt": "2026-09-27T03:40:01.831253+00:00",
+    "sourceSha256": "6ba7b3ca1f022c6424cca681e9dc0d8527aa992b7e5fec6efd8def2c6cfdb1a2",
+    "markdownSha256": "9b158822a7e6065a013df5f93e3828f0e237c191c51b6d7876164be6f322badd",
+    "imagePaths": []
+  },
+  {
+    "number": 870,
+    "contentId": "fc4e48c521a4",
+    "title": "优势洗牌",
+    "url": "https://leetcode.cn/problems/advantage-shuffle/",
+    "fetchedAt": "2026-09-27T03:39:44.663581+00:00",
+    "sourceSha256": "523a442c4502ea6fa959214e095f7a0d377b72a7763fe5cfc714a60f1baa8d6e",
+    "markdownSha256": "34b6e50366e52bec81fbdb3313e56e1828e7f71c2f3615e359d0093a3880697a",
+    "imagePaths": []
+  },
+  {
+    "number": 877,
+    "contentId": "77c189ca7186",
+    "title": "石子游戏",
+    "url": "https://leetcode.cn/problems/stone-game/",
+    "fetchedAt": "2026-09-27T03:39:56.558590+00:00",
+    "sourceSha256": "4bfc48dec0c9aa8fdcfc34eacfbc8fbfb9ffc63323c25b6a1b54e2ec9b9bc4ca",
+    "markdownSha256": "5a868b6d1d9cf57441b5497b6486d3c339ca520b994c1c8c1013e1f67cc38f79",
+    "imagePaths": []
+  },
+  {
+    "number": 879,
+    "contentId": "4b92b372887d",
+    "title": "盈利计划",
+    "url": "https://leetcode.cn/problems/profitable-schemes/",
+    "fetchedAt": "2026-09-27T03:39:53.284026+00:00",
+    "sourceSha256": "060208d9e92ed12fbf0927081eff64e36dc76a915da284bf760c42b43bbe48f9",
+    "markdownSha256": "4d79bbf91fe6f222554bfd7804e8ddffd5ac693d8b760e7996085aebc6ddaa36",
+    "imagePaths": []
+  },
+  {
+    "number": 886,
+    "contentId": "beb68faa5304",
+    "title": "可能的二分法",
+    "url": "https://leetcode.cn/problems/possible-bipartition/",
+    "fetchedAt": "2026-09-27T03:40:00.795329+00:00",
+    "sourceSha256": "6f6ddfb8715298aa7fb9851a41c76524b808ac6de29eda00e386e73116ee692f",
+    "markdownSha256": "055a2049af86cad59f4006e773b499aeb9c2c0a275cb57493efd269fad232f39",
+    "imagePaths": []
+  },
+  {
+    "number": 899,
+    "contentId": "44bb46406b75",
+    "title": "有序队列",
+    "url": "https://leetcode.cn/problems/orderly-queue/",
+    "fetchedAt": "2026-09-27T03:39:44.672162+00:00",
+    "sourceSha256": "2b3147b244ef6e486835efeb355f837b288de84ed64e667d0e0204a724c6e8c0",
+    "markdownSha256": "d9e0525558fc08b83c299f59fde98f716066cc4659b0cc4c9535a218dcc2aaae",
+    "imagePaths": []
+  },
+  {
+    "number": 905,
+    "contentId": "843a03c2b7cb",
+    "title": "按奇偶排序数组",
+    "url": "https://leetcode.cn/problems/sort-array-by-parity/",
+    "fetchedAt": "2026-09-27T03:39:41.926962+00:00",
+    "sourceSha256": "61f77a37e14a196f96c5e5f0fed975b33e28fdc5382d979c41a2cbb68327f246",
+    "markdownSha256": "7d07252de56b08dd47c82c5cb7371b408ed2b12343cdc8aaa859d96c64b78bd8",
+    "imagePaths": []
+  },
+  {
+    "number": 912,
+    "contentId": "865e32800df8",
+    "title": "排序数组",
+    "url": "https://leetcode.cn/problems/sort-an-array/",
+    "fetchedAt": "2026-09-27T03:39:42.410352+00:00",
+    "sourceSha256": "7b22c0fa01bf4a624cdb0375b061a4d09033c655dd04e2cfa0de7c10ea0d37b2",
+    "markdownSha256": "981004ec0c2bdfd7460bda1c9e2f5b1cafc539d27ba6f7623e10d85d9dbd3c18",
+    "imagePaths": []
+  },
+  {
+    "number": 918,
+    "contentId": "1eb8d3876120",
+    "title": "环形子数组的最大和",
+    "url": "https://leetcode.cn/problems/maximum-sum-circular-subarray/",
+    "fetchedAt": "2026-09-27T03:39:50.713058+00:00",
+    "sourceSha256": "b10b57ed46b06c59f8661e292adbbddd23c059982054f1bb826ed62a12c01bbd",
+    "markdownSha256": "f3481ef49399b98331e29aa2305a678e69d9806b1cee577f59fa18639ed1e833",
+    "imagePaths": []
+  },
+  {
+    "number": 920,
+    "contentId": "a0bd3c57647a",
+    "title": "播放列表的数量",
+    "url": "https://leetcode.cn/problems/number-of-music-playlists/",
+    "fetchedAt": "2026-09-27T03:39:58.334063+00:00",
+    "sourceSha256": "b2c90ca785e4812a0ad208f1867ba9f36e10680b93849e7d753b908ca366d0b2",
+    "markdownSha256": "64ea19e281122e28c6e9bbebe3185345527a585870cb3be2d9906847b3924ef8",
+    "imagePaths": []
+  },
+  {
+    "number": 922,
+    "contentId": "e38ce5bbf69b",
+    "title": "按奇偶排序数组 II",
+    "url": "https://leetcode.cn/problems/sort-array-by-parity-ii/",
+    "fetchedAt": "2026-09-27T03:39:41.975492+00:00",
+    "sourceSha256": "6065d1c2456ee4149cbaa0b3ed20d951cdc84e58a96128a2a61a8d2425ffba1b",
+    "markdownSha256": "eeba5a4ab3e11e5756e87385dfaf96f7a5f224338a42e89e8b6615f963d5f148",
+    "imagePaths": []
+  },
+  {
+    "number": 924,
+    "contentId": "919c0342a18e",
+    "title": "尽量减少恶意软件的传播",
+    "url": "https://leetcode.cn/problems/minimize-malware-spread/",
+    "fetchedAt": "2026-09-27T03:40:03.360076+00:00",
+    "sourceSha256": "8f0e94d19de2ae59a3a2e38b44ba3a4062dd6391cf5e24f4a3db11ee2b8c096a",
+    "markdownSha256": "731f60430f1c3cef439486d2ab7c7d0b80293e78ec2720f5cc92878ae096312f",
+    "imagePaths": []
+  },
+  {
+    "number": 928,
+    "contentId": "b72c0e15b8c2",
+    "title": "尽量减少恶意软件的传播 II",
+    "url": "https://leetcode.cn/problems/minimize-malware-spread-ii/",
+    "fetchedAt": "2026-09-27T03:40:03.346866+00:00",
+    "sourceSha256": "d5fa7b7f6e9086e8e0c188edc72f6b8bd5c19110b1f4ec5c5cb6022bc0be27b4",
+    "markdownSha256": "7e801006c35f74ac58a38a15b76f4a1cee2656884712f8715c2c548c020b5d85",
+    "imagePaths": []
+  },
+  {
+    "number": 931,
+    "contentId": "5156cac43fc3",
+    "title": "下降路径最小和",
+    "url": "https://leetcode.cn/problems/minimum-falling-path-sum/",
+    "fetchedAt": "2026-09-27T03:39:51.278052+00:00",
+    "sourceSha256": "7f84f11697b32f60f747242228a17dbb267e32e54cd986daaf745e2750acedd0",
+    "markdownSha256": "04ec52999eea83f72351496cb509afb0b42b70c2fee15088c1b9a7ad03cd8a8d",
+    "imagePaths": [
+      "/leetcode-assets/522397a147727cce31055ffe.png",
+      "/leetcode-assets/81863c0b05dfc34fe321574c.png"
+    ]
+  },
+  {
+    "number": 935,
+    "contentId": "783f2d8a7fd0",
+    "title": "骑士拨号器",
+    "url": "https://leetcode.cn/problems/knight-dialer/",
+    "fetchedAt": "2026-09-27T03:39:57.835850+00:00",
+    "sourceSha256": "61d6b860b83985e545211440bdea04eb1b057c321d89d853e2ed8657a1a94d71",
+    "markdownSha256": "8c0250400eb3f8cdacc9f48d70379fa1a99b96b35557517fb5b4bd84e6cfd0a1",
+    "imagePaths": [
+      "/leetcode-assets/27a822f26de26b91366db369.jpg",
+      "/leetcode-assets/af62f3034a830123d8b30fbd.jpg"
+    ]
+  },
+  {
+    "number": 937,
+    "contentId": "db703162f370",
+    "title": "重新排列日志文件",
+    "url": "https://leetcode.cn/problems/reorder-data-in-log-files/",
+    "fetchedAt": "2026-09-27T03:39:44.060592+00:00",
+    "sourceSha256": "470242d353a280292e90facd862a35e97adb47abe49b2dacda0f9aa0a5d0f97e",
+    "markdownSha256": "14a2e6e38f85e4441361753126a80ca301a78cdc150c2f6283041b916c0bfd95",
+    "imagePaths": []
+  },
+  {
+    "number": 954,
+    "contentId": "3f86eac611e7",
+    "title": "二倍数对数组",
+    "url": "https://leetcode.cn/problems/array-of-doubled-pairs/",
+    "fetchedAt": "2026-09-27T03:39:44.426825+00:00",
+    "sourceSha256": "a660cde157526cda71374567be0ea93e4ec9f3aa640ba0c628f72f055bc8d408",
+    "markdownSha256": "c9a3ad2bbcb2f514fe4b9e86b3f512213d60c627a268375bf51a316b508bc63a",
+    "imagePaths": []
+  },
+  {
+    "number": 969,
+    "contentId": "957e1324b960",
+    "title": "煎饼排序",
+    "url": "https://leetcode.cn/problems/pancake-sorting/",
+    "fetchedAt": "2026-09-27T03:39:42.568946+00:00",
+    "sourceSha256": "ea966ba326d1aee288ebf2db25ac24995ae0c8d6b924611e9f808c26e8a5578a",
+    "markdownSha256": "47f04e51d0f76a9d5ef5cc18196d1191f12aad8126db10b9595e0b0aa3b5d575",
+    "imagePaths": []
+  },
+  {
+    "number": 973,
+    "contentId": "c1918be656c2",
+    "title": "最接近原点的 K 个点",
+    "url": "https://leetcode.cn/problems/k-closest-points-to-origin/",
+    "fetchedAt": "2026-09-27T03:39:46.081965+00:00",
+    "sourceSha256": "148a40e7d3a191e5c7abb7ea9c2cde752ee91c349079da18dc079825f121dc2a",
+    "markdownSha256": "340cea8f1637d06c2b54f1b7f1985e2f305e1941516477fdac2ac22f9f1e8dc4",
+    "imagePaths": [
+      "/leetcode-assets/953c3de80b5f0b7faaf05951.jpg"
+    ]
+  },
+  {
+    "number": 976,
+    "contentId": "862baaf01329",
+    "title": "三角形的最大周长",
+    "url": "https://leetcode.cn/problems/largest-perimeter-triangle/",
+    "fetchedAt": "2026-09-27T03:39:44.904120+00:00",
+    "sourceSha256": "8a4e2792115217c6b074eec4197abe903e71fc8acf44d0ae0f7225044b916d52",
+    "markdownSha256": "2c47fbda33ec6ce8d9da1fdfd348f0f5fb302e42a652c61ae6add055b0a483fc",
+    "imagePaths": []
+  },
+  {
+    "number": 977,
+    "contentId": "3ddfcd4360ff",
+    "title": "有序数组的平方",
+    "url": "https://leetcode.cn/problems/squares-of-a-sorted-array/",
+    "fetchedAt": "2026-09-27T03:39:42.153790+00:00",
+    "sourceSha256": "e00551fe585d65381a4f65686f2873dc96ead70d565a1ef923e975b6016bdc14",
+    "markdownSha256": "5d25f48078a3cdf8656f83dab556f2940b08c578ce12f352e773440b7f1aef03",
+    "imagePaths": []
+  },
+  {
+    "number": 983,
+    "contentId": "6d0f9a41be61",
+    "title": "最低票价",
+    "url": "https://leetcode.cn/problems/minimum-cost-for-tickets/",
+    "fetchedAt": "2026-09-27T03:39:53.256577+00:00",
+    "sourceSha256": "beeca0f8d32ff91a4ba1a124acda1d9fea71586e1dcf27c91f8f2208cffb98ae",
+    "markdownSha256": "0c6fbf318d37c6d8646a11864b4fdb536e0e001c481f2ea06ffe6ce3758d4f12",
+    "imagePaths": []
+  },
+  {
+    "number": 990,
+    "contentId": "fd4d4a19b114",
+    "title": "等式方程的可满足性",
+    "url": "https://leetcode.cn/problems/satisfiability-of-equality-equations/",
+    "fetchedAt": "2026-09-27T03:40:00.794823+00:00",
+    "sourceSha256": "d0c141f3b2b860c88c7b86f817da84d4c86dac5a6fc1a27658571c4fb52ad5ca",
+    "markdownSha256": "052ad341ff8a27182e80a1ac3d14b6ccc36bca43c35b307b7da2fa0c3c382a0a",
+    "imagePaths": []
+  },
+  {
+    "number": 997,
+    "contentId": "a47eb51646ad",
+    "title": "找到小镇的法官",
+    "url": "https://leetcode.cn/problems/find-the-town-judge/",
+    "fetchedAt": "2026-09-27T03:39:59.168844+00:00",
+    "sourceSha256": "7be13fcdd299098368ca6cbe6df713d76501bc10fee9b466d369ca8f39b91c04",
+    "markdownSha256": "ab26676ea49f12c4232bc0b2cae13425a16a9dd28c3a8ed09dd4ce5cce2718e5",
+    "imagePaths": []
+  },
+  {
+    "number": 1000,
+    "contentId": "80c1a6ebc05a",
+    "title": "合并石头的最低成本",
+    "url": "https://leetcode.cn/problems/minimum-cost-to-merge-stones/",
+    "fetchedAt": "2026-09-27T03:39:56.795625+00:00",
+    "sourceSha256": "6ef9d09876a49d74484a95650c5a35dde9a6d38ee48b6eac651906cfe6ac591a",
+    "markdownSha256": "f292d3fa17dab7d53f14b5a65e555005ce7d6082a7b19c338ac7c52838e1e9cd",
+    "imagePaths": []
+  },
+  {
+    "number": 1027,
+    "contentId": "eb51e744bd7e",
+    "title": "最长等差数列",
+    "url": "https://leetcode.cn/problems/longest-arithmetic-subsequence/",
+    "fetchedAt": "2026-09-27T03:39:53.775114+00:00",
+    "sourceSha256": "6952943861b7a5941abffcc3e16e89c40354692ee25187adcfc08410fa1d188e",
+    "markdownSha256": "6a9f15d9e2a9f99e20585d762268b972d7bc3339800939fc3cb7e80b50df570a",
+    "imagePaths": []
+  },
+  {
+    "number": 1035,
+    "contentId": "c3d9e20b9745",
+    "title": "不相交的线",
+    "url": "https://leetcode.cn/problems/uncrossed-lines/",
+    "fetchedAt": "2026-09-27T03:39:54.326209+00:00",
+    "sourceSha256": "e18af284ff9510b32af4f121ce1bab958d74d568606be2cbbb0badd98cd3faa9",
+    "markdownSha256": "d6ecd1552552bbb8d5ae2ceac3aeeabf2fae0322a7caeefc0fc39096762b6dd4",
+    "imagePaths": [
+      "/leetcode-assets/c48b68fdf0971c51f2c1ce16.png"
+    ]
+  },
+  {
+    "number": 1039,
+    "contentId": "1e976226f402",
+    "title": "多边形三角剖分的最低得分",
+    "url": "https://leetcode.cn/problems/minimum-score-triangulation-of-polygon/",
+    "fetchedAt": "2026-09-27T03:39:56.298850+00:00",
+    "sourceSha256": "86a00f157450bf65ed32c491a6ccbd4980ac7db3c8af65eed93e1cc2dafaa754",
+    "markdownSha256": "9c686a5b16eaf5f5a711e6cb630d3948c71653658b2e93502b78b28b4e447d88",
+    "imagePaths": [
+      "/leetcode-assets/c1e5e396e8a06423f8fbb9dd.png",
+      "/leetcode-assets/90213a2e7697a4c3402f4cd3.png",
+      "/leetcode-assets/3e53598934036eda851f4284.png"
+    ]
+  },
+  {
+    "number": 1048,
+    "contentId": "67be1ac9532e",
+    "title": "最长字符串链",
+    "url": "https://leetcode.cn/problems/longest-string-chain/",
+    "fetchedAt": "2026-09-27T03:39:54.015592+00:00",
+    "sourceSha256": "dfa294df3c14793caa4360ea36067ecf3940a91158c48af2aeb165e83e9e0afe",
+    "markdownSha256": "dcf3d7f5f0ba98ca14e28e78c3e09657d7dedb6d7b00f4209315e3e24a1a3b0d",
+    "imagePaths": []
+  },
+  {
+    "number": 1049,
+    "contentId": "846edea2b1f3",
+    "title": "最后一块石头的重量 II",
+    "url": "https://leetcode.cn/problems/last-stone-weight-ii/",
+    "fetchedAt": "2026-09-27T03:39:52.206179+00:00",
+    "sourceSha256": "7f03ada6b01aac35b0e57848a4a5883018ac4c59b212d86c591fa26be5b4d026",
+    "markdownSha256": "6c1de47e53f16b285ee514a6ce85696e36e7f637b4d08330068ce71c94d60365",
+    "imagePaths": []
+  },
+  {
+    "number": 1051,
+    "contentId": "71123c8d39aa",
+    "title": "高度检查器",
+    "url": "https://leetcode.cn/problems/height-checker/",
+    "fetchedAt": "2026-09-27T03:39:41.947436+00:00",
+    "sourceSha256": "fd2fa119842ae51f71dab45cd6946205e07e0f1d0854ac5851530402c6402a0e",
+    "markdownSha256": "5e22fa2ea477319613ed814fb743c6508db3c0820d5303049444483f49a1419c",
+    "imagePaths": []
+  },
+  {
+    "number": 1054,
+    "contentId": "da1cd549ea9a",
+    "title": "距离相等的条形码",
+    "url": "https://leetcode.cn/problems/distant-barcodes/",
+    "fetchedAt": "2026-09-27T03:39:46.826608+00:00",
+    "sourceSha256": "cbfc52d038bb193e9cfaba4512ab849b5f5bf82d1051a7b14d031f9e83cfe35a",
+    "markdownSha256": "ab99333416e8d420d8cf0a4f8eecaa4b678dc663f64498e1796fa7bab05f17f4",
+    "imagePaths": []
+  },
+  {
+    "number": 1092,
+    "contentId": "eb93de15a80d",
+    "title": "最短公共超序列",
+    "url": "https://leetcode.cn/problems/shortest-common-supersequence/",
+    "fetchedAt": "2026-09-27T03:39:54.996507+00:00",
+    "sourceSha256": "03bd58c5d36b07f81ccd6853a96facebb7eba68b31f4634cd7d8bf17976de660",
+    "markdownSha256": "6b8a4381a0d6230f4667fd7ae5f8b164e6b165017a54fa87b9fae8b240cac4ad",
+    "imagePaths": []
+  },
+  {
+    "number": 1094,
+    "contentId": "44b79672b9a0",
+    "title": "拼车",
+    "url": "https://leetcode.cn/problems/car-pooling/",
+    "fetchedAt": "2026-09-27T03:39:48.863534+00:00",
+    "sourceSha256": "555c7934bd4da155abf0af7d312618028bfafed5eaca640f0750f97dfe653481",
+    "markdownSha256": "594956d82d1a43203f29c3c3b43c8a8b006a6a5103d5d165b9c050b03d10fca7",
+    "imagePaths": []
+  },
+  {
+    "number": 1122,
+    "contentId": "8e92675d72bd",
+    "title": "数组的相对排序",
+    "url": "https://leetcode.cn/problems/relative-sort-array/",
+    "fetchedAt": "2026-09-27T03:39:42.827533+00:00",
+    "sourceSha256": "22de7ca1a0b961efc5c3d15bd7de83a815cf8d79538ce6edfeb13717580e3b7e",
+    "markdownSha256": "117f95d58553d18f09df67e526e4168eab6dfdb06290507362566b93ab6352f7",
+    "imagePaths": []
+  },
+  {
+    "number": 1129,
+    "contentId": "d637d60745ce",
+    "title": "颜色交替的最短路径",
+    "url": "https://leetcode.cn/problems/shortest-path-with-alternating-colors/",
+    "fetchedAt": "2026-09-27T03:40:00.245218+00:00",
+    "sourceSha256": "93bf77d6bbadde607cf1af65a125578a8b4797eafce1b815868cb1228cc60995",
+    "markdownSha256": "59d4655c4c9f8a182c16fc8dbe6ecd917dc6fdcb9f866bf388663fe9b43fe71e",
+    "imagePaths": []
+  },
+  {
+    "number": 1137,
+    "contentId": "d6a1795d43dc",
+    "title": "第 N 个泰波那契数",
+    "url": "https://leetcode.cn/problems/n-th-tribonacci-number/",
+    "fetchedAt": "2026-09-27T03:39:49.939440+00:00",
+    "sourceSha256": "b28c45e8ffd83091c72f41584e82275e7227ae32273bb1d4a065ce200c24dcc0",
+    "markdownSha256": "8d8baeb9ab665630c50838f4e2d9852440753fe4c265ff413083bdde703a7c29",
+    "imagePaths": []
+  },
+  {
+    "number": 1140,
+    "contentId": "5822374b66c7",
+    "title": "石子游戏 II",
+    "url": "https://leetcode.cn/problems/stone-game-ii/",
+    "fetchedAt": "2026-09-27T03:39:56.542851+00:00",
+    "sourceSha256": "312698f5758a74bb3c568d745d5821a49305588b1089c3a3b071020147743558",
+    "markdownSha256": "a7ff0d76ed53dfe4b9387942b87fd872b8601e438279b15302b93ef10a909a03",
+    "imagePaths": []
+  },
+  {
+    "number": 1143,
+    "contentId": "61ff85c82c18",
+    "title": "最长公共子序列",
+    "url": "https://leetcode.cn/problems/longest-common-subsequence/",
+    "fetchedAt": "2026-09-27T03:39:54.300468+00:00",
+    "sourceSha256": "fef1c3267801b2446be733a9c35249fa39543a66e20b68deb02e25d0ce4aaf5c",
+    "markdownSha256": "f39d6a4c757574e7e47a6919642736ffdf60b4c9dc5bfd5732dc89427d502f34",
+    "imagePaths": []
+  },
+  {
+    "number": 1155,
+    "contentId": "593e36fcf48d",
+    "title": "掷骰子等于目标和的方法数",
+    "url": "https://leetcode.cn/problems/number-of-dice-rolls-with-target-sum/",
+    "fetchedAt": "2026-09-27T03:39:52.993151+00:00",
+    "sourceSha256": "8ccabe6c608e0801263c29ed3d5846c76967b82347724c28f669dda6f56881e6",
+    "markdownSha256": "105c8e3739502c84bdf56f981ac8b92e21acfbc2c9c15e70f018932e70e8c9f8",
+    "imagePaths": []
+  },
+  {
+    "number": 1170,
+    "contentId": "2c7c578c2691",
+    "title": "比较字符串最小字母出现频次",
+    "url": "https://leetcode.cn/problems/compare-strings-by-frequency-of-the-smallest-character/",
+    "fetchedAt": "2026-09-27T03:39:43.392588+00:00",
+    "sourceSha256": "12a7acfd7aa3c32e674301573197fcff07ca4d02af83ead3bd9402fcbbf4ef76",
+    "markdownSha256": "0f939ba167041ee973b53c49f7e233aa7223d20db53749700e25bd838912e85c",
+    "imagePaths": []
+  },
+  {
+    "number": 1186,
+    "contentId": "41cf9fc2862f",
+    "title": "删除一次得到子数组最大和",
+    "url": "https://leetcode.cn/problems/maximum-subarray-sum-with-one-deletion/",
+    "fetchedAt": "2026-09-27T03:39:50.721382+00:00",
+    "sourceSha256": "a1cfee739947ad4e242bf9108e36df3089983581893782ff31e10c9b1f3a423d",
+    "markdownSha256": "cb6909ae734040ac26ae6ae20a1b1c42b469a0096c8388ba1de90f4464f2cc59",
+    "imagePaths": []
+  },
+  {
+    "number": 1192,
+    "contentId": "cb34a2548142",
+    "title": "查找集群内的关键连接",
+    "url": "https://leetcode.cn/problems/critical-connections-in-a-network/",
+    "fetchedAt": "2026-09-27T03:40:03.232433+00:00",
+    "sourceSha256": "854bf8dda87b87f86fe9a51a040cf46679bb8970a0a32b9f2d321fcce9d2da10",
+    "markdownSha256": "5701f29529c808cab06abf7ba1573f942f93fc898b832a2a9cd563d7172a60cd",
+    "imagePaths": [
+      "/leetcode-assets/8af8b8e488ce3e0360a49c62.png"
+    ]
+  },
+  {
+    "number": 1200,
+    "contentId": "7b60ecaae015",
+    "title": "最小绝对差",
+    "url": "https://leetcode.cn/problems/minimum-absolute-difference/",
+    "fetchedAt": "2026-09-27T03:39:45.515766+00:00",
+    "sourceSha256": "363737f5c368868dab3468d77040c9a97dbc13c918ffcb63e5520089fdf5775f",
+    "markdownSha256": "27d6c3f0982edd61272dd946ad830bde403da0fc0e48d04cc43a545af377183c",
+    "imagePaths": []
+  },
+  {
+    "number": 1203,
+    "contentId": "1cc2b467832f",
+    "title": "项目管理",
+    "url": "https://leetcode.cn/problems/sort-items-by-groups-respecting-dependencies/",
+    "fetchedAt": "2026-09-27T03:40:02.143342+00:00",
+    "sourceSha256": "4982580f21690f8ec94b54c23a5e17e9ba18b1dd2a97657c93f5e264d63e5f3a",
+    "markdownSha256": "d4dbbff3970d4af87682b1859d0b8ccc8efbd5f62935c323e5f0c89da9bb9154",
+    "imagePaths": [
+      "/leetcode-assets/b9734a249b3cfb99fd672665.png"
+    ]
+  },
+  {
+    "number": 1218,
+    "contentId": "d9728fb184c4",
+    "title": "最长定差子序列",
+    "url": "https://leetcode.cn/problems/longest-arithmetic-subsequence-of-given-difference/",
+    "fetchedAt": "2026-09-27T03:39:53.763171+00:00",
+    "sourceSha256": "6f66003a73f0a0fda492c6f752e6501d521f337e858ca930a536719ab9b5d742",
+    "markdownSha256": "ade84f874a634e959c09e9fab620b84edff608e65e4714642a0f0dd1a4d74212",
+    "imagePaths": []
+  },
+  {
+    "number": 1223,
+    "contentId": "109ce80c089c",
+    "title": "掷骰子模拟",
+    "url": "https://leetcode.cn/problems/dice-roll-simulation/",
+    "fetchedAt": "2026-09-27T03:39:58.318448+00:00",
+    "sourceSha256": "87265941df1b670703f59b5502aa9a4c6bf36ed596053d843cb4658e180bb7e5",
+    "markdownSha256": "f57324f4dc8c5c0d5986f0188516d4c1160e5693a02bf323e66b69afb933a165",
+    "imagePaths": []
+  },
+  {
+    "number": 1235,
+    "contentId": "7c1e6c0e3b48",
+    "title": "规划兼职工作",
+    "url": "https://leetcode.cn/problems/maximum-profit-in-job-scheduling/",
+    "fetchedAt": "2026-09-27T03:39:58.935345+00:00",
+    "sourceSha256": "f5d84274ddad47b53cc3d4457bcdbde45d630cec4376f9852e9b6426d57ab976",
+    "markdownSha256": "f13b453d1c02e7d09541e839e058b8521f4f66adcd42bc7244b741c62bcd4150",
+    "imagePaths": [
+      "/leetcode-assets/b0f25a6a7b92e7784038bd87.png",
+      "/leetcode-assets/a046bee468a540d4793cfd7e.png",
+      "/leetcode-assets/f2e8b629c59968fead7a5172.png"
+    ]
+  },
+  {
+    "number": 1268,
+    "contentId": "23110a956a30",
+    "title": "搜索推荐系统",
+    "url": "https://leetcode.cn/problems/search-suggestions-system/",
+    "fetchedAt": "2026-09-27T03:39:44.602577+00:00",
+    "sourceSha256": "60e26eceb39f03b5996e6a1f699cb6f21bb026e2e8b029a03ca5a60b0e4b12ac",
+    "markdownSha256": "3c525a57572e6cd46dd402fbbe35d86d9abbc5db7592590b9d845e82fab32f97",
+    "imagePaths": []
+  },
+  {
+    "number": 1269,
+    "contentId": "f031755fc2dc",
+    "title": "停在原地的方案数",
+    "url": "https://leetcode.cn/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/",
+    "fetchedAt": "2026-09-27T03:39:58.115609+00:00",
+    "sourceSha256": "96a2148d5c381babd38870557e1bb12449718506aa661a51f6bbe794f704312f",
+    "markdownSha256": "072e8564e3c690206d6cb48f621c8d5ce71cda4e4e730e4bbca652eb611585ed",
+    "imagePaths": []
+  },
+  {
+    "number": 1277,
+    "contentId": "0b5b04d594a3",
+    "title": "统计全为 1 的正方形子矩阵",
+    "url": "https://leetcode.cn/problems/count-square-submatrices-with-all-ones/",
+    "fetchedAt": "2026-09-27T03:39:51.486931+00:00",
+    "sourceSha256": "20d89c829459ae2f9c0865ceb9ababbbc06c3eb4d29f91e7d72538f2cc0ae09a",
+    "markdownSha256": "d81b716cebbeb8afc8b65df7ce47295bbc1db8f945ccd12eac6a53581b7f16c7",
+    "imagePaths": []
+  },
+  {
+    "number": 1278,
+    "contentId": "b730463bbc5d",
+    "title": "分割回文串 III",
+    "url": "https://leetcode.cn/problems/palindrome-partitioning-iii/",
+    "fetchedAt": "2026-09-27T03:39:55.923433+00:00",
+    "sourceSha256": "d0356fa967d46570966657dc9efe146a9a8021cfa19345c373697d1f77584a19",
+    "markdownSha256": "3905e48ba563e68618c899bfc76c58e0b928e2b09845bf9b84b1635e46839d7e",
+    "imagePaths": []
+  },
+  {
+    "number": 1289,
+    "contentId": "b207a9237ee7",
+    "title": "下降路径最小和  II",
+    "url": "https://leetcode.cn/problems/minimum-falling-path-sum-ii/",
+    "fetchedAt": "2026-09-27T03:39:51.741573+00:00",
+    "sourceSha256": "9aaf70568ef2a82e664e89dfe330925d13c71dd2c71b2cb45e15c92a2f0b2890",
+    "markdownSha256": "f2cd1ff40ba0f68558213189f40406824f44279c23cb530a665b1d864d547e1a",
+    "imagePaths": [
+      "/leetcode-assets/e9afd342df7a37d38114b505.jpg"
+    ]
+  },
+  {
+    "number": 1301,
+    "contentId": "948dcd6440a0",
+    "title": "最大得分的路径数目",
+    "url": "https://leetcode.cn/problems/number-of-paths-with-max-score/",
+    "fetchedAt": "2026-09-27T03:39:51.891598+00:00",
+    "sourceSha256": "9a2a6b5faec7c8335f96134575dd69df193771826fee5c1cafdc437a87625c2d",
+    "markdownSha256": "ac2def034e831d669e2cde721a505b6e9a74e9c6771530bd62f6ff9b198b3ff8",
+    "imagePaths": []
+  },
+  {
+    "number": 1305,
+    "contentId": "c9a49090356c",
+    "title": "两棵二叉搜索树中的所有元素",
+    "url": "https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/",
+    "fetchedAt": "2026-09-27T03:39:48.287419+00:00",
+    "sourceSha256": "40fa4a8f43f31c001cb58cc4ceae03978d7edda9be265f080512bd0f2d907e45",
+    "markdownSha256": "8794401de8d544bddb3b8f1b38a37b9839422d5566e332128a34b2852d6b7b43",
+    "imagePaths": [
+      "/leetcode-assets/a6e51c4990da6255651946d4.png",
+      "/leetcode-assets/a761a580c16cf8f323ec692e.png"
+    ]
+  },
+  {
+    "number": 1311,
+    "contentId": "bbbd750c24ec",
+    "title": "获取你好友已观看的视频",
+    "url": "https://leetcode.cn/problems/get-watched-videos-by-your-friends/",
+    "fetchedAt": "2026-09-27T03:40:00.267714+00:00",
+    "sourceSha256": "bf23398c05b7bfef137751f74e52aaaa69a94a7fd78e9ae6d97d9b31b3342986",
+    "markdownSha256": "8e0bfeba8d4840242b68f687746a3e014f62b5fd9c6cdd935070a5dee50118b5",
+    "imagePaths": [
+      "/leetcode-assets/b4c11c8f5f21ed635dbef645.png",
+      "/leetcode-assets/4cc5a946842b49043641c706.png"
+    ]
+  },
+  {
+    "number": 1312,
+    "contentId": "2cbef52ff342",
+    "title": "让字符串成为回文串的最少插入次数",
+    "url": "https://leetcode.cn/problems/minimum-insertion-steps-to-make-a-string-palindrome/",
+    "fetchedAt": "2026-09-27T03:39:55.793778+00:00",
+    "sourceSha256": "d13e6102c0a5ba7d4d835da954dc8703d2b7e8e8d37c4e9f87e3bc623c3e71f8",
+    "markdownSha256": "10cc3353178e0441dc51676bb3dd73624557dfbbf057142ff3369b337e7e7486",
+    "imagePaths": []
+  },
+  {
+    "number": 1319,
+    "contentId": "ff2d8696aa2a",
+    "title": "连通网络的操作次数",
+    "url": "https://leetcode.cn/problems/number-of-operations-to-make-network-connected/",
+    "fetchedAt": "2026-09-27T03:40:01.042076+00:00",
+    "sourceSha256": "7612967daf85f611f5d84133de8b9cb7d4f7cac1447f8fe78807d5c4ffd0d6ea",
+    "markdownSha256": "06ea806eadde858c1363da3206fe988e1006511a87c7db2109bec9785568291a",
+    "imagePaths": [
+      "/leetcode-assets/f3a52f2e0b3bf17db547b48a.png",
+      "/leetcode-assets/ef3f635401f5275b98560744.png"
+    ]
+  },
+  {
+    "number": 1329,
+    "contentId": "a32c7ebfc4d5",
+    "title": "将矩阵按对角线排序",
+    "url": "https://leetcode.cn/problems/sort-the-matrix-diagonally/",
+    "fetchedAt": "2026-09-27T03:39:42.484600+00:00",
+    "sourceSha256": "cf2391f66df360231e7bb95837a0054924bd1708f7000fb7b685ca1ab5116eaa",
+    "markdownSha256": "88e2df32c6c473654454e249acde3b63b3392125be33637739b97e9a7409967d",
+    "imagePaths": [
+      "/leetcode-assets/e24ed7fcf7179efd500ba188.png"
+    ]
+  },
+  {
+    "number": 1331,
+    "contentId": "85900e2ad310",
+    "title": "数组序号转换",
+    "url": "https://leetcode.cn/problems/rank-transform-of-an-array/",
+    "fetchedAt": "2026-09-27T03:39:42.974248+00:00",
+    "sourceSha256": "de163192c821e94ef293b83eb20e00475df849f24a5d54b08cf9ae204a148b0a",
+    "markdownSha256": "d5c0fe9c294112564afced4584debb7399d6ca013186813a95e0cb545d4468c1",
+    "imagePaths": []
+  },
+  {
+    "number": 1334,
+    "contentId": "7136ddce1833",
+    "title": "阈值距离内邻居最少的城市",
+    "url": "https://leetcode.cn/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/",
+    "fetchedAt": "2026-09-27T03:40:02.338827+00:00",
+    "sourceSha256": "e3aba97e670e3cb0d165df275709bfca855ab8139360c9bd70393ba974cf5767",
+    "markdownSha256": "fcbddb074e677da89ecfff037da3590fe80e1af19be00038639ffec7edb9ebe2",
+    "imagePaths": [
+      "/leetcode-assets/632ed310b3a6e5aa2dca8ba2.png",
+      "/leetcode-assets/142921317472e7d6c109b094.png"
+    ]
+  },
+  {
+    "number": 1353,
+    "contentId": "318819a5b19e",
+    "title": "最多可以参加的会议数目",
+    "url": "https://leetcode.cn/problems/maximum-number-of-events-that-can-be-attended/",
+    "fetchedAt": "2026-09-27T03:39:46.834790+00:00",
+    "sourceSha256": "80c789fb7f031f94e1b319228372b7ca167325b5105af0fceb783c42ca704d23",
+    "markdownSha256": "aa0305bf3bed1a954948ac64916cf139d47d5b29d8935de55ebc2c965f140c1f",
+    "imagePaths": [
+      "/leetcode-assets/bbbde9855676ace4887d5d1c.png"
+    ]
+  },
+  {
+    "number": 1356,
+    "contentId": "db8fa19a7031",
+    "title": "根据数字二进制下 1 的数目排序",
+    "url": "https://leetcode.cn/problems/sort-integers-by-the-number-of-1-bits/",
+    "fetchedAt": "2026-09-27T03:39:43.041334+00:00",
+    "sourceSha256": "70c2865d6a2e74cf8c0864ee7504b2f4e1a109f3f46d5f67fa261b357aafd0b8",
+    "markdownSha256": "6db71947524edfa5c62ae33b1727e90c38ac73a74f8d7d058e67f60890efb7d9",
+    "imagePaths": []
+  },
+  {
+    "number": 1361,
+    "contentId": "73d2700aaf63",
+    "title": "验证二叉树",
+    "url": "https://leetcode.cn/problems/validate-binary-tree-nodes/",
+    "fetchedAt": "2026-09-27T03:40:00.842949+00:00",
+    "sourceSha256": "52c3a56a4a6eaf11668e1f61954c62feacc7d0a7c3866a24dd39f47c576bdcc6",
+    "markdownSha256": "0889876c1f65677778cc7e9ec3830697550c9be0320aeb3febcfe930d0e1b3bf",
+    "imagePaths": [
+      "/leetcode-assets/40a324da4a54b2981e9e5fc0.png",
+      "/leetcode-assets/9575ea69f096c3e576bdf6f4.png",
+      "/leetcode-assets/e16da60dd14391b5f3177d4f.png"
+    ]
+  },
+  {
+    "number": 1365,
+    "contentId": "aa20c18a6820",
+    "title": "有多少小于当前数字的数字",
+    "url": "https://leetcode.cn/problems/how-many-numbers-are-smaller-than-the-current-number/",
+    "fetchedAt": "2026-09-27T03:39:42.748914+00:00",
+    "sourceSha256": "ea57eb34a6396d22ea377a0bb25100750964f7afe1919a513c061f1e27f86858",
+    "markdownSha256": "46278221984fc1e9ff82fa98df5161db5d36f13e6fddf80051e77c41d819f95f",
+    "imagePaths": []
+  },
+  {
+    "number": 1366,
+    "contentId": "d09cc451bcb6",
+    "title": "通过投票对团队排名",
+    "url": "https://leetcode.cn/problems/rank-teams-by-votes/",
+    "fetchedAt": "2026-09-27T03:39:43.574464+00:00",
+    "sourceSha256": "b37ccbb54adfb6427596f9fff02b8d48ad98cfc066342b537d07796a9a48146d",
+    "markdownSha256": "0153e86cdba28e734d49c044654e04d94aabcd55757c9e54a6de6e75f374b29b",
+    "imagePaths": []
+  },
+  {
+    "number": 1368,
+    "contentId": "75d27c4c67ae",
+    "title": "使网格图至少有一条有效路径的最小代价",
+    "url": "https://leetcode.cn/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/",
+    "fetchedAt": "2026-09-27T03:40:02.627739+00:00",
+    "sourceSha256": "b73057b2a2a593d947c806ba796724222c71a031d7df57a3d65143ac7c833ba5",
+    "markdownSha256": "a177cff2083883abcc06867d2e254ce4dad0bbab4ae5f3dd8290722627734bce",
+    "imagePaths": [
+      "/leetcode-assets/d45a10740deae459cc4938bc.png",
+      "/leetcode-assets/4fcb21beb304b65a0922a81e.png",
+      "/leetcode-assets/ff0d0674b09fe2caf534b9db.png"
+    ]
+  },
+  {
+    "number": 1372,
+    "contentId": "d6ff60736012",
+    "title": "二叉树中的最长交错路径",
+    "url": "https://leetcode.cn/problems/longest-zigzag-path-in-a-binary-tree/",
+    "fetchedAt": "2026-09-27T03:39:58.574796+00:00",
+    "sourceSha256": "23feed9f623fab770af8257a06699136ea1cac17228ad14d5d2f2efd8fd911c7",
+    "markdownSha256": "9c8ff010c315939a43706ac21b70cbb7608ba15882561905d455da867969a66b",
+    "imagePaths": [
+      "/leetcode-assets/afe7557faabcfc5272cea3b6.png",
+      "/leetcode-assets/a156cdf3a9b3399926aeff4b.png"
+    ]
+  },
+  {
+    "number": 1387,
+    "contentId": "03ce3aa51bbd",
+    "title": "将整数按权重排序",
+    "url": "https://leetcode.cn/problems/sort-integers-by-the-power-value/",
+    "fetchedAt": "2026-09-27T03:39:43.913134+00:00",
+    "sourceSha256": "762fd7c3635b0deb965817d4afd73197741c7ef2fbcebf8ad1c745e3a908a270",
+    "markdownSha256": "0fd35a7e62efb5252fc24bf4162e5cf0a950372eb93bdabbc53e8afb2d03dbd0",
+    "imagePaths": []
+  },
+  {
+    "number": 1397,
+    "contentId": "e2e950cd90d3",
+    "title": "找到所有好字符串",
+    "url": "https://leetcode.cn/problems/find-all-good-strings/",
+    "fetchedAt": "2026-09-27T03:39:58.347242+00:00",
+    "sourceSha256": "d8d9c88530fa8bc2ff45a14ab99b3c8ed7714c10ab9861940dc33930683ba3e9",
+    "markdownSha256": "2e83cce45176f063b98fa774e9efb689c578f22d3e23e7a9c65ee0ef8f9a188e",
+    "imagePaths": []
+  },
+  {
+    "number": 1449,
+    "contentId": "9ca20c7eb04a",
+    "title": "数位成本和为目标值的最大数字",
+    "url": "https://leetcode.cn/problems/form-largest-integer-with-digits-that-add-up-to-target/",
+    "fetchedAt": "2026-09-27T03:39:53.310649+00:00",
+    "sourceSha256": "51b11c8b0a0a6c2a5910aefdae4ccef7a7ff419756efe10594f817146fa79df8",
+    "markdownSha256": "5d3565656021e1507a0e93de867a18b0097d77bedb50dc0a59feabd61fc905c2",
+    "imagePaths": []
+  },
+  {
+    "number": 1451,
+    "contentId": "2df18ea3b93a",
+    "title": "重新排列句子中的单词",
+    "url": "https://leetcode.cn/problems/rearrange-words-in-a-sentence/",
+    "fetchedAt": "2026-09-27T03:39:43.898587+00:00",
+    "sourceSha256": "17f6763f0af26ba2f35cf5c0b58b605d81ebada71ee4c0b453a3125e8f108942",
+    "markdownSha256": "539d6818a6e3167d9ca6a11698dc41f275b5919195a1822cf4d7469d7f75b2ca",
+    "imagePaths": []
+  },
+  {
+    "number": 1458,
+    "contentId": "d5be254af3d2",
+    "title": "两个子序列的最大点积",
+    "url": "https://leetcode.cn/problems/max-dot-product-of-two-subsequences/",
+    "fetchedAt": "2026-09-27T03:39:55.046644+00:00",
+    "sourceSha256": "4a958f11f5c0bb75eaf1bb837215cea9a78884efe60773094323f26a91dede5e",
+    "markdownSha256": "1a80b86dc096426e0fb92b61eeede352868b868bc7421c86cdd43a36be32393c",
+    "imagePaths": [
+      "/leetcode-assets/990a2e400eb24466f46aacea.png"
+    ]
+  },
+  {
+    "number": 1462,
+    "contentId": "b97559d0017a",
+    "title": "课程表 IV",
+    "url": "https://leetcode.cn/problems/course-schedule-iv/",
+    "fetchedAt": "2026-09-27T03:40:01.610014+00:00",
+    "sourceSha256": "a64e2abdb0b423de9b0a92aaef177e145a9f9ff403373eb7ada67e6778ff9af4",
+    "markdownSha256": "95508dc4867c2395e2d3e8c8fc5cbd94dea39a9fc984dc3c650603cefe1e9db8",
+    "imagePaths": [
+      "/leetcode-assets/2871f17951d71b3b38abd3cc.jpg",
+      "/leetcode-assets/89517bf03ace884a2b15d953.jpg"
+    ]
+  },
+  {
+    "number": 1466,
+    "contentId": "a7f0836e77a3",
+    "title": "重新规划路线",
+    "url": "https://leetcode.cn/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/",
+    "fetchedAt": "2026-09-27T03:40:00.160971+00:00",
+    "sourceSha256": "bc8340c1e48a5e04154fb5a911560c40d4946d27d365148de728bc833f70cb19",
+    "markdownSha256": "99f59d99849b9411d189a91396f0b059907589b8a1f44ad3d62cf72529d45979",
+    "imagePaths": [
+      "/leetcode-assets/1ad891e63db985daccccc4be.png",
+      "/leetcode-assets/5b401cfd56bbcab54f1fa26d.png"
+    ]
+  },
+  {
+    "number": 1471,
+    "contentId": "27d7df25fd8e",
+    "title": "数组中的 k 个最强值",
+    "url": "https://leetcode.cn/problems/the-k-strongest-values-in-an-array/",
+    "fetchedAt": "2026-09-27T03:39:46.044346+00:00",
+    "sourceSha256": "c278116bda16a2435be212b484f398d28ef703f64485fa1b0af6dbf7d8dc028f",
+    "markdownSha256": "f33acfd75d113e16c0ad1d685412fa933cd6630d6d0fc79e6041c1e6a0ab6b57",
+    "imagePaths": []
+  },
+  {
+    "number": 1489,
+    "contentId": "d9d551d009ca",
+    "title": "找到最小生成树里的关键边和伪关键边",
+    "url": "https://leetcode.cn/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/",
+    "fetchedAt": "2026-09-27T03:40:01.272301+00:00",
+    "sourceSha256": "dbe4d0fb1bf0d3a4b56121ea7cfc2292d756313c8086b2a77fbbaa8ef4e5d835",
+    "markdownSha256": "c29468068c2f5fa0b84efb0bc661eaa8d8bc29efe43d01d7878f9400f138d62d",
+    "imagePaths": [
+      "/leetcode-assets/eaa5165d0eecf986b0e356d6.png",
+      "/leetcode-assets/5aa24502774d8c98531350a8.png",
+      "/leetcode-assets/386a5531620122881380f5ea.png"
+    ]
+  },
+  {
+    "number": 1498,
+    "contentId": "6a055d0f0679",
+    "title": "满足条件的子序列数目",
+    "url": "https://leetcode.cn/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/",
+    "fetchedAt": "2026-09-27T03:39:45.823588+00:00",
+    "sourceSha256": "a6da0872d3175116dd78db8d7b9428aa821854dfa64eddb6eda4314877d56045",
+    "markdownSha256": "d64ee63db2ea5e3b2ae6c283b2fa1c0e9d632e4684c7de8e0fe2e9cf90b2e25b",
+    "imagePaths": []
+  },
+  {
+    "number": 1508,
+    "contentId": "5a55b20eec85",
+    "title": "子数组和排序后的区间和",
+    "url": "https://leetcode.cn/problems/range-sum-of-sorted-subarray-sums/",
+    "fetchedAt": "2026-09-27T03:39:48.318556+00:00",
+    "sourceSha256": "6f48f30748c78a0e429d96a78b5803acc9f053db81eef2c13e1af052d931ad9f",
+    "markdownSha256": "688236da2d5d83bf1e799416be7ba888362a5c7903c04042b21ec959102737e0",
+    "imagePaths": []
+  },
+  {
+    "number": 1514,
+    "contentId": "fe0f5b31b61b",
+    "title": "概率最大的路径",
+    "url": "https://leetcode.cn/problems/path-with-maximum-probability/",
+    "fetchedAt": "2026-09-27T03:40:02.557998+00:00",
+    "sourceSha256": "50f9dc40f1e5abed89ea425c7af5aeb823ca74d0e9e10eb359387e3a23b46333",
+    "markdownSha256": "b067a8ec68455787d5ac80f16853e8fe749e09d74288203600937e1b7067f443",
+    "imagePaths": [
+      "/leetcode-assets/dbeb90bcc4b214b5021a86ac.png",
+      "/leetcode-assets/8e5edce99c79e5f8d1a18d78.png",
+      "/leetcode-assets/70ae197c63302609b73a1ee3.png"
+    ]
+  },
+  {
+    "number": 1547,
+    "contentId": "0b62ed9ece83",
+    "title": "切棍子的最小成本",
+    "url": "https://leetcode.cn/problems/minimum-cost-to-cut-a-stick/",
+    "fetchedAt": "2026-09-27T03:39:56.719065+00:00",
+    "sourceSha256": "59c5e64ed0daec46ea5fc28326ddc8d286cbd1bc4aa16dcd5608f14f3d985ef8",
+    "markdownSha256": "f17d4216578bf40b19f73b650a16961e50ddd5c51f03a19d8f907a1aeebc41f6",
+    "imagePaths": [
+      "/leetcode-assets/f516f2f07e1629ea4fa94f08.jpg",
+      "/leetcode-assets/bfec276ea2597931e15545b6.jpg",
+      "/leetcode-assets/f2ce9b7fd5af41538c562990.jpg"
+    ]
+  },
+  {
+    "number": 1557,
+    "contentId": "68c5e32357e6",
+    "title": "可以到达所有点的最少点数目",
+    "url": "https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/",
+    "fetchedAt": "2026-09-27T03:40:01.544104+00:00",
+    "sourceSha256": "b7c3dbf4cc35479720f196e83e4bf0e19637b6f45486855acb0fc95c802c0779",
+    "markdownSha256": "a3c368bce42734f37185546f506bccf1d952075cec4c0adb1faf853d1901015b",
+    "imagePaths": [
+      "/leetcode-assets/b32bf8f85c358457c246c1cc.png",
+      "/leetcode-assets/8ff96c7e03e9c7ae68235880.png"
+    ]
+  },
+  {
+    "number": 1579,
+    "contentId": "8e4d9d3fe897",
+    "title": "保证图可完全遍历",
+    "url": "https://leetcode.cn/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/",
+    "fetchedAt": "2026-09-27T03:40:01.297625+00:00",
+    "sourceSha256": "cdba3bd967a833fb30c99ab69c85673f099d41579045c8f47bf37ea7ad9ee086",
+    "markdownSha256": "a5383a95196e4c939cb9e16052c55f9b01f6a74778c6e053195259680ab18e94",
+    "imagePaths": [
+      "/leetcode-assets/44a039b842c5a56938900e05.png",
+      "/leetcode-assets/c45cad094011e9bb8413ed3e.png",
+      "/leetcode-assets/311545019498f8c11ce755ab.png"
+    ]
+  },
+  {
+    "number": 1584,
+    "contentId": "8de9e8e2ab69",
+    "title": "连接所有点的最小费用",
+    "url": "https://leetcode.cn/problems/min-cost-to-connect-all-points/",
+    "fetchedAt": "2026-09-27T03:40:01.094609+00:00",
+    "sourceSha256": "acedf8f2e50cf6b7750e0104798fbdf88538f449654785485628c55e906d38b3",
+    "markdownSha256": "abd00e32b37f439ca5a8396d501aee3dff470ad102577e7631ea9a52efb454f1",
+    "imagePaths": [
+      "/leetcode-assets/3bf48285d64ebe060efcde44.png",
+      "/leetcode-assets/85366fbc12f764d3545d9abb.png"
+    ]
+  },
+  {
+    "number": 1585,
+    "contentId": "993a4404d97a",
+    "title": "检查字符串是否可以通过排序子字符串得到另一个字符串",
+    "url": "https://leetcode.cn/problems/check-if-string-is-transformable-with-substring-sort-operations/",
+    "fetchedAt": "2026-09-27T03:39:44.849298+00:00",
+    "sourceSha256": "0e38cf6378313e66a7ba7b3bf910c5f18ed6b5af888702e887544ece16f009e8",
+    "markdownSha256": "c2f1bba8e3af1168941499ccfe3d6ca2bf1637e9174b1a46d56cc80f82b3aace",
+    "imagePaths": []
+  },
+  {
+    "number": 1589,
+    "contentId": "0a2bf93624ec",
+    "title": "所有排列中的最大和",
+    "url": "https://leetcode.cn/problems/maximum-sum-obtained-of-any-permutation/",
+    "fetchedAt": "2026-09-27T03:39:49.097919+00:00",
+    "sourceSha256": "e9cc14011c81f79ade39f9a1e33caf9948e99fed0249185a4a5756aa99603487",
+    "markdownSha256": "90f335dda5c66e81dfe1c9c78e5b637e809042e9defe315cf9895740aa8c5d85",
+    "imagePaths": []
+  },
+  {
+    "number": 1594,
+    "contentId": "e6405189875d",
+    "title": "矩阵的最大非负积",
+    "url": "https://leetcode.cn/problems/maximum-non-negative-product-in-a-matrix/",
+    "fetchedAt": "2026-09-27T03:39:51.542357+00:00",
+    "sourceSha256": "a9f7a4eee684cd13a79abd55acc4ffb91ab9b934cf03150ebc5906834cd967d4",
+    "markdownSha256": "68b20598ed1e93c240a777fa5df6a459a28a5bb14ac8eb6f9607bf8f78081b7e",
+    "imagePaths": [
+      "/leetcode-assets/aa4b362e6bb7e94b72c9df3b.jpg",
+      "/leetcode-assets/710fdf5b96c654be5c1de1ff.jpg",
+      "/leetcode-assets/f0debe4baac28c9b13f12f83.jpg"
+    ]
+  },
+  {
+    "number": 1615,
+    "contentId": "82e3a484b15e",
+    "title": "最大网络秩",
+    "url": "https://leetcode.cn/problems/maximal-network-rank/",
+    "fetchedAt": "2026-09-27T03:39:59.921704+00:00",
+    "sourceSha256": "10a9bef919bab012785ed6d196c0e7c14e4cefbb1f558a8253d70f04e28444da",
+    "markdownSha256": "eb6d4f8925077a6a78f5be0c3f4198680ab2307e2f8525c4bebd7db9a1efc55e",
+    "imagePaths": [
+      "/leetcode-assets/6d7c32795cb48b1082e1b0d9.png",
+      "/leetcode-assets/bdd577c0cf497c0dbed312ef.png"
+    ]
+  },
+  {
+    "number": 1626,
+    "contentId": "b2f7f43cb64a",
+    "title": "无矛盾的最佳球队",
+    "url": "https://leetcode.cn/problems/best-team-with-no-conflicts/",
+    "fetchedAt": "2026-09-27T03:39:54.076969+00:00",
+    "sourceSha256": "b4d5b877bb9f1f9ac7169749ddd6f54cf1fd757df3a4d2a352247b80ca3014f2",
+    "markdownSha256": "fba5f63af2c90ce31ac08dd709ccab901a6145940c32cac9adaa1bb2c70a076e",
+    "imagePaths": []
+  },
+  {
+    "number": 1636,
+    "contentId": "187c40ca21b0",
+    "title": "按照频率将数组升序排序",
+    "url": "https://leetcode.cn/problems/sort-array-by-increasing-frequency/",
+    "fetchedAt": "2026-09-27T03:39:42.920317+00:00",
+    "sourceSha256": "b0f8150e2057de838f7dd0ab6007fde33414f2ce312611e7e3bd39587e3eb2e5",
+    "markdownSha256": "508608b6236c868cd6aa44d49ce83c79be94af9b15124286abbe69031b642080",
+    "imagePaths": []
+  },
+  {
+    "number": 1637,
+    "contentId": "b2213c303758",
+    "title": "两点之间不包含任何点的最宽垂直区域",
+    "url": "https://leetcode.cn/problems/widest-vertical-area-between-two-points-containing-no-points/",
+    "fetchedAt": "2026-09-27T03:39:48.564096+00:00",
+    "sourceSha256": "dcad4e46bdf24bbc09a29b0f15cb6b54877800441bd30a58c2e4acad8804e54f",
+    "markdownSha256": "65764cf0726cefa2b695b558f49cacf410c55f8607c29794c840bf2dae96cc70",
+    "imagePaths": [
+      "/leetcode-assets/6cdf79fb4cc93046db8a2dc1.png"
+    ]
+  },
+  {
+    "number": 1657,
+    "contentId": "814e5e827a8c",
+    "title": "确定两个字符串是否接近",
+    "url": "https://leetcode.cn/problems/determine-if-two-strings-are-close/",
+    "fetchedAt": "2026-09-27T03:39:43.272379+00:00",
+    "sourceSha256": "aad1a9413ddc593a9bc68aa95a92c069f06ba55d32723be2b767e5d53dbe3964",
+    "markdownSha256": "4374c18b8eb2b8a71e002c97a010f114679236eda7fa98302639a2b2ba2e1322",
+    "imagePaths": []
+  },
+  {
+    "number": 1697,
+    "contentId": "bdc8b2bbd4b6",
+    "title": "检查边长度限制的路径是否存在",
+    "url": "https://leetcode.cn/problems/checking-existence-of-edge-length-limited-paths/",
+    "fetchedAt": "2026-09-27T03:39:49.360425+00:00",
+    "sourceSha256": "dac2907648953ef23106df5e19939bba2c2d9306cf547924e5a22b09be6ebfd0",
+    "markdownSha256": "2f0a81baec83d55fb7f21af476af552c060a91b0a8d0a4b4e3129edb4924d72d",
+    "imagePaths": [
+      "/leetcode-assets/9e2500ccab72179c2fb8746f.png",
+      "/leetcode-assets/3face19a59110f6fcd3c3e0e.png"
+    ]
+  },
+  {
+    "number": 1745,
+    "contentId": "ffc2948430f8",
+    "title": "分割回文串 IV",
+    "url": "https://leetcode.cn/problems/palindrome-partitioning-iv/",
+    "fetchedAt": "2026-09-27T03:39:56.056516+00:00",
+    "sourceSha256": "92ede9398aff4bb4009663b75f929af50b0e0480a4964217c4272bf74a6163c8",
+    "markdownSha256": "3cb430461326eb6351f8642b41026b8b1d235172cf2872ce2c6d025039386388",
+    "imagePaths": []
+  },
+  {
+    "number": 1761,
+    "contentId": "6457a42643ce",
+    "title": "一个图中连通三元组的最小度数",
+    "url": "https://leetcode.cn/problems/minimum-degree-of-a-connected-trio-in-a-graph/",
+    "fetchedAt": "2026-09-27T03:39:59.929940+00:00",
+    "sourceSha256": "4f519e7c15732f3930cec3991a2ac4b4df7c0428094499f19ad7db3b7dd5f3e6",
+    "markdownSha256": "fdf65b6f55a47517895470be20670c06b255b2c7cd86ff4c38a3c408509b860a",
+    "imagePaths": [
+      "/leetcode-assets/f12c264e339f935ab7965f2f.png",
+      "/leetcode-assets/943a2a921872a23956cbc09b.png"
+    ]
+  },
+  {
+    "number": 1771,
+    "contentId": "6770ed2838bf",
+    "title": "由子序列构造的最长回文串的长度",
+    "url": "https://leetcode.cn/problems/maximize-palindrome-length-from-subsequences/",
+    "fetchedAt": "2026-09-27T03:39:56.046281+00:00",
+    "sourceSha256": "2f6b9c01c55985c71491556139567ffbcfa7ac258d3b4c47166744e75334bd8e",
+    "markdownSha256": "6da0ef07d640f2795c2fe589b39e62ea0ec721d158d00d73bb0a37fdf1d169a4",
+    "imagePaths": []
+  },
+  {
+    "number": 1786,
+    "contentId": "cb7bf08620f1",
+    "title": "从第一个节点出发到最后一个节点的受限路径数",
+    "url": "https://leetcode.cn/problems/number-of-restricted-paths-from-first-to-last-node/",
+    "fetchedAt": "2026-09-27T03:40:02.591120+00:00",
+    "sourceSha256": "d6634979eeb4d7dffc520ce7a721755dfb53030695f921bdac0e575e7ebccc89",
+    "markdownSha256": "a09ebc012fa15eb444ad81f3cd277f0c8fb4235c873c5c6248565fc612cb75f1",
+    "imagePaths": [
+      "/leetcode-assets/45baa368c95a33006a74a34e.png",
+      "/leetcode-assets/55a67769e6a059589ccc574e.png"
+    ]
+  },
+  {
+    "number": 1791,
+    "contentId": "a74bcc90b837",
+    "title": "找出星型图的中心节点",
+    "url": "https://leetcode.cn/problems/find-center-of-star-graph/",
+    "fetchedAt": "2026-09-27T03:39:59.210459+00:00",
+    "sourceSha256": "2c928b8e4898b16647b62a1beaa646798cf00d3b6653fab5e715caa7a737bd67",
+    "markdownSha256": "707406b41c5ccff2e280342132dc29b8ee46e54103b4c4096ae97c4d1e4cbd45",
+    "imagePaths": [
+      "/leetcode-assets/5158241583ac62baa00c8c8b.png"
+    ]
+  },
+  {
+    "number": 1818,
+    "contentId": "9527a9ec12f2",
+    "title": "绝对差值和",
+    "url": "https://leetcode.cn/problems/minimum-absolute-sum-difference/",
+    "fetchedAt": "2026-09-27T03:39:45.342785+00:00",
+    "sourceSha256": "a1f247c67f90f89fc29669e2aa0fc288eca8782191276543f9f8d346c292cb79",
+    "markdownSha256": "d4a7801974045af6a54cc4daf72f06db0b3093d15c5018ad563437917822ce92",
+    "imagePaths": []
+  },
+  {
+    "number": 1834,
+    "contentId": "47d1a821d8f1",
+    "title": "单线程 CPU",
+    "url": "https://leetcode.cn/problems/single-threaded-cpu/",
+    "fetchedAt": "2026-09-27T03:39:46.898623+00:00",
+    "sourceSha256": "e2eed83266e3fff5a01725f9534c8ea278a82f32761f7cc58b904dada7e56c0b",
+    "markdownSha256": "94db770dd348ab0575ca55aab9437d352ea7c0088b8eae61481f060bbbbb40a5",
+    "imagePaths": []
+  },
+  {
+    "number": 1851,
+    "contentId": "5fe9f2abc67b",
+    "title": "包含每个查询的最小区间",
+    "url": "https://leetcode.cn/problems/minimum-interval-to-include-each-query/",
+    "fetchedAt": "2026-09-27T03:39:47.424241+00:00",
+    "sourceSha256": "23ec4b06a12c4f178879a101a3aa9fc4a20ef3266d250b4126932b5f6f18d39e",
+    "markdownSha256": "a4347a6a5b82acefd3438458642c941e23e87eddaafca899614caaed44c7783f",
+    "imagePaths": []
+  },
+  {
+    "number": 1887,
+    "contentId": "f8e6d2a708fd",
+    "title": "使数组元素相等的减少操作次数",
+    "url": "https://leetcode.cn/problems/reduction-operations-to-make-the-array-elements-equal/",
+    "fetchedAt": "2026-09-27T03:39:48.062439+00:00",
+    "sourceSha256": "98d032f9395cb72945ad09d9872b092d70a330bb7d72df41e20e079ee6bbff79",
+    "markdownSha256": "99d380384c7924c5fdb888b49c6125d50d3827579b58c60351f3337c91757e62",
+    "imagePaths": []
+  },
+  {
+    "number": 1943,
+    "contentId": "c71599e0b68d",
+    "title": "描述绘画结果",
+    "url": "https://leetcode.cn/problems/describe-the-painting/",
+    "fetchedAt": "2026-09-27T03:39:49.058645+00:00",
+    "sourceSha256": "d915a7cad6c709a5099f00ca4c210c225ff87f7d86cb57e45ad714505a4738b7",
+    "markdownSha256": "17de29be0f31bd731e7ea1cf91a009a25ceb5b9ac48cbc0aba123a7ee973f175",
+    "imagePaths": [
+      "/leetcode-assets/0b24229d248fa2b639217af0.png",
+      "/leetcode-assets/b33c802daefe554c56d3eb7b.png",
+      "/leetcode-assets/fb6c28e463636f2f59371171.png"
+    ]
+  },
+  {
+    "number": 1971,
+    "contentId": "e92ea26f4eac",
+    "title": "寻找图中是否存在路径",
+    "url": "https://leetcode.cn/problems/find-if-path-exists-in-graph/",
+    "fetchedAt": "2026-09-27T03:39:59.318512+00:00",
+    "sourceSha256": "f7439e38a2b58bb04611d1c8ff8c5c2f7f4c6054066a80cc11fe13d6dc8cf6a4",
+    "markdownSha256": "e817576433d0442809cb519a505b410e22d29d713ec947fcb03490dbd1b8991a",
+    "imagePaths": [
+      "/leetcode-assets/f2c57e4c38dcaec2d7116cd8.png",
+      "/leetcode-assets/7cb80c3afe447bef97c37c3c.png"
+    ]
+  },
+  {
+    "number": 1976,
+    "contentId": "7fee8396e502",
+    "title": "到达目的地的方案数",
+    "url": "https://leetcode.cn/problems/number-of-ways-to-arrive-at-destination/",
+    "fetchedAt": "2026-09-27T03:40:02.600450+00:00",
+    "sourceSha256": "97ee8225e35221ae9cc77f58f3312785661b8ed040696eb6a5d4e27e6e081344",
+    "markdownSha256": "aa88c12db327ff3aa30969158814cc00f8e4b857a117d83820e3536fe0c672e1",
+    "imagePaths": [
+      "/leetcode-assets/b2d39c4613e63d3a312c62a3.png"
+    ]
+  },
+  {
+    "number": 1985,
+    "contentId": "16367a31dd34",
+    "title": "找出数组中的第 K 大整数",
+    "url": "https://leetcode.cn/problems/find-the-kth-largest-integer-in-the-array/",
+    "fetchedAt": "2026-09-27T03:39:46.063917+00:00",
+    "sourceSha256": "d59adeb861e3640fda4f51c2c34e63a07ac39301d47fb150287af3a5db348985",
+    "markdownSha256": "c29afe85ccdef309a5614b4d1b8268726741d3d25032b3ab5c03a7dcd4da933e",
+    "imagePaths": []
+  },
+  {
+    "number": 2007,
+    "contentId": "ae60b504720f",
+    "title": "从双倍数组中还原原数组",
+    "url": "https://leetcode.cn/problems/find-original-array-from-doubled-array/",
+    "fetchedAt": "2026-09-27T03:39:44.333206+00:00",
+    "sourceSha256": "c7ea265acb715750d2356619a4c2119f850cc3b275485a7d5c3c47f93c6a4114",
+    "markdownSha256": "8cda8b40455e926a138621ff6b530346e3dfaecc68d43ee646cbcd228e76d70d",
+    "imagePaths": []
+  },
+  {
+    "number": 2050,
+    "contentId": "e6af9c948c36",
+    "title": "并行课程 III",
+    "url": "https://leetcode.cn/problems/parallel-courses-iii/",
+    "fetchedAt": "2026-09-27T03:40:02.109870+00:00",
+    "sourceSha256": "c401ff46d5cf1cdd0a17514be57d141667572ba73918c2dba003b65a55d80b1b",
+    "markdownSha256": "22d2172dc0d77511272971340ee69802a9ab55d0ef93d34fdcdde8dad503a9a1",
+    "imagePaths": [
+      "/leetcode-assets/7e9b4234b84aea3e5f56a99d.png",
+      "/leetcode-assets/7dc2bb364a04c9bc917b733a.png"
+    ]
+  },
+  {
+    "number": 2094,
+    "contentId": "98abb06e644f",
+    "title": "找出 3 位偶数",
+    "url": "https://leetcode.cn/problems/finding-3-digit-even-numbers/",
+    "fetchedAt": "2026-09-27T03:39:42.701103+00:00",
+    "sourceSha256": "fdcd450f4711a548578f1d5294dcbbb9f91512950a8697af9a151ecd8fd72b6c",
+    "markdownSha256": "f90e2ee8a10eb3a579f7acd892a30fda0632ced1b40e3f60a2e1354146304cc4",
+    "imagePaths": []
+  },
+  {
+    "number": 2097,
+    "contentId": "125241dbbaee",
+    "title": "合法重新排列数对",
+    "url": "https://leetcode.cn/problems/valid-arrangement-of-pairs/",
+    "fetchedAt": "2026-09-27T03:40:02.829363+00:00",
+    "sourceSha256": "9f45942ad146a980adc9066498f998aacaea1964711de56adac260b81ff069ba",
+    "markdownSha256": "312b4630cc7436417f3b04e201e56d17d8966dd0c4b498404e9ef5548ab79785",
+    "imagePaths": []
+  },
+  {
+    "number": 2101,
+    "contentId": "c4ba93fb2f05",
+    "title": "引爆最多的炸弹",
+    "url": "https://leetcode.cn/problems/detonate-the-maximum-bombs/",
+    "fetchedAt": "2026-09-27T03:40:00.571443+00:00",
+    "sourceSha256": "fe8a97de53eff20935ef8eff68fd69f42b2dc6dbb7e282fe9a740b132ce3422f",
+    "markdownSha256": "fa04a18b9d4ae887cfbcfbfe2a164381f88b0fd945e6612f5de77d029e714a15",
+    "imagePaths": [
+      "/leetcode-assets/ad22a67af7cdb2890e34a2fe.png",
+      "/leetcode-assets/44b3ff4014a335ed3f61e618.png",
+      "/leetcode-assets/03bbc20475a5f6c174b4cbac.png"
+    ]
+  },
+  {
+    "number": 2115,
+    "contentId": "2baef4ea2518",
+    "title": "从给定原材料中找到所有可以做出的菜",
+    "url": "https://leetcode.cn/problems/find-all-possible-recipes-from-given-supplies/",
+    "fetchedAt": "2026-09-27T03:40:01.892349+00:00",
+    "sourceSha256": "b6275b045fa437cd9e08c6300f635a9324999c829959eb08e3a22de32a547e33",
+    "markdownSha256": "bacf4edb1cb1c42f5c6060fd57d75c728755e5e2d04f17168b7241bda44d30fd",
+    "imagePaths": []
+  },
+  {
+    "number": 2165,
+    "contentId": "5a58b9117e63",
+    "title": "重排数字的最小值",
+    "url": "https://leetcode.cn/problems/smallest-value-of-the-rearranged-number/",
+    "fetchedAt": "2026-09-27T03:39:43.811121+00:00",
+    "sourceSha256": "2c4a6db5b7426beb0d492d987081549bd02457dccd67b2d659653f7a4f39e5c2",
+    "markdownSha256": "599970167e7a80a2c2655ff62755d185533f0adea2396aeacff564d99c9ea6eb",
+    "imagePaths": []
+  },
+  {
+    "number": 2191,
+    "contentId": "5ff4e9b33e5c",
+    "title": "将杂乱无章的数字排序",
+    "url": "https://leetcode.cn/problems/sort-the-jumbled-numbers/",
+    "fetchedAt": "2026-09-27T03:39:43.644412+00:00",
+    "sourceSha256": "270b5345b986f6bfcdf9b100691a1d41c666ece726e4e9603b0e26f3429e1e35",
+    "markdownSha256": "824e4caf6a13aac1a2699f584143dc6d8e283c36ce1c153c89a069bf18e8a2b3",
+    "imagePaths": []
+  },
+  {
+    "number": 2192,
+    "contentId": "aa40b95ee90b",
+    "title": "有向无环图中一个节点的所有祖先",
+    "url": "https://leetcode.cn/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/",
+    "fetchedAt": "2026-09-27T03:40:01.809809+00:00",
+    "sourceSha256": "b58f0ea7e88e32ceb4dd716d28ebe615dd7b9b621f2aba7e99ca7a1ea2f21e26",
+    "markdownSha256": "b51f4498f78d0250225adfe48c97303c27846e1f6bad8ce9e930321b49d1deb4",
+    "imagePaths": [
+      "/leetcode-assets/4c4da003fb6b157ddea3cce1.png",
+      "/leetcode-assets/d46f0ca2aadcfadcd669b1b5.png"
+    ]
+  },
+  {
+    "number": 2251,
+    "contentId": "f65e6c46d923",
+    "title": "花期内花的数目",
+    "url": "https://leetcode.cn/problems/number-of-flowers-in-full-bloom/",
+    "fetchedAt": "2026-09-27T03:39:49.328214+00:00",
+    "sourceSha256": "df5f406444b983ee8866c4e609f614d50580c19ff089c57c6c2906fec2878553",
+    "markdownSha256": "cb388d28ed68e10fcff37b206027688d61bcd82877200930d81ab880e7f056de",
+    "imagePaths": [
+      "/leetcode-assets/691181d0b521b049f3f74c2f.jpg",
+      "/leetcode-assets/d01ace54d7dcf9823bb36086.jpg"
+    ]
+  },
+  {
+    "number": 2280,
+    "contentId": "0b25bdf018ef",
+    "title": "表示一个折线图的最少线段数",
+    "url": "https://leetcode.cn/problems/minimum-lines-to-represent-a-line-chart/",
+    "fetchedAt": "2026-09-27T03:39:48.822975+00:00",
+    "sourceSha256": "d5af0dd966d512712c8f22f5bc8468d14738ef978e734bad8f9d035066a52b67",
+    "markdownSha256": "038dea2ad7b128670fbf7dcb7cd5ea58dc661b9a80fe2c379412ef747b8a83cc",
+    "imagePaths": [
+      "/leetcode-assets/d38d09c0bc99c6c29509d679.png",
+      "/leetcode-assets/87d1d3917d1d8c2b2505b77e.png",
+      "/leetcode-assets/5922c171173d342251d9dc6c.png"
+    ]
+  },
+  {
+    "number": 2300,
+    "contentId": "75153349c4d1",
+    "title": "咒语和药水的成功对数",
+    "url": "https://leetcode.cn/problems/successful-pairs-of-spells-and-potions/",
+    "fetchedAt": "2026-09-27T03:39:45.334613+00:00",
+    "sourceSha256": "e539a83b28bbbe485ec6d9800d14ea535061241323e08063fee66c3d72fa1e55",
+    "markdownSha256": "4144ff21c9e7243acc765ec28831e5bc02bfef40bc05b31ca5adc3786ffd47e5",
+    "imagePaths": []
+  },
+  {
+    "number": 2316,
+    "contentId": "8026d01f9e9e",
+    "title": "统计无向图中无法互相到达点对数",
+    "url": "https://leetcode.cn/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/",
+    "fetchedAt": "2026-09-27T03:39:59.655206+00:00",
+    "sourceSha256": "289ad08b255f68d353eb6d86172fa5cd59ac667f037849c688811e43678feed6",
+    "markdownSha256": "9035e9fa77ceb996a787b4cc902b69aeb2dd8a661e0851e16fcf7faf028f0574",
+    "imagePaths": [
+      "/leetcode-assets/92070fb38721fa0e97dd1987.png",
+      "/leetcode-assets/8b6875c82d54df2669b0bd15.png"
+    ]
+  },
+  {
+    "number": 2328,
+    "contentId": "8d7ca3b9e350",
+    "title": "网格图中递增路径的数目",
+    "url": "https://leetcode.cn/problems/number-of-increasing-paths-in-a-grid/",
+    "fetchedAt": "2026-09-27T03:40:02.076331+00:00",
+    "sourceSha256": "7cbe5d521e2989c996329ebf2d2401e472156f4f321672ad62353e4a72eb5851",
+    "markdownSha256": "4400501b058a28c4c7be9795e0a008ca9a3a394d398c0d293f5c594cbc450838",
+    "imagePaths": [
+      "/leetcode-assets/0b40efd71e53de5965577cd2.png"
+    ]
+  },
+  {
+    "number": 2343,
+    "contentId": "93706d68d483",
+    "title": "裁剪数字后查询第 K 小的数字",
+    "url": "https://leetcode.cn/problems/query-kth-smallest-trimmed-number/",
+    "fetchedAt": "2026-09-27T03:39:43.624593+00:00",
+    "sourceSha256": "0836ec857cd72884b1772c154711b23e46dcb0a8e1e5435d1beec3b4d30ec433",
+    "markdownSha256": "380db1c133481076e6a565bbb860c86084aed780f039e7ba728df565067d4a54",
+    "imagePaths": []
+  },
+  {
+    "number": 2359,
+    "contentId": "d8e2a46c7c2e",
+    "title": "找到离给定两个节点最近的节点",
+    "url": "https://leetcode.cn/problems/find-closest-node-to-given-two-nodes/",
+    "fetchedAt": "2026-09-27T03:40:03.086255+00:00",
+    "sourceSha256": "f0e8e4289c3016ba42a5b474275537380203f668feb6498064f2433a3bb16973",
+    "markdownSha256": "aea68df30c15336a1b20426b9622b7a6b328294e0016b0b7201cb290dfb59fb9",
+    "imagePaths": [
+      "/leetcode-assets/2853c359d5de555113e3f1d2.png",
+      "/leetcode-assets/9a8f379c5b0cd23653265442.png"
+    ]
+  },
+  {
+    "number": 2360,
+    "contentId": "647fd34537cd",
+    "title": "图中的最长环",
+    "url": "https://leetcode.cn/problems/longest-cycle-in-a-graph/",
+    "fetchedAt": "2026-09-27T03:40:03.106450+00:00",
+    "sourceSha256": "0218d110ab54a1eddcc155356daa906b49ec4f2033bab1b01d9df73d87d70c4c",
+    "markdownSha256": "86f48cd5320cfe14461f151c02c4eb13ea32f28e72113c890f79eeeda68ff711",
+    "imagePaths": [
+      "/leetcode-assets/394db7105e5d228a020e53ca.png",
+      "/leetcode-assets/8ca294b7febaebffca1067fc.png"
+    ]
+  },
+  {
+    "number": 2363,
+    "contentId": "249dd1931460",
+    "title": "合并相似的物品",
+    "url": "https://leetcode.cn/problems/merge-similar-items/",
+    "fetchedAt": "2026-09-27T03:39:47.903022+00:00",
+    "sourceSha256": "d02313f1c5f0776f44e4f927fc45134ebc65e1bf8cd0d4a7b1d735ec66f76d37",
+    "markdownSha256": "f8043b5b6fe1a544811ff2b925d4a2a9b75dffe532d5169429df81f4bd060d0d",
+    "imagePaths": []
+  },
+  {
+    "number": 2368,
+    "contentId": "89241df92000",
+    "title": "受限条件下可到达节点的数目",
+    "url": "https://leetcode.cn/problems/reachable-nodes-with-restrictions/",
+    "fetchedAt": "2026-09-27T03:39:59.954741+00:00",
+    "sourceSha256": "59f5796bf4930623146bf74d00e009d074b9d4ff57d5077f7c50f51e6db69b65",
+    "markdownSha256": "26f51c88273eb333060e2afe4ee7a15808d84b7072ca339256cf1d3a1417eb6f",
+    "imagePaths": [
+      "/leetcode-assets/70570b46ba5b3e31555fc1ac.png",
+      "/leetcode-assets/4137199dd65fd12789ccef27.png"
+    ]
+  },
+  {
+    "number": 2374,
+    "contentId": "5f0c52bec5bb",
+    "title": "边积分最高的节点",
+    "url": "https://leetcode.cn/problems/node-with-highest-edge-score/",
+    "fetchedAt": "2026-09-27T03:39:59.350679+00:00",
+    "sourceSha256": "312e7df3a3d9adb901b9b0f08c63c0f6a44dc4f3f0c5af771324a83ca7f082d2",
+    "markdownSha256": "b07032251b743aa31ba60fbf3e0746c0fe4a5777be4f6bb43ff3b7d0ae567fed",
+    "imagePaths": [
+      "/leetcode-assets/afdb047fdbfade94c34075b4.png",
+      "/leetcode-assets/8edbc9ff48d76cda7d94011e.png"
+    ]
+  },
+  {
+    "number": 2386,
+    "contentId": "ad21f5eee10b",
+    "title": "找出数组的第 K 大和",
+    "url": "https://leetcode.cn/problems/find-the-k-sum-of-an-array/",
+    "fetchedAt": "2026-09-27T03:39:47.741598+00:00",
+    "sourceSha256": "c937d45bd4a1ea3a17c652e74a174376fa5df90d86d9f332031cac9327baec90",
+    "markdownSha256": "2c131742b107bee81cc4cba8c73dcbd07ca464023c89f86c0b7faa9f5b9f6d7a",
+    "imagePaths": []
+  },
+  {
+    "number": 2392,
+    "contentId": "63cfa422ef6d",
+    "title": "给定条件下构造矩阵",
+    "url": "https://leetcode.cn/problems/build-a-matrix-with-conditions/",
+    "fetchedAt": "2026-09-27T03:40:02.010077+00:00",
+    "sourceSha256": "d668e0db60e7967b0cfc405cf18db2fbaa9872042987ff94026e39f3bf5a863f",
+    "markdownSha256": "e0605b5853c146ce4997439b6ab94b0e75b27bbf65470094cf3a05c6abc80822",
+    "imagePaths": [
+      "/leetcode-assets/9d772306d57f811fda18e066.png"
+    ]
+  },
+  {
+    "number": 2402,
+    "contentId": "8eeca9a0008e",
+    "title": "会议室 III",
+    "url": "https://leetcode.cn/problems/meeting-rooms-iii/",
+    "fetchedAt": "2026-09-27T03:39:47.435031+00:00",
+    "sourceSha256": "0bd063b0e4cf453d61353557f0f3f619338b3c01793c111cd89a94a898886ddd",
+    "markdownSha256": "765012e41cbe1f9e14b64c444b0b4a75dc48cc3d9dc8a77163090fe4e870a46d",
+    "imagePaths": []
+  },
+  {
+    "number": 2503,
+    "contentId": "a6da024d5dfc",
+    "title": "矩阵查询可获得的最大分数",
+    "url": "https://leetcode.cn/problems/maximum-number-of-points-from-grid-queries/",
+    "fetchedAt": "2026-09-27T03:39:47.623437+00:00",
+    "sourceSha256": "a7ffb6ac36356a9b28e3780cb6314366729124284bc7a3035593528a330e1d9b",
+    "markdownSha256": "2d3abb11ed7953937c1a6bf441028c41675122c048a6901da93ee6e9aefc4e32",
+    "imagePaths": [
+      "/leetcode-assets/3b169dc00421a3dd35fb2c7b.png",
+      "/leetcode-assets/a5cbad6c3e8fb5e3b546ea16.png"
+    ]
+  },
+  {
+    "number": 2508,
+    "contentId": "24fd5480d09b",
+    "title": "添加边使所有节点度数都为偶数",
+    "url": "https://leetcode.cn/problems/add-edges-to-make-degrees-of-all-nodes-even/",
+    "fetchedAt": "2026-09-27T03:40:02.826959+00:00",
+    "sourceSha256": "470f841097944ac5408779d50ddac956931a7f1e387564f87375e6361d7fae10",
+    "markdownSha256": "1584daaa48c92f92e113fa978ab56af91ff7d413bc454ff59925176897c2bca0",
+    "imagePaths": [
+      "/leetcode-assets/3337ae6a3b5fc0e98282976a.png",
+      "/leetcode-assets/99c65a7416651add540d5222.png",
+      "/leetcode-assets/34a0ea6aac25ae48df087ff6.png"
+    ]
+  },
+  {
+    "number": 2542,
+    "contentId": "42eadd75c7c6",
+    "title": "最大子序列的分数",
+    "url": "https://leetcode.cn/problems/maximum-subsequence-score/",
+    "fetchedAt": "2026-09-27T03:39:47.091575+00:00",
+    "sourceSha256": "e2ed348ccaa7d61cd385d297b2f7e4513d0ec94350e9a12011f758367d39a4e8",
+    "markdownSha256": "fdc31c20ec1d94f9ac70c3476e8ae2f0b57b642379f9efe32ce875dcf0fc7792",
+    "imagePaths": []
+  },
+  {
+    "number": 2563,
+    "contentId": "3618469d8976",
+    "title": "统计公平数对的数目",
+    "url": "https://leetcode.cn/problems/count-the-number-of-fair-pairs/",
+    "fetchedAt": "2026-09-27T03:39:45.570918+00:00",
+    "sourceSha256": "7ade9714d96eb65e907f7f92347d39272b9bd478ce243524c615ecf415740e1c",
+    "markdownSha256": "195cc3a1687713e2a19817ccf5266ea0fe81df22fdc52e7350b90a147bf8af55",
+    "imagePaths": []
+  },
+  {
+    "number": 2602,
+    "contentId": "e080b63e460f",
+    "title": "使数组元素全部相等的最少操作次数",
+    "url": "https://leetcode.cn/problems/minimum-operations-to-make-all-array-elements-equal/",
+    "fetchedAt": "2026-09-27T03:39:45.521456+00:00",
+    "sourceSha256": "2b1c5a2d89f14860df20f3c4e68c8d0148891d286c7e23840e394733e6c280c2",
+    "markdownSha256": "e93badd474d6d5163107cbc9173b9641e2068b63613590e7d7f042acfb8f8e02",
+    "imagePaths": []
+  },
+  {
+    "number": 2608,
+    "contentId": "f1a3e6fa93cf",
+    "title": "图中的最短环",
+    "url": "https://leetcode.cn/problems/shortest-cycle-in-a-graph/",
+    "fetchedAt": "2026-09-27T03:40:03.340345+00:00",
+    "sourceSha256": "656239fd8373c1d9ecbbe033f7ba0f2071e4d3ac4f9320298d0814799a99da1d",
+    "markdownSha256": "87b4c6ad0cbdf2e58f7f668f112ebde01cf0db307268974b769a2c3871648fee",
+    "imagePaths": [
+      "/leetcode-assets/93a556cafd5c0abfc4ef6fcb.png",
+      "/leetcode-assets/b62ed430845aaeb9b78f7e77.png"
+    ]
+  },
+  {
+    "number": 2616,
+    "contentId": "b7523d368610",
+    "title": "最小化数对的最大差值",
+    "url": "https://leetcode.cn/problems/minimize-the-maximum-difference-of-pairs/",
+    "fetchedAt": "2026-09-27T03:39:45.823588+00:00",
+    "sourceSha256": "aa181bd675c702aa85bcadd2e629604f1d7ccf99d8a5d9818d353c9850643d52",
+    "markdownSha256": "3f99db2ae5d74c190f927d7d4c81678b1818d86b946be9823914cc095c65b2d0",
+    "imagePaths": []
+  },
+  {
+    "number": 2659,
+    "contentId": "d5be6cbfe172",
+    "title": "将数组清空",
+    "url": "https://leetcode.cn/problems/make-array-empty/",
+    "fetchedAt": "2026-09-27T03:39:49.624875+00:00",
+    "sourceSha256": "827a5d7a69789f0dffe242265dc8b61e453b954d75792527ac94da74833aec5e",
+    "markdownSha256": "fc073be7b4438db56a5303fceb8ab1d7a0dc8bef34ae5edc2eb6565739860883",
+    "imagePaths": []
+  },
+  {
+    "number": 2685,
+    "contentId": "ae3e6d6ee824",
+    "title": "统计完全连通分量的数量",
+    "url": "https://leetcode.cn/problems/count-the-number-of-complete-components/",
+    "fetchedAt": "2026-09-27T03:39:59.699521+00:00",
+    "sourceSha256": "6880983f5f6bc6ffb232a7fbc2b5910b5dd5ce5d9242fbd511881aa2b50d2f13",
+    "markdownSha256": "bccfca236277901b0d00661a68915606f261359c244e3ed9aab364bc2af9f5c7",
+    "imagePaths": [
+      "/leetcode-assets/65ff500e800bee8925363d5d.png",
+      "/leetcode-assets/7969da4e50fa4d35bebeeffd.png"
+    ]
+  },
+  {
+    "number": 2736,
+    "contentId": "58ff114e2997",
+    "title": "最大和查询",
+    "url": "https://leetcode.cn/problems/maximum-sum-queries/",
+    "fetchedAt": "2026-09-27T03:39:49.606658+00:00",
+    "sourceSha256": "4d49dbd852d7033754b2f6d5098dde614efc7a41449101f743b5e0241932a970",
+    "markdownSha256": "3ca470e5f6961838182fe66748519c52c155ae710df223d2126971074809430d",
+    "imagePaths": []
+  },
+  {
+    "number": 2813,
+    "contentId": "a69b003afbf2",
+    "title": "子序列最大优雅度",
+    "url": "https://leetcode.cn/problems/maximum-elegance-of-a-k-length-subsequence/",
+    "fetchedAt": "2026-09-27T03:39:47.696869+00:00",
+    "sourceSha256": "d6faa22cd23342d89c5f066a4fa0b033309b530fce505edb6ef41c2d39107dff",
+    "markdownSha256": "1212c30352d6c6bb11ff2c7319efe076aa453b51ad918b5974fb7ef6ace4157f",
+    "imagePaths": []
+  },
+  {
+    "number": 2948,
+    "contentId": "d75f5d7d88bf",
+    "title": "交换得到字典序最小的数组",
+    "url": "https://leetcode.cn/problems/make-lexicographically-smallest-array-by-swapping-elements/",
+    "fetchedAt": "2026-09-27T03:39:44.617377+00:00",
+    "sourceSha256": "faac90022e4aa1ca1a57d1c6d2a8ededb0ee4f6419f174aea4896bf48b2b1c61",
+    "markdownSha256": "ab8897b1b9bc8c6884da47cc769b80b23b2ed3bcf1d6e6c27d7198b1bfca5af6",
+    "imagePaths": []
+  },
+  {
+    "number": 2971,
+    "contentId": "920913075b0b",
+    "title": "找到最大周长的多边形",
+    "url": "https://leetcode.cn/problems/find-polygon-with-the-largest-perimeter/",
+    "fetchedAt": "2026-09-27T03:39:45.810579+00:00",
+    "sourceSha256": "be671ebc372305a4d305adbfc0ec0b3c4cccad0704c914e35bbf9248aacf8e8d",
+    "markdownSha256": "e855eb14dc13e6e6650028ee381c45d16972486fe13f50b21849513104fab2cb",
+    "imagePaths": []
+  },
+  {
+    "number": 2976,
+    "contentId": "fd5dd252fc54",
+    "title": "转换字符串的最小成本 I",
+    "url": "https://leetcode.cn/problems/minimum-cost-to-convert-string-i/",
+    "fetchedAt": "2026-09-27T03:40:02.386866+00:00",
+    "sourceSha256": "c7c0a5036f128f68d88589976fc1e19c91ee674419a8c2b8b07080aec5af311a",
+    "markdownSha256": "6d0de616a049747b4981a7b2a573e95c2220babf33cddff85af827208a0248c2",
+    "imagePaths": []
+  },
+  {
+    "number": 3011,
+    "contentId": "8340544872f1",
+    "title": "判断一个数组是否可以变为有序",
+    "url": "https://leetcode.cn/problems/find-if-array-can-be-sorted/",
+    "fetchedAt": "2026-09-27T03:39:48.860640+00:00",
+    "sourceSha256": "371f9841fc36c282797f6787676eff3b541a949577f81a9e6fccf4d58d844f38",
+    "markdownSha256": "243cf9f7bfbdf393fa9a0b1c4532f13d6973f4c87f73f8c49031369a1a6fa4ad",
+    "imagePaths": []
+  },
+  {
+    "number": 3027,
+    "contentId": "7084f82c87cb",
+    "title": "人员站位的方案数 II",
+    "url": "https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/",
+    "fetchedAt": "2026-09-27T03:39:50.220961+00:00",
+    "sourceSha256": "d070d73c5ae7e53924f76ee0919be6ba1ecd0ce13751010ef3edd404a7fc15ac",
+    "markdownSha256": "ad253f4392d534b1d5f428fb5543c847dfbd509edadb8c68c14e0a8e6ca2b759",
+    "imagePaths": [
+      "/leetcode-assets/19f358fcb42fb6cf81cfffb0.png",
+      "/leetcode-assets/e1eae90384615f366aa0ba49.png",
+      "/leetcode-assets/071e833f6673ad19ec3c62fa.jpg",
+      "/leetcode-assets/f95fc30f6403642b47d7ec21.jpg"
+    ]
+  },
+  {
+    "number": 3123,
+    "contentId": "371bf1061656",
+    "title": "最短路径中的边",
+    "url": "https://leetcode.cn/problems/find-edges-in-shortest-paths/",
+    "fetchedAt": "2026-09-27T03:40:02.806886+00:00",
+    "sourceSha256": "1608a84daf5fb9facdf3ba0d321c508aba5c6392c79a70a05fbbe65991ebc42f",
+    "markdownSha256": "a9e93108ae97d56ecaa9a2d805e8f6e33a0cd159d86160e56ed08e550606026e",
+    "imagePaths": [
+      "/leetcode-assets/e6d506befc08a1999d2f34be.png",
+      "/leetcode-assets/e6c0f507ed08087fab16fc3a.png"
+    ]
+  },
+  {
+    "number": 3243,
+    "contentId": "4a4fb1a6b575",
+    "title": "新增道路查询后的最短距离 I",
+    "url": "https://leetcode.cn/problems/shortest-distance-after-road-addition-queries-i/",
+    "fetchedAt": "2026-09-27T03:40:00.534078+00:00",
+    "sourceSha256": "df6a3198bece9c9afdf892cd0c8403e5fa114ef583aed1ec222052535b31b42c",
+    "markdownSha256": "7114fec23d3140ede451504d0499b01b1ea61d97ad41fe69f28da0f3258f83d6",
+    "imagePaths": [
+      "/leetcode-assets/0bbfb85ada92fd0c5fd96fb2.jpg",
+      "/leetcode-assets/21b04f4e9e09676b41b1cdd4.jpg",
+      "/leetcode-assets/d360ca48e328a6c27b2ffaa4.jpg",
+      "/leetcode-assets/28ffe98b16442a3a31fe3e9b.jpg",
+      "/leetcode-assets/ba15c4d7ad2ebbfa3bbb951f.jpg"
+    ]
+  },
+  {
+    "number": 3428,
+    "contentId": "795fad10d981",
+    "title": "最多 K 个元素的子序列的最值之和",
+    "url": "https://leetcode.cn/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/",
+    "fetchedAt": "2026-09-27T03:39:49.108815+00:00",
+    "sourceSha256": "73c1b22896b16ece5bd069eee38595f56bf07406ae93182a798537a398e227fe",
+    "markdownSha256": "a8556c17bfed45ff01f5e13cb40205ab1c5589526d822554d0e366d741289ae4",
+    "imagePaths": []
+  },
+  {
+    "number": 3769,
+    "contentId": "d6bd7ca51319",
+    "title": "二进制反射排序",
+    "url": "https://leetcode.cn/problems/sort-integers-by-binary-reflection/",
+    "fetchedAt": "2026-09-27T03:39:43.067821+00:00",
+    "sourceSha256": "ef27cfc23f892c22cd9df92bda7a3bb1ed412696b1b3352ab7cc547d7abcfe0f",
+    "markdownSha256": "ffedaedc9469e2ef28f22f55108d8f2edc08eac8d18160937dee66f7e57f84d7",
+    "imagePaths": []
+  },
+  {
+    "number": 3898,
+    "contentId": "14765e133671",
+    "title": "统计每个顶点的度",
+    "url": "https://leetcode.cn/problems/find-the-degree-of-each-vertex/",
+    "fetchedAt": "2026-09-27T03:39:59.087831+00:00",
+    "sourceSha256": "77f0308bdbf25f6e5a4fbd130fdda0f4b411273ebd1a92c7bfeddfc02b626466",
+    "markdownSha256": "c5ddb10b2ed3185aae6d5f15a46e49d04f4624517a9604d48110a183662bff99",
+    "imagePaths": [
+      "/leetcode-assets/3d8dc707429fa63267d7fe3c.png",
+      "/leetcode-assets/0c0d581e329486bcbad7e3f6.png"
+    ]
+  }
+]

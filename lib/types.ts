@@ -55,8 +55,18 @@ export interface ProblemState {
   revealedMaskGroups?: number[]
   noteMarkdown: string
   pseudocode: string
+  draftUpdatedAt?: string
   lastReadAnchor?: string
   lastOpenedAt: string
+  updatedAt: string
+}
+
+export interface PseudocodeVersion {
+  id: string
+  contentId: string
+  name: string
+  code: string
+  createdAt: string
   updatedAt: string
 }
 

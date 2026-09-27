@@ -15,5 +15,5 @@ export default async function ProblemPage({ params, searchParams }: { params: Pr
   const items = collection ? getCollectionItems(collection) : getContentItems().filter((entry) => item.sourceRoot === 'local' || entry.sourceRoot !== 'local')
   const index = items.findIndex((entry) => entry.contentId === item.contentId)
   const linkMap = Object.fromEntries(getContentItems().map((entry) => [entry.sourcePath, entry.slug]))
-  return <ProblemWorkspace item={items[index] ?? item} markdown={await getMarkdown(item)} linkMap={linkMap} previous={items[index - 1]} next={items[index + 1]} collectionId={collection?.id} collectionLabel={collection?.title.split(' · ')[0]} />
+  return <ProblemWorkspace item={items[index] ?? item} markdown={await getMarkdown(item)} linkMap={linkMap} previous={items[index - 1]} next={items[index + 1]} collectionId={collection?.id} collectionLabel={collection?.title.split(' · ')[0]} collectionSize={collection?.entries.length} />
 }

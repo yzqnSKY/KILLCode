@@ -9,7 +9,7 @@ import rehypeKatex from 'rehype-katex'
 import rehypeSanitize, { defaultSchema } from 'rehype-sanitize'
 import { memo, type ReactNode } from 'react'
 
-const schema = { ...defaultSchema, attributes: { ...defaultSchema.attributes, '*': [...(defaultSchema.attributes?.['*'] ?? []), 'className', 'id'], img: [...(defaultSchema.attributes?.img ?? []), 'src', 'alt', 'width', 'height'] } }
+const schema = { ...defaultSchema, strip: [...(defaultSchema.strip ?? []), 'style'], attributes: { ...defaultSchema.attributes, '*': [...(defaultSchema.attributes?.['*'] ?? []), 'className', 'id'], img: [...(defaultSchema.attributes?.img ?? []), 'src', 'alt', 'width', 'height'] } }
 
 function nodeText(node: ReactNode): string {
   if (typeof node === 'string' || typeof node === 'number') return String(node)
@@ -54,16 +54,16 @@ export const MarkdownView = memo(function MarkdownView({ children, sourceUrl, so
     h2: ({ children: heading }) => <h2 id={headingId(heading)}>{heading}</h2>,
     h3: ({ children: heading }) => <h3 id={headingId(heading)}>{heading}</h3>,
     a: ({ href, children: label }) => { const resolved = resolveLink(href); const external = resolved?.startsWith('http'); return <a href={resolved} target={external ? '_blank' : undefined} rel={external ? 'noreferrer' : undefined}>{label}</a> },
-    img: ({ src, alt }) => {
+    img: ({ src, alt, width, height }) => {
       const base = 'https://raw.githubusercontent.com/youngyangyang04/leetcode-master/master/'
       let resolved = typeof src === 'string' ? src : ''
-      if (resolved && !resolved.startsWith('http')) {
+      if (resolved && !resolved.startsWith('http') && !resolved.startsWith('/leetcode-assets/')) {
         try { resolved = new URL(resolved, `${base}${sourcePath ?? ''}`).href }
         catch { resolved = `${base}${resolved.replace(/^\.\//, '')}` }
       }
       // Upstream Markdown images have arbitrary remote dimensions and paths.
       // eslint-disable-next-line @next/next/no-img-element
-      return <img src={resolved} alt={alt ?? ''} loading="lazy" onClick={() => resolved && window.open(resolved, '_blank', 'noopener,noreferrer')} title="点击查看原图" />
+      return <img src={resolved} alt={alt ?? ''} width={width} height={height} loading="lazy" onClick={() => resolved && window.open(resolved, '_blank', 'noopener,noreferrer')} title="点击查看原图" />
     },
   }}>{normalizeMathDelimiters(children)}</ReactMarkdown></div>
 })

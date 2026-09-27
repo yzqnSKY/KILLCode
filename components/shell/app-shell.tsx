@@ -2,9 +2,9 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { BookOpen, Bookmark, Check, Home, ListOrdered, GitBranch, Moon, Palette, PanelLeftClose, PanelLeftOpen, Settings, Sun } from 'lucide-react'
+import { BookOpen, Bookmark, Check, Home, ListOrdered, GitBranch, Network, Moon, Palette, PanelLeftClose, PanelLeftOpen, Settings, Sun } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
-import { db, exportLocalData, importLocalData } from '@/lib/local-db/db'
+import { db, exportLocalData, importLocalData, initializeStorage, refreshStorage, clearLearningData } from '@/lib/local-db/db'
 import { parseBackup, type ImportPreview } from '@/lib/local-db/backup'
 import { CodexConnection } from '@/components/settings/codex-connection'
 import contentIndex from '@/content/generated/index.json'
@@ -29,6 +29,20 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const fileRef = useRef<HTMLInputElement>(null)
   const [pendingImport, setPendingImport] = useState<{ text: string; preview: ImportPreview; name: string } | null>(null)
   const validContentIds = useRef(new Set(contentIndex.map((item) => item.contentId)))
+  const [storageReady, setStorageReady] = useState(false)
+  const [storageError, setStorageError] = useState('')
+
+  useEffect(() => {
+    let active = true
+    const refresh = async () => {
+      try { await initializeStorage(); await refreshStorage(); if (active) { setStorageReady(true); setStorageError('') } }
+      catch (error) { if (active) setStorageError(error instanceof Error ? error.message : '读取本机学习数据失败') }
+    }
+    void refresh()
+    const timer = setInterval(() => { if (document.visibilityState === 'visible') void refresh() }, 3000)
+    addEventListener('focus', refresh)
+    return () => { active = false; clearInterval(timer); removeEventListener('focus', refresh) }
+  }, [])
 
   useEffect(() => {
     const saved = localStorage.getItem('killcode-theme') as 'dark' | 'light' | null
@@ -72,15 +86,17 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <Link className={pathname === '/' ? 'active' : ''} href="/"><Home /> <span>学习路线</span></Link>
         <Link className={pathname === '/collections/sorting-100' ? 'active' : ''} href="/collections/sorting-100"><ListOrdered /> <span>排序合集</span></Link>
         <Link className={pathname === '/collections/dynamic-programming-100' ? 'active' : ''} href="/collections/dynamic-programming-100"><GitBranch /> <span>动态规划合集</span></Link>
+        <Link className={pathname === '/collections/graph-50' ? 'active' : ''} href="/collections/graph-50"><Network /> <span>图论合集</span></Link>
         <Link href="/?bookmarked=1"><Bookmark /> <span>收藏</span></Link>
       </nav>
       <button aria-label="设置" className="settings-button" onClick={() => setSettingsOpen(true)}><Settings /><span>设置</span></button>
     </aside>
-    <main className="app-main">{children}</main>
+    <main className="app-main">{storageError && <p className="storage-error" role="alert">本机存储暂时不可用：{storageError}。未保存的草稿会保留在浏览器中，连接恢复后重试。</p>}{storageReady ? children : <p className="storage-loading">正在读取本机学习记录并迁移旧数据…</p>}</main>
     <nav className="mobile-nav" aria-label="移动端导航">
       <Link href="/"><BookOpen/><span>路线</span></Link>
       <Link href="/collections/sorting-100"><ListOrdered/><span>排序</span></Link>
       <Link href="/collections/dynamic-programming-100"><GitBranch/><span>动态规划</span></Link>
+      <Link href="/collections/graph-50"><Network/><span>图论</span></Link>
       <Link href="/?bookmarked=1"><Bookmark/><span>收藏</span></Link>
       <button aria-label="设置" onClick={() => setSettingsOpen(true)}><Settings/><span>设置</span></button>
     </nav>
@@ -91,10 +107,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <div className={`palette-picker ${theme === 'dark' ? 'disabled' : ''}`}><div className="palette-heading"><div><Palette/><strong>撞色方案</strong></div><small>{theme === 'dark' ? '切换到浅色模式后可选' : '按钮与文本会自动适配对比度'}</small></div><div className="palette-grid">{palettes.map((option) => <button type="button" key={option.id} disabled={theme === 'dark'} aria-label={`选择${option.name}`} aria-pressed={palette === option.id} className={`palette-option ${palette === option.id ? 'selected' : ''}`} onClick={() => setPalette(option.id)}><span className="palette-swatches" aria-hidden="true">{option.colors.map((color) => <i key={color} style={{ backgroundColor: color }}/>)}</span><span><strong>{option.name}</strong><small>{option.description}</small></span>{palette === option.id && <Check className="palette-check"/>}</button>)}</div></div>
         </div>
         <div className="settings-section"><h3>Codex 连接</h3><p>AI 提问和伪代码评估使用本机 Codex。登录信息由 Codex CLI 在本机管理。</p><CodexConnection/></div>
-        <div className="settings-section"><h3>本地备份</h3><p>学习记录只保存在当前浏览器。建议定期导出 JSON；导入会按更新时间合并，不会覆盖较新的本地记录。</p><div className="button-row"><button className="button" onClick={downloadBackup}>导出数据</button><button className="button" onClick={() => fileRef.current?.click()}>导入数据</button></div><input ref={fileRef} hidden type="file" accept="application/json" onChange={async (event) => { const file = event.target.files?.[0]; if (!file) return; try { const text = await file.text(); setPendingImport({ text, preview: parseBackup(text, validContentIds.current), name: file.name }) } catch (error) { alert(error instanceof Error ? error.message : '导入失败') } finally { event.target.value = '' } }} />
-          {pendingImport && <div className="import-preview" role="status"><strong>导入预览 · {pendingImport.name}</strong><p>{pendingImport.preview.counts.problemStates} 道题目状态，{pendingImport.preview.counts.messages} 条 AI/评估记录。</p>{pendingImport.preview.unknownContentIds.length > 0 && <p>将跳过 {pendingImport.preview.unknownContentIds.length} 个当前内容库中不存在的题目 ID。</p>}<div className="button-row"><button className="button" onClick={() => setPendingImport(null)}>取消</button><button className="button primary" onClick={async () => { await importLocalData(pendingImport.text, validContentIds.current); location.reload() }}>确认合并</button></div></div>}
+        <div className="settings-section"><h3>本地备份</h3><p>学习记录自动保存到项目内的本机数据库，切换端口或浏览器仍可读取。每日自动备份；也可导出 JSON，导入时按更新时间合并。</p><div className="button-row"><button className="button" onClick={downloadBackup}>导出数据</button><button className="button" onClick={() => fileRef.current?.click()}>导入数据</button></div><input ref={fileRef} hidden type="file" accept="application/json" onChange={async (event) => { const file = event.target.files?.[0]; if (!file) return; try { const text = await file.text(); setPendingImport({ text, preview: parseBackup(text, validContentIds.current), name: file.name }) } catch (error) { alert(error instanceof Error ? error.message : '导入失败') } finally { event.target.value = '' } }} />
+          {pendingImport && <div className="import-preview" role="status"><strong>导入预览 · {pendingImport.name}</strong><p>{pendingImport.preview.counts.problemStates} 道题目状态，{pendingImport.preview.counts.messages} 条 AI/评估记录，{pendingImport.preview.payload.pseudocodeVersions?.length ?? 0} 个伪代码版本。</p>{pendingImport.preview.unknownContentIds.length > 0 && <p>将跳过 {pendingImport.preview.unknownContentIds.length} 个当前内容库中不存在的题目 ID。</p>}<div className="button-row"><button className="button" onClick={() => setPendingImport(null)}>取消</button><button className="button primary" onClick={async () => { await importLocalData(pendingImport.text, validContentIds.current); location.reload() }}>确认合并</button></div></div>}
         </div>
-        <div className="settings-section danger-zone"><h3>清空本地数据</h3><p>将删除当前浏览器中的状态、笔记、伪代码和 AI 记录。</p><button className="button danger" onClick={async () => { const count = await db.problemStates.count() + await db.messages.count(); if (confirm(`确定删除 ${count} 条本地记录吗？此操作不可撤销。`)) { await db.delete(); location.reload() } }}>清空数据</button></div>
+        <div className="settings-section danger-zone"><h3>清空本地数据</h3><p>将清空本机数据库中的状态、笔记、伪代码版本和 AI 记录。操作前会自动备份。</p><button className="button danger" onClick={async () => { const count = await db.problemStates.count() + await db.messages.count(); if (confirm(`确定删除 ${count} 条本地记录吗？此操作不可撤销。`)) { await clearLearningData(); location.reload() } }}>清空数据</button></div>
       </section>
     </div>}
   </div>

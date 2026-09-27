@@ -9,7 +9,8 @@ import { useEffect, useRef, useState, type CSSProperties, type PointerEvent as R
 import { MarkdownView } from '@/components/markdown/markdown-view'
 import { ReadingMask } from '@/components/markdown/reading-mask'
 import { EvaluationView } from '@/components/ai/evaluation-view'
-import { db, defaultState, patchProblemState } from '@/lib/local-db/db'
+import { db, defaultState, patchProblemState, journalDraft, saveJournaledDraft, putMessages, patchMessage } from '@/lib/local-db/db'
+import { PseudocodeVersions } from './pseudocode-versions'
 import type { ContentItem, EvaluationResult, MessageAttachment, ProblemMessage, ProblemState } from '@/lib/types'
 
 const CodeEditor = dynamic(() => import('./code-editor').then((mod) => mod.CodeEditor), { ssr: false, loading: () => <div className="editor-loading">正在加载编辑器…</div> })
@@ -24,7 +25,7 @@ const readDataUrl = (file: File) => new Promise<string>((resolve, reject) => { c
 let modelOptionsRequest: Promise<CodexModelOption[]> | undefined
 const loadModelOptions = () => modelOptionsRequest ??= fetch('/api/codex/models', { cache: 'no-store' }).then(async (response) => response.ok ? ((await response.json()).models ?? []) : [])
 
-export function ProblemWorkspace({ item, markdown, linkMap, previous, next, collectionId, collectionLabel }: { item: ContentItem; markdown: string; linkMap: Record<string, string>; previous?: ContentItem; next?: ContentItem; collectionId?: string; collectionLabel?: string }) {
+export function ProblemWorkspace({ item, markdown, linkMap, previous, next, collectionId, collectionLabel, collectionSize }: { item: ContentItem; markdown: string; linkMap: Record<string, string>; previous?: ContentItem; next?: ContentItem; collectionId?: string; collectionLabel?: string; collectionSize?: number }) {
   const problemHref = (target: ContentItem) => `/problems/${target.slug}${collectionId ? `?collection=${collectionId}` : ''}`
   const stored = useLiveQuery(() => db.problemStates.get(item.contentId).then((value) => value ?? null), [item.contentId])
   const messages = useLiveQuery(() => db.messages.where('[contentId+createdAt]').between([item.contentId, Dexie.minKey], [item.contentId, Dexie.maxKey]).reverse().limit(50).toArray().then((rows) => rows.reverse()), [item.contentId]) ?? []
@@ -52,18 +53,17 @@ export function ProblemWorkspace({ item, markdown, linkMap, previous, next, coll
   const selectedEvaluationMessage = evaluationMessages.find((message) => message.id === selectedEvaluationId) ?? evaluationMessages.at(-1)
   const latestEvaluation = selectedEvaluationMessage?.evaluation
   const stateLoaded = useRef(false)
+  const [draftReady, setDraftReady] = useState(false)
   const fileInputRef = useRef<HTMLInputElement>(null)
   const followLatestMessage = useRef(true)
 
   useEffect(() => {
     if (stored === undefined || stateLoaded.current) return
     stateLoaded.current = true
-    if (stored) queueMicrotask(() => setState(stored))
-    else {
-      const opened = { ...defaultState(item.contentId), status: 'in_progress' as const }
-      queueMicrotask(() => setState(opened))
-      void db.problemStates.put(opened)
-    }
+    void patchProblemState(item.contentId, {
+      status: stored?.status === 'completed' ? 'completed' : 'in_progress',
+      lastOpenedAt: new Date().toISOString(),
+    }).then((opened) => { setState(opened); setDraftReady(true) }).catch(() => { stateLoaded.current = false; setSaveStatus('error') })
   }, [stored, item.contentId])
   useEffect(() => { fetch('/api/codex/status').then(async (response) => { const result = await response.json(); setCodexConnected(response.ok && result.connected === true) }).catch(() => setCodexConnected(false)) }, [])
   useEffect(() => { queueMicrotask(() => setAiDisclosureAccepted(localStorage.getItem('killcode-ai-disclosure') === 'accepted')) }, [])
@@ -104,17 +104,19 @@ export function ProblemWorkspace({ item, markdown, linkMap, previous, next, coll
     })
   }, [])
   useEffect(() => {
-    if (!stateLoaded.current) return
-    setSaveStatus('saving')
-    const timer = setTimeout(() => patchProblemState(item.contentId, { noteMarkdown: state.noteMarkdown, pseudocode: state.pseudocode }).then(() => setSaveStatus('saved')).catch(() => setSaveStatus('error')), 800)
+    if (!draftReady) return
+    const timer = setTimeout(() => saveJournaledDraft(item.contentId).then(() => setSaveStatus('saved')).catch(() => setSaveStatus('error')), 400)
     return () => clearTimeout(timer)
-  }, [item.contentId, state.noteMarkdown, state.pseudocode])
+  }, [draftReady, item.contentId, state.noteMarkdown, state.pseudocode])
   useEffect(() => {
-    const flush = () => { void patchProblemState(item.contentId, { noteMarkdown: state.noteMarkdown, pseudocode: state.pseudocode }) }
-    const saveShortcut = (event: KeyboardEvent) => { if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 's') { event.preventDefault(); setSaveStatus('saving'); flush(); setTimeout(() => setSaveStatus('saved'), 150) } }
-    addEventListener('pagehide', flush); addEventListener('keydown', saveShortcut)
-    return () => { removeEventListener('pagehide', flush); removeEventListener('keydown', saveShortcut) }
-  }, [item.contentId, state.noteMarkdown, state.pseudocode])
+    if (!draftReady) return
+    const flush = () => { void saveJournaledDraft(item.contentId, true).catch(() => {}) }
+    const saveShortcut = (event: KeyboardEvent) => { if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 's') { event.preventDefault(); setSaveStatus('saving'); void saveJournaledDraft(item.contentId).then(() => setSaveStatus('saved')).catch(() => setSaveStatus('error')) } }
+    const hide = () => { if (document.visibilityState === 'hidden') flush() }
+    const synced = () => { if (!localStorage.getItem(`killcode-draft-${item.contentId}`)) setSaveStatus('saved') }
+    addEventListener('pagehide', flush); addEventListener('keydown', saveShortcut); document.addEventListener('visibilitychange', hide); addEventListener('killcode-storage-synced', synced)
+    return () => { flush(); removeEventListener('pagehide', flush); removeEventListener('keydown', saveShortcut); document.removeEventListener('visibilitychange', hide); removeEventListener('killcode-storage-synced', synced) }
+  }, [draftReady, item.contentId])
   useEffect(() => {
     const pane = document.querySelector<HTMLElement>('.primary-pane')
     if (!pane) return
@@ -128,8 +130,12 @@ export function ProblemWorkspace({ item, markdown, linkMap, previous, next, coll
   }, [item.contentId, state.lastReadAnchor])
 
   const updateState = (patch: Partial<ProblemState>, immediate = false) => {
+    if ('noteMarkdown' in patch || 'pseudocode' in patch) {
+      journalDraft(item.contentId, patch.noteMarkdown ?? state.noteMarkdown, patch.pseudocode ?? state.pseudocode)
+      setSaveStatus('saving')
+    }
     setState((current) => ({ ...current, ...patch }))
-    if (immediate) void patchProblemState(item.contentId, patch)
+    if (immediate) void patchProblemState(item.contentId, patch).catch(() => setSaveStatus('error'))
   }
 
   const defaultModel = aiModels.find((model) => model.isDefault)
@@ -189,17 +195,17 @@ export function ProblemWorkspace({ item, markdown, linkMap, previous, next, coll
     setQuestion(''); setBusy(true)
     const user: ProblemMessage = { id: crypto.randomUUID(), contentId: item.contentId, role: 'user', kind: 'question', content: text || '请分析附件', attachments: selectedAttachments.map(({ name, type, size, kind }) => ({ name, type, size, kind })), status: 'pending', createdAt: new Date().toISOString() }
     const assistant: ProblemMessage = { id: crypto.randomUUID(), contentId: item.contentId, role: 'assistant', kind: 'answer', content: '', status: 'streaming', createdAt: `${user.createdAt}-assistant` }
-    await db.messages.bulkPut([user, assistant])
     let streamPersistTimer: ReturnType<typeof setTimeout> | undefined
     try {
+      await putMessages([user, assistant])
       const response = await fetch(`/api/problems/${item.contentId}/chat`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message: text, attachments: selectedAttachments.map(({ kind, name, type, size, data, content }) => kind === 'image' ? { kind, name, type, size, data } : { kind, name, type, size, content }), pseudocode: state.pseudocode, threadId: state.codexThreadId, model: effectiveModel, effort: effectiveEffort, recentMessages: messages.slice(-12).map(({ role, content }) => ({ role, content })) }) })
       if (!response.ok || !response.body) throw new Error((await response.json()).error || '请求失败')
       const reader = response.body.getReader(); const decoder = new TextDecoder(); let buffer = ''; let content = ''; let threadId = state.codexThreadId
       let lastPersistedAt = 0
       const persistStream = () => {
         const elapsed = Date.now() - lastPersistedAt
-        if (elapsed >= 80) { lastPersistedAt = Date.now(); void db.messages.update(assistant.id, { content }); return }
-        streamPersistTimer ??= setTimeout(() => { streamPersistTimer = undefined; lastPersistedAt = Date.now(); void db.messages.update(assistant.id, { content }) }, 80 - elapsed)
+        if (elapsed >= 250) { lastPersistedAt = Date.now(); void patchMessage(assistant.id, { content }).catch(() => setSaveStatus('error')); return }
+        streamPersistTimer ??= setTimeout(() => { streamPersistTimer = undefined; lastPersistedAt = Date.now(); void patchMessage(assistant.id, { content }).catch(() => setSaveStatus('error')) }, 250 - elapsed)
       }
       while (true) {
         const { value, done } = await reader.read(); if (done) break
@@ -208,9 +214,12 @@ export function ProblemWorkspace({ item, markdown, linkMap, previous, next, coll
         for (const line of lines) { if (!line) continue; const event = JSON.parse(line); if (event.type === 'meta') { threadId = event.threadId; updateState({ codexThreadId: threadId }, true) } else if (event.type === 'delta') { content += event.delta; persistStream() } else if (event.type === 'error') throw new Error(event.error) }
       }
       if (streamPersistTimer) { clearTimeout(streamPersistTimer); streamPersistTimer = undefined }
-      await db.messages.update(user.id, { status: 'completed' }); await db.messages.update(assistant.id, { status: 'completed', content }); setAttachments([]); setAttachmentError(''); if (fileInputRef.current) fileInputRef.current.value = ''
+      await patchMessage(user.id, { status: 'completed' }); await patchMessage(assistant.id, { status: 'completed', content }); setAttachments([]); setAttachmentError(''); if (fileInputRef.current) fileInputRef.current.value = ''
     } catch (error) {
-      await db.messages.update(user.id, { status: 'failed' }); await db.messages.update(assistant.id, { status: 'failed', content: error instanceof Error ? error.message : '生成失败，请重试。' })
+      setQuestion(text)
+      try {
+        await patchMessage(user.id, { status: 'failed' }); await patchMessage(assistant.id, { status: 'failed', content: error instanceof Error ? error.message : '生成失败，请重试。' })
+      } catch { setSaveStatus('error') }
     } finally { if (streamPersistTimer) clearTimeout(streamPersistTimer); setBusy(false) }
   }
 
@@ -219,21 +228,22 @@ export function ProblemWorkspace({ item, markdown, linkMap, previous, next, coll
     setBusy(true); setToolPanel('practice'); setEvaluationStatus('pending'); setEvaluationError('')
     const snapshot = state.pseudocode
     const requestMessage: ProblemMessage = { id: crypto.randomUUID(), contentId: item.contentId, role: 'user', kind: 'evaluation_request', content: '评估当前伪代码', codeSnapshot: snapshot, status: 'pending', createdAt: new Date().toISOString() }
-    await db.messages.put(requestMessage)
     try {
+      await putMessages([requestMessage])
       const response = await fetch(`/api/problems/${item.contentId}/evaluate`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ pseudocode: snapshot, threadId: state.codexThreadId, model: effectiveModel, effort: effectiveEffort }) })
       const result = await response.json(); if (!response.ok) throw new Error(result.error || '评估失败')
       updateState({ codexThreadId: result.threadId }, true)
       const evaluation = result.evaluation as EvaluationResult
-      await db.messages.update(requestMessage.id, { status: 'completed' })
+      await patchMessage(requestMessage.id, { status: 'completed' })
       const evaluationId = crypto.randomUUID()
-      await db.messages.put({ id: evaluationId, contentId: item.contentId, role: 'assistant', kind: 'evaluation_result', content: evaluation.summary, codeSnapshot: snapshot, evaluation, status: 'completed', createdAt: `${requestMessage.createdAt}-evaluation` })
+      await putMessages([{ id: evaluationId, contentId: item.contentId, role: 'assistant', kind: 'evaluation_result', content: evaluation.summary, codeSnapshot: snapshot, evaluation, status: 'completed', createdAt: `${requestMessage.createdAt}-evaluation` }])
       setSelectedEvaluationId(evaluationId)
       setEvaluationStatus('done')
     } catch (error) {
       const message = error instanceof Error ? error.message : '评估失败'
       setEvaluationStatus('failed'); setEvaluationError(message)
-      await db.messages.update(requestMessage.id, { status: 'failed', content: message })
+      try { await patchMessage(requestMessage.id, { status: 'failed', content: message }) }
+      catch { setSaveStatus('error') }
     } finally { setBusy(false) }
   }
 
@@ -278,7 +288,7 @@ export function ProblemWorkspace({ item, markdown, linkMap, previous, next, coll
     <div className="workspace" style={{ '--tool-panel-width': `${panelWidth}px` } as CSSProperties}>
       <section className="primary-pane">
         <div className="reader-toolbar"><Link href={collectionId ? `/collections/${collectionId}` : "/"} className="back" aria-label={collectionId ? `返回${collectionLabel}` : "返回学习路线"}><ChevronLeft/></Link><div className="reader-actions"><button type="button" className={`reader-mask-toggle ${state.readingMaskEnabled ? 'active' : ''}`} aria-pressed={Boolean(state.readingMaskEnabled)} onClick={() => updateState({ readingMaskEnabled: !state.readingMaskEnabled, revealedMaskGroups: state.revealedMaskGroups ?? [0] }, true)}><EyeOff/>使用遮罩</button><a className="reader-source" href={item.sourceUrl} target="_blank" rel="noreferrer">查看原文 <ExternalLink/></a><button className={`icon-button ${state.isBookmarked ? 'selected' : ''}`} onClick={() => updateState({ isBookmarked: !state.isBookmarked }, true)} aria-label={state.isBookmarked ? '取消收藏' : '收藏'}><Bookmark fill={state.isBookmarked ? 'currentColor' : 'none'}/></button></div></div>
-        {item.study && <div className="collection-context"><strong>{collectionLabel} · 第 {item.study.order}/100 题 · {item.study.difficulty} · {item.study.priority}</strong><span>{item.study.focus}</span></div>}
+        {item.study && <div className="collection-context"><strong>{collectionLabel} · 第 {item.study.order}/{collectionSize} 题 · {item.study.difficulty} · {item.study.priority}</strong><span>{item.study.focus}</span></div>}
         <ReadingMask enabled={Boolean(state.readingMaskEnabled)} revealedGroups={state.revealedMaskGroups ?? [0]} onToggleGroup={toggleMaskGroup}><MarkdownView sourceUrl={item.sourceUrl} sourcePath={item.sourcePath} linkMap={linkMap}>{markdown}</MarkdownView></ReadingMask>
       </section>
       <div className="workspace-resizer" role="separator" aria-label="调整题目与练习区宽度" aria-orientation="vertical" tabIndex={0} onPointerDown={startPanelResize} onKeyDown={(event) => { if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') { const nextWidth = Math.min(Math.max(panelWidth + (event.key === 'ArrowLeft' ? 24 : -24), 340), 760); setPanelWidth(nextWidth); localStorage.setItem('killcode-tool-panel-width', String(nextWidth)) } }}/>
@@ -289,8 +299,8 @@ export function ProblemWorkspace({ item, markdown, linkMap, previous, next, coll
           <button role="tab" aria-selected={toolPanel === 'ai'} className={toolPanel === 'ai' ? 'active' : ''} onClick={() => setToolPanel('ai')}><MessageSquare/>AI</button>
           <button className="mobile-close" onClick={() => setMobilePanelOpen(false)} aria-label="关闭学习工具"><X/></button>
         </div>
-        {toolPanel === 'practice' && <div className="practice-pane"><header><div><h2>伪代码</h2><small><Check/> {saveStatus === 'saving' ? '保存中…' : saveStatus === 'error' ? '保存失败' : '已保存'}</small></div><div><button className="button subtle" onClick={() => updateState({ pseudocode: '' })}>清空</button><button className="button primary" disabled={busy || state.pseudocode.trim().length < 3} onClick={evaluate}>{busy ? <LoaderCircle className="spin"/> : <Sparkles/>}AI 评估</button></div></header><div className="practice-editor" style={{ height: editorHeight }}><CodeEditor value={state.pseudocode} onChange={(pseudocode) => updateState({ pseudocode })}/></div><div className="editor-resizer" role="separator" aria-label="调整伪代码编辑器高度" aria-orientation="horizontal" tabIndex={0} onPointerDown={startEditorResize} onKeyDown={(event) => { if (event.key === 'ArrowUp' || event.key === 'ArrowDown') { const nextHeight = Math.min(Math.max(editorHeight + (event.key === 'ArrowDown' ? 36 : -36), 260), 1100); setEditorHeight(nextHeight); localStorage.setItem('killcode-editor-height', String(nextHeight)) } }}><span/></div>{(latestEvaluation || evaluationStatus !== 'idle') && <div className="evaluation-column">{evaluationMessages.length > 1 && <select aria-label="评估历史" value={selectedEvaluationMessage?.id} onChange={(event) => setSelectedEvaluationId(event.target.value)}>{[...evaluationMessages].reverse().map((message, index) => <option key={message.id} value={message.id}>第 {evaluationMessages.length - index} 次 · {new Date(message.createdAt.split('-evaluation')[0]).toLocaleString('zh-CN')}</option>)}</select>}{latestEvaluation ? <><EvaluationView evaluation={latestEvaluation}/><details className="code-snapshot"><summary>查看本次伪代码快照</summary><pre>{selectedEvaluationMessage?.codeSnapshot}</pre></details></> : <div className="evaluation-placeholder">{evaluationStatus === 'pending' ? <LoaderCircle className="spin"/> : <Bot/>}<h2>{evaluationStatus === 'failed' ? '评估失败' : '正在评估'}</h2><p>{evaluationStatus === 'failed' ? evaluationError : 'AI 正在检查正确性、边界、反例和复杂度。'}</p></div>}</div>}</div>}
-        {toolPanel === 'notes' && <div className="notes-pane"><header><div><h2>本题笔记</h2><small>{saveStatus === 'saving' ? '保存中…' : saveStatus === 'error' ? '保存失败' : '已保存到本机'}</small></div><div className="note-mode-toggle" role="group" aria-label="笔记显示方式"><button type="button" aria-pressed={noteMode === 'edit'} onClick={() => setNoteMode('edit')}>编辑</button><button type="button" aria-pressed={noteMode === 'preview'} onClick={() => setNoteMode('preview')}>预览</button></div></header>{noteMode === 'edit' ? <textarea className="notes-editor" value={state.noteMarkdown} onChange={(event) => updateState({ noteMarkdown: event.target.value })} placeholder="支持 Markdown：记录关键点、错误、边界条件和复盘…"/> : <div className="notes-preview">{state.noteMarkdown.trim() ? <MarkdownView>{state.noteMarkdown}</MarkdownView> : <p className="notes-empty">还没有笔记。切换到“编辑”开始记录。</p>}</div>}</div>}
+        {toolPanel === 'practice' && <div className="practice-pane"><header><div><h2>伪代码</h2><small><Check/> {saveStatus === 'saving' ? '保存中…' : saveStatus === 'error' ? '保存失败' : '草稿已保存到本机'}</small></div><div><button className="button subtle" disabled={!draftReady} onClick={() => updateState({ pseudocode: '' })}>清空</button><button className="button primary" disabled={!draftReady || busy || state.pseudocode.trim().length < 3} onClick={evaluate}>{busy ? <LoaderCircle className="spin"/> : <Sparkles/>}AI 评估</button></div></header>{draftReady && <PseudocodeVersions contentId={item.contentId} code={state.pseudocode} onLoad={(pseudocode) => updateState({ pseudocode })}/> }<div className="practice-editor" style={{ height: editorHeight }}>{draftReady ? <CodeEditor value={state.pseudocode} onChange={(pseudocode) => updateState({ pseudocode })}/> : <div className="editor-loading">正在读取本机草稿…</div>}</div><div className="editor-resizer" role="separator" aria-label="调整伪代码编辑器高度" aria-orientation="horizontal" tabIndex={0} onPointerDown={startEditorResize} onKeyDown={(event) => { if (event.key === 'ArrowUp' || event.key === 'ArrowDown') { const nextHeight = Math.min(Math.max(editorHeight + (event.key === 'ArrowDown' ? 36 : -36), 260), 1100); setEditorHeight(nextHeight); localStorage.setItem('killcode-editor-height', String(nextHeight)) } }}><span/></div>{(latestEvaluation || evaluationStatus !== 'idle') && <div className="evaluation-column">{evaluationMessages.length > 1 && <select aria-label="评估历史" value={selectedEvaluationMessage?.id} onChange={(event) => setSelectedEvaluationId(event.target.value)}>{[...evaluationMessages].reverse().map((message, index) => <option key={message.id} value={message.id}>第 {evaluationMessages.length - index} 次 · {new Date(message.createdAt.split('-evaluation')[0]).toLocaleString('zh-CN')}</option>)}</select>}{latestEvaluation ? <><EvaluationView evaluation={latestEvaluation}/><details className="code-snapshot"><summary>查看本次伪代码快照</summary><pre>{selectedEvaluationMessage?.codeSnapshot}</pre></details></> : <div className="evaluation-placeholder">{evaluationStatus === 'pending' ? <LoaderCircle className="spin"/> : <Bot/>}<h2>{evaluationStatus === 'failed' ? '评估失败' : '正在评估'}</h2><p>{evaluationStatus === 'failed' ? evaluationError : 'AI 正在检查正确性、边界、反例和复杂度。'}</p></div>}</div>}</div>}
+        {toolPanel === 'notes' && <div className="notes-pane"><header><div><h2>本题笔记</h2><small>{saveStatus === 'saving' ? '保存中…' : saveStatus === 'error' ? '保存失败' : '已保存到本机'}</small></div><div className="note-mode-toggle" role="group" aria-label="笔记显示方式"><button type="button" aria-pressed={noteMode === 'edit'} onClick={() => setNoteMode('edit')}>编辑</button><button type="button" aria-pressed={noteMode === 'preview'} onClick={() => setNoteMode('preview')}>预览</button></div></header>{noteMode === 'edit' ? <textarea disabled={!draftReady} className="notes-editor" value={state.noteMarkdown} onChange={(event) => updateState({ noteMarkdown: event.target.value })} placeholder="支持 Markdown：记录关键点、错误、边界条件和复盘…"/> : <div className="notes-preview">{state.noteMarkdown.trim() ? <MarkdownView>{state.noteMarkdown}</MarkdownView> : <p className="notes-empty">还没有笔记。切换到“编辑”开始记录。</p>}</div>}</div>}
         {toolPanel === 'ai' && <div className="chat-panel"><header><div><h2>本题 AI</h2><span className={`connection ${codexConnected ? 'connected' : ''}`}>{codexConnected === null ? '检查中' : codexConnected ? 'Codex 已连接' : 'Codex 未连接'}</span></div><p>对话只绑定当前题目，不读取其他题目的记录。</p><div className="ai-model-row"><select aria-label="AI 模型" value={selectedModel} disabled={!codexConnected || busy} onChange={(event) => chooseModel(event.target.value)}><option value="">跟随 Codex 默认{defaultModel ? ` · ${defaultModel.displayName}` : ''}</option>{selectedModel && !aiModels.some((model) => model.model === selectedModel) && <option value={selectedModel}>{selectedModel}</option>}{aiModels.map((model) => <option key={model.id} value={model.model}>{model.displayName}</option>)}</select><select aria-label="推理强度" value={effectiveEffort ?? ''} disabled={!codexConnected || busy || !reasoningEfforts.length} onChange={(event) => chooseEffort(event.target.value)}><option value="">跟随默认{activeModel?.defaultReasoningEffort ? ` · ${reasoningEffortLabels[activeModel.defaultReasoningEffort] ?? activeModel.defaultReasoningEffort}` : ''}</option>{reasoningEfforts.map((option) => <option key={option.reasoningEffort} value={option.reasoningEffort} title={option.description}>{reasoningEffortLabels[option.reasoningEffort] ?? option.reasoningEffort}</option>)}</select><button type="button" className="sync-model" disabled={(!selectedModel && !selectedEffort) || busy} onClick={() => { chooseModel(''); chooseEffort('') }}><RefreshCw/>同步默认</button></div></header>{!aiDisclosureAccepted && <div className="ai-disclosure"><strong>首次使用说明</strong><p>提问会把当前题目、伪代码和最近对话发送给本机 Codex 服务；内容可能由 Codex 按你的订阅设置处理。</p><button className="button primary" onClick={() => { localStorage.setItem('killcode-ai-disclosure', 'accepted'); setAiDisclosureAccepted(true) }}>我知道了</button></div>}<div className="messages">{messages.filter((message) => message.kind === 'question' || message.kind === 'answer').map((message) => <article className={message.role} key={message.id}><small>{message.role === 'user' ? '你' : 'AI'}</small><div><MarkdownView>{message.content || '正在思考…'}</MarkdownView>{message.attachments?.length ? <div className="message-attachments">{message.attachments.map((attachment, index) => <span key={`${attachment.name}-${index}`}>{attachment.kind === 'image' ? <Image/> : <FileText/>}{attachment.name}</span>)}</div> : null}{message.role === 'assistant' && message.status === 'completed' && message.content && <div className="message-actions"><button type="button" disabled={addedAnswerId === message.id} onClick={() => addAnswerToNotes(message)}>{addedAnswerId === message.id ? <Check/> : <NotebookPen/>}{addedAnswerId === message.id ? '已添加到笔记' : '添加到笔记'}</button></div>}{message.status === 'failed' && <><em>请求失败，输入已保留。</em>{message.role === 'user' ? <button className="retry-link" onClick={() => ask(message.content, [])}>重试</button> : null}</>}</div></article>)}{!messages.some((message) => message.kind === 'question' || message.kind === 'answer') && <div className="chat-empty"><Bot/><h3>从你的疑问开始</h3><p>可以问边界条件、循环不变量或复杂度。</p></div>}</div><div className="quick-prompts">{['给我一个提示','检查边界条件','解释复杂度'].map((prompt) => <button key={prompt} onClick={() => ask(prompt)}> {prompt}</button>)}</div><form onSubmit={(event) => { event.preventDefault(); void ask() }}>{attachments.length ? <div className="pending-attachments">{attachments.map((attachment) => <span key={attachment.id}>{attachment.kind === 'image' ? <Image/> : <FileText/>}<span title={attachment.name}>{attachment.name}</span><button type="button" aria-label={`移除 ${attachment.name}`} onClick={() => setAttachments((current) => current.filter((item) => item.id !== attachment.id))}><X/></button></span>)}</div> : null}{attachmentError && <small className="attachment-error">{attachmentError}</small>}<textarea value={question} onChange={(event) => setQuestion(event.target.value)} onPaste={(event) => { const files = [...event.clipboardData.files]; if (files.length) { event.preventDefault(); void addFiles(files) } }} onKeyDown={(event) => { if ((event.key === 'Enter' || event.key === 'NumpadEnter') && !event.shiftKey && !event.nativeEvent.isComposing) { event.preventDefault(); if (aiDisclosureAccepted && !busy && (question.trim() || attachments.length)) event.currentTarget.form?.requestSubmit() } }} placeholder="输入问题，Enter 发送，Shift+Enter 换行…"/><input ref={fileInputRef} hidden type="file" multiple accept="image/png,image/jpeg,image/webp,image/gif,text/*,.md,.markdown,.json,.csv,.ts,.tsx,.js,.jsx,.py,.java,.c,.cc,.cpp,.h,.hpp,.go,.rs,.html,.css,.sql,.xml,.yaml,.yml,.toml,.log,.sh,.ps1" onChange={(event) => { void addFiles([...(event.target.files ?? [])]); event.target.value = '' }}/><button className="attach-button" type="button" aria-label="添加图片或文件" title="添加图片或文件" disabled={busy || attachments.length >= 4} onClick={() => fileInputRef.current?.click()}><Paperclip/></button><button className="send-button" disabled={!aiDisclosureAccepted || busy || (!question.trim() && !attachments.length)} aria-label="发送">{busy ? <LoaderCircle className="spin"/> : <Send/>}</button></form></div>}
       </aside>
     </div>

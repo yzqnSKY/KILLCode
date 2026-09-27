@@ -46,6 +46,11 @@ foreach ($command in @('node', 'npm', 'codex')) {
   }
 }
 
+& node -e "try { require('node:sqlite') } catch { process.exit(1) }" *> $null
+if ($LASTEXITCODE -ne 0) {
+  Stop-WithMessage 'Node.js 22.13+ is required for the local learning database.'
+}
+
 $savedErrorPreference = $ErrorActionPreference
 $ErrorActionPreference = 'SilentlyContinue'
 & codex login status *> $null

@@ -13,6 +13,22 @@ describe('Markdown rendering', () => {
     expect(html).not.toContain('onerror')
   })
 
+  it('omits source styles without losing the problem statement', () => {
+    const html = renderToStaticMarkup(<MarkdownView>{'<style>.dungeon { width: 70px; }</style><p>生命值必须大于零。</p><pre>输入：[[1]]\n输出：1</pre><p>提示：1 &lt;= n &lt;= 200</p>'}</MarkdownView>)
+    expect(html).not.toContain('.dungeon')
+    expect(html).toContain('生命值必须大于零。')
+    expect(html).toContain('输出：1')
+    expect(html).toContain('提示：1 &lt;= n &lt;= 200')
+  })
+
+  it('serves a locally stored diagram without resolving it against upstream', () => {
+    const html = renderToStaticMarkup(<MarkdownView sourcePath="problems/example.md">{'<img src="/leetcode-assets/example.png" alt="题目配图" width="260" height="180" />'}</MarkdownView>)
+    expect(html).toContain('src="/leetcode-assets/example.png"')
+    expect(html).not.toContain('raw.githubusercontent.com')
+    expect(html).toContain('width="260"')
+    expect(html).toContain('height="180"')
+  })
+
   it('renders dollar and LaTeX-style math delimiters', () => {
     const markdown = String.raw`Inline: \(n + 1\)
 

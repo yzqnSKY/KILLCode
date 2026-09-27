@@ -8,3 +8,8 @@ coverage/
 content/generated/*.json
 *.log
 *.tsbuildinfo
+.killcode-data/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+killcode-backup-*.json

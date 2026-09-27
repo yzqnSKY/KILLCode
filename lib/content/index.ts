@@ -4,11 +4,13 @@ import path from 'node:path'
 import indexData from '@/content/generated/index.json'
 import sortingData from '@/content/generated/sorting-100.json'
 import dpData from '@/content/generated/dynamic-programming-100.json'
+import graphData from '@/content/generated/graph-50.json'
 import type { ContentCollection, ContentItem } from '@/lib/types'
 import { normalizeMarkdown } from '@/lib/content/pipeline'
 
 const items = indexData as ContentItem[]
-const collections = [sortingData, dpData] as ContentCollection[]
+const collections = [sortingData, dpData, graphData] as ContentCollection[]
+const collectionProblems = new Map(collections.flatMap((collection) => collection.entries.map((entry) => [entry.contentId, entry.number] as const)))
 
 export function getCollection(id: string) {
   return collections.find((collection) => collection.id === id)
@@ -42,5 +44,20 @@ export async function getMarkdown(item: ContentItem) {
   const fullPath = path.resolve(process.cwd(), 'content', sourceRoot, item.sourcePath)
   const allowedRoot = path.resolve(process.cwd(), 'content', sourceRoot) + path.sep
   if (!fullPath.startsWith(allowedRoot)) throw new Error('Invalid content path')
-  return normalizeMarkdown(await readFile(fullPath, 'utf8'))
+  const number = collectionProblems.get(item.contentId)
+  const [markdown, statement] = await Promise.all([
+    readFile(fullPath, 'utf8'),
+    number === undefined ? Promise.resolve(null) : readFile(path.join(process.cwd(), 'content', 'leetcode', `${number}.md`), 'utf8'),
+  ])
+  if (statement === null) return normalizeMarkdown(markdown)
+  const materials = markdown.replace(/^\uFEFF?#\s+[^\n]*\r?\n/, '').trim()
+  return normalizeMarkdown(`${statement}
+
+<details class="existing-study-material">
+<summary>原有学习资料与训练重点</summary>
+
+${materials}
+
+</details>
+`)
 }

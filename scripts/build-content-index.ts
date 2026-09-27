@@ -63,10 +63,10 @@ items.sort((a, b) => a.order - b.order)
 
 await mkdir(path.dirname(output), { recursive: true })
 // Keep sorting first so its existing content IDs also win when collections overlap.
-for (const id of ['sorting-100', 'dynamic-programming-100']) {
+for (const [id, count] of [['sorting-100', 100], ['dynamic-programming-100', 100], ['graph-50', 65]] as const) {
   const collection = JSON.parse(await readFile(path.join(root, 'content', 'collections', `${id}.json`), 'utf8')) as ContentCollection
-  if (collection.entries.length !== 100 || new Set(collection.entries.map((entry) => entry.number)).size !== 100) {
-    throw new Error(`Collection ${id} must contain 100 distinct problems`)
+  if (collection.entries.length !== count || new Set(collection.entries.map((entry) => entry.number)).size !== count) {
+    throw new Error(`Collection ${id} must contain ${count} distinct problems`)
   }
   for (const entry of collection.entries) {
     const existing = items.find((item) => item.number === entry.number && item.isProblem)
@@ -80,7 +80,7 @@ for (const id of ['sorting-100', 'dynamic-programming-100']) {
     const contentId = createHash('sha1').update(`local/${sourcePath}`).digest('hex').slice(0, 12)
     entry.contentId = contentId
     items.push({
-      contentId, slug: `${id.replace(/-100$/, '')}-${entry.number}`, title: `${entry.number}. ${entry.title}`,
+      contentId, slug: `${id.replace(/-\d+$/, '')}-${entry.number}`, title: `${entry.number}. ${entry.title}`,
       number: entry.number, category: collection.title.split(' · ')[0], sourceRoot: 'local', sourcePath,
       sourceUrl: entry.url, excerpt: cleanTitle(body).replace(/\s+/g, ' ').slice(0, 1600),
       order: items.length, isRouteItem: false, isProblem: true,
